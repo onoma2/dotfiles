@@ -45,13 +45,13 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time  status rvm time)
 
 
 #OsX or Linux
-if [ "$OSTYPE"="darwin15.0" ]; then
+if [[ $PLATFORM == 'Darwin' ]]; then
   antigen bundle osx
   antigen bundle brew
 fi
 
 # Plugins.
-antigen bundle z
+antigen bundle zls
 antigen bundle thefuck
 antigen bundle git
 antigen bundle git-prompt

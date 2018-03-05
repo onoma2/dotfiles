@@ -6,7 +6,19 @@ export EDITOR='nano'
 
 TERM=xterm-256color
 
-alias condainit='export PATH="/Users/onoma/anaconda3/bin:$PATH"'
+setopt AUTO_CD # No cd needed to change directories
+setopt BANG_HIST # Treat the '!' character specially during expansion.
+setopt EXTENDED_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST # Expire duplicate entries first when trimming history.
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS # Delete old recorded entry if new entry is a duplicate.
+setopt HIST_IGNORE_DUPS # Don't record an entry that was just recorded again.
+setopt HIST_IGNORE_SPACE # Don't record an entry starting with a space.
+setopt HIST_REDUCE_BLANKS # Remove superfluous blanks before recording entry.
+setopt HIST_SAVE_NO_DUPS # Don't write duplicate entries in the history file.
+setopt INC_APPEND_HISTORY # Write to the history file immediately, not when the shell exits.
+setopt SHARE_HISTORY # Share history between all sessions.
+
 alias lc='colorls -lA --sd'
 alias weather="curl http://wttr.in/"
 alias moon="curl http://wttr.in/Moon"
@@ -18,7 +30,11 @@ alias wget="wget -c"
 ENABLE_CORRECTION="false"
 HIST_STAMPS="mm/dd/yyyy"
 
+
 export PLATFORM=$(uname)
+
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 if [[ $PLATFORM == 'Linux' ]]; then
 
@@ -36,16 +52,24 @@ if [[ $PLATFORM == 'Linux' ]]; then
 	alias update='sudo pacman -Syu'
 	alias upmirrors='sudo reflector --score 100 --fastest 25 --sort rate --save /etc/pacman.d/mirrorlist --verbose'
 
+	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
+
 	source /usr/share/zsh/share/antigen.zsh
 
 # If the platform is OS X
 elif [[ $PLATFORM == 'Darwin' ]]; then
-	export CLICOLOR=1
-	export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
-    source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
+
+	alias condainit='export PATH="/Users/onoma/anaconda3/bin:$PATH"'
+	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
+    source /usr/local/Celpip/antigen/2.2.3/share/antigen/antigen.zsh
 
 fi
 
 antigen init ~/.antigenrc
 
 neofetch --ascii
+
+# use .localrc for SUPER SECRET CRAP that you don't
+# want in your public, versioned repo.
+# shellcheck disable=SC1090
+[ -f ~/.localrc ] && . ~/.localrc
