@@ -61,7 +61,7 @@ elif [[ $PLATFORM == 'Darwin' ]]; then
 
 	alias condainit='export PATH="/Users/onoma/anaconda3/bin:$PATH"'
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
-    source /usr/local/Celpip/antigen/2.2.3/share/antigen/antigen.zsh
+	source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
 
 fi
 
