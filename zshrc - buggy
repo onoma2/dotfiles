@@ -60,10 +60,14 @@ if [[ $PLATFORM == 'Linux' ]]; then
 elif [[ $PLATFORM == 'Darwin' ]]; then
 
 	alias condainit='export PATH="/Users/onoma/anaconda3/bin:$PATH"'
+	alias ls='ls -G'
+
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
 	source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
 
 fi
+
+
 
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8';
@@ -72,17 +76,11 @@ export LC_ALL='en_US.UTF-8';
 # Highlight section titles in manual pages.
 export LESS_TERMCAP_md="${yellow}";
 
-# Don’t clear the screen after quitting a manual page.
-export MANPAGER='less -X'
-
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 # shellcheck disable=SC1090
 [ -f ~/.localrc ] && . ~/.localrc
 
-[ -e "${HOME}/dotfiles/zsh/functions" ] && source "${HOME}/dotfiles/zsh/functions"
-
 antigen init ~/.antigenrc
 
 neofetch --ascii
-
