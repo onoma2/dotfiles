@@ -69,18 +69,4 @@ fi
 
 
 
-# Prefer US English and use UTF-8.
-export LANG='en_US.UTF-8';
-export LC_ALL='en_US.UTF-8';
 
-# Highlight section titles in manual pages.
-export LESS_TERMCAP_md="${yellow}";
-
-# use .localrc for SUPER SECRET CRAP that you don't
-# want in your public, versioned repo.
-# shellcheck disable=SC1090
-[ -f ~/.localrc ] && . ~/.localrc
-
-antigen init ~/.antigenrc
-
-neofetch --ascii
