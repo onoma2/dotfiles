@@ -89,5 +89,5 @@ export MANPAGER='less -X'
 
 antigen init ~/.antigenrc
 
-neofetch --ascii
+#neofetch --ascii
 
