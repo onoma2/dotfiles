@@ -55,6 +55,7 @@ if [[ $PLATFORM == 'Linux' ]]; then
 	alias pacman='sudo pacman --color auto'
 	alias update='sudo pacman -Syu'
 	alias upmirrors='sudo reflector --score 100 --fastest 25 --sort rate --save /etc/pacman.d/mirrorlist --verbose'
+	alias afk="systemctl suspend"
 
 	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
 
