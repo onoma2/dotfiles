@@ -26,6 +26,8 @@ alias mkdir="mkdir -pv"
 alias du="du -ach | sort -h"
 alias ps="ps -af"
 alias wget="wget -c"
+alias zshr="exec zsh"
+alias zshs="source ~/.zshrc"
 
 ENABLE_CORRECTION="false"
 HIST_STAMPS="mm/dd/yyyy"
@@ -34,7 +36,9 @@ HIST_STAMPS="mm/dd/yyyy"
 export PLATFORM=$(uname)
 
 export CLICOLOR=1
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+#export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+eval $( dircolors -b $HOME/dotfiles/dircolors )
 
 if [[ $PLATFORM == 'Linux' ]]; then
 
@@ -51,6 +55,7 @@ if [[ $PLATFORM == 'Linux' ]]; then
 	alias pacman='sudo pacman --color auto'
 	alias update='sudo pacman -Syu'
 	alias upmirrors='sudo reflector --score 100 --fastest 25 --sort rate --save /etc/pacman.d/mirrorlist --verbose'
+	alias afk="systemctl suspend"
 
 	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
 
