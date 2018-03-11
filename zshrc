@@ -67,12 +67,12 @@ elif [[ $PLATFORM == 'Darwin' ]]; then
 	alias condainit='export PATH="/Users/onoma/anaconda3/bin:$PATH"'
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
 	source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
+	export LC_ALL='en_US.UTF-8'
 
 fi
 
 # Prefer US English and use UTF-8.
-export LANG='en_US.UTF-8';
-# export LC_ALL='en_US.UTF-8';
+export LANG='en_US.UTF-8'; 
 
 # Highlight section titles in manual pages.
 export LESS_TERMCAP_md="${yellow}";
