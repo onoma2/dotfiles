@@ -6,6 +6,14 @@ export EDITOR='nano'
 
 TERM=xterm-256color
 
+# create history file
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
+
+#options from ArchLabs
 setopt AUTO_CD # No cd needed to change directories
 setopt BANG_HIST # Treat the '!' character specially during expansion.
 setopt EXTENDED_HISTORY
@@ -19,6 +27,8 @@ setopt HIST_SAVE_NO_DUPS # Don't write duplicate entries in the history file.
 setopt INC_APPEND_HISTORY # Write to the history file immediately, not when the shell exits.
 setopt SHARE_HISTORY # Share history between all sessions.
 
+
+#general aliases
 alias lc='colorls -lA --sd'
 alias weather="curl http://wttr.in/"
 alias moon="curl http://wttr.in/Moon"
@@ -26,8 +36,8 @@ alias mkdir="mkdir -pv"
 alias du="du -ach | sort -h"
 alias ps="ps -af"
 alias wget="wget -c"
-alias zshr="exec zsh"
-alias zshs="source ~/.zshrc"
+alias zsr="exec zsh"
+alias zss="source ~/.zshrc"
 
 ENABLE_CORRECTION="false"
 HIST_STAMPS="mm/dd/yyyy"
@@ -56,6 +66,7 @@ if [[ $PLATFORM == 'Linux' ]]; then
 	alias update='sudo pacman -Syu'
 	alias upmirrors='sudo reflector --score 100 --fastest 25 --sort rate --save /etc/pacman.d/mirrorlist --verbose'
 	alias afk="systemctl suspend"
+	alias neoa="neofetch --ascii"
 
 	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
 
