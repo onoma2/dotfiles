@@ -32,7 +32,7 @@ inherit = bar/master
 ; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
 monitor =
 
-modules-left   = jgmenu menu i3-workspaces 
+modules-left   = redshift jgmenu menu i3-workspaces 
 modules-center = play music2
 modules-right  = pkg memory network volume keyboard battery time
 
