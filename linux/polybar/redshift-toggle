@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+
+if [[ $1 = "--toggle" ]] || [[ $1 = "-t" ]]; then
+  if pgrep redshift > /dev/null 2>&1; then
+    killall redshift
+  else
+    redshift &
+  fi
+  exit 0
+fi
+
+
+icon=""
+pgrep -x redshift &> /dev/null
+if [[ $? -eq 0 ]]; then
+  temp=$(redshift -p 2>/dev/null | grep temp | cut -d' ' -f3)
+  temp=${temp//K/}
+fi
+
+if [[ -z $temp ]]; then
+  echo " $icon "       # Greyed out (not running)
+elif [[ $temp -ge 5000 ]]; then
+  echo "%{F#8039A0} $icon "       # Blue
+elif [[ $temp -ge 4000 ]]; then
+  echo "%{F#B13F47} $icon "       # Yellow
+else
+  echo "%{F#FF5B6C} $icon "       # Orange
+fi
