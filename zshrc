@@ -43,19 +43,32 @@ ENABLE_CORRECTION="false"
 HIST_STAMPS="mm/dd/yyyy"
 
 
-export PLATFORM=$(uname)
+
 
 export CLICOLOR=1
 #export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
-eval $( dircolors -b $HOME/dotfiles/dircolors )
+
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+	colorflag="--color"
+	eval $( dircolors -b $HOME/dotfiles/dircolors )
+else # macOS `ls`
+	colorflag="-G"
+	export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
+fi
+
+
+
+export PLATFORM=$(uname)
 
 if [[ $PLATFORM == 'Linux' ]]; then
 
 	PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
 	export GEM_HOME=$HOME/.gem
 
-	alias ls='ls --color=auto'
+#	alias ls='ls --color=auto'
 	alias la='ls -A'
 	alias ll='ls -lA'
 	alias l='ls'
