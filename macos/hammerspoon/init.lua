@@ -2,7 +2,7 @@
 
 
 
-require "homebrew"
+-- require "homebrew"
 
 -- init grid
 hs.grid.MARGINX 	= 0
