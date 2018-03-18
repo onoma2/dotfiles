@@ -14,7 +14,7 @@ local appCuts = {
   d = 'Dictionary',
   i = 'iterm',
   c = 'Google chrome',
-  t = 'kitty.app',
+  t = 'kitty',
   -- 4 reserved for dash shortcut 
   -- q = 'steam',
   -- e = 'sublime text',
