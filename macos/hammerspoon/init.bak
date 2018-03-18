@@ -29,6 +29,25 @@ local appCuts = {
 }
 
 
+-- Display Help
+local function display_help()
+  local t = {}
+  str = "Keyboard shortcuts\n"
+  table.insert(t, str)
+  str = "--------------------\n"
+  table.insert(t, str)
+  for key, app in pairs(appCuts) do
+    str = "^-Alt-Meta-"..key.."\t :\t"..app.."\n"
+    --hs.alert.show(str)
+    table.insert(t,str)
+  end
+  t = table.concat(t)
+  hs.alert.show(t, 2)
+end
+
+
+
+
 
 -- Init Launch applications bindings
 local function init_app_binding()
@@ -39,6 +58,7 @@ end
 
 local function init()
 	init_app_binding()
+  hs.hotkey.bind(mash_app, '/', function() display_help() end)
 	-- start app launch watcher
 end
 
