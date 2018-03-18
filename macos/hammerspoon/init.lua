@@ -1,7 +1,6 @@
 -- Hammerspoon configuration, heavily influenced by sdegutis default configuration
 
-require "pomodoor"
---require "bar"
+
 
 require "homebrew"
 
@@ -105,14 +104,6 @@ local function init_wm_binding()
 	hs.hotkey.bind(mash, 'I', hs.grid.resizeWindowTaller)
 	hs.hotkey.bind(mash, 'O', hs.grid.resizeWindowWider)
 
-	-- Window Hints
-	-- hs.hotkey.bind(mash, '.', function() hs.hints.windowHints(hs.window.allWindows()) end)
-	hs.hotkey.bind(mash, '.', hs.hints.windowHints)
-
-	-- pomodoro key binding
-	hs.hotkey.bind(mash, '9', function() pom_enable() end)
-	hs.hotkey.bind(mash, '0', function() pom_disable() end)
-	hs.hotkey.bind(mash_shift, '0', function() pom_reset_work() end)
 end
 
 -- Init Launch applications bindings
