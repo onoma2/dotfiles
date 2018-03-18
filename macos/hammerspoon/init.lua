@@ -38,7 +38,6 @@ end
 local function init()
 	init_app_binding()
 	-- start app launch watcher
-	hs.application.watcher.new(auto_tile):start()
 end
 
 init()
