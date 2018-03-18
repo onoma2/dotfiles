@@ -15,8 +15,8 @@ local appCuts = {
   i = 'iterm',
   c = 'Google chrome',
   k = 'kitty',
-  v = 'Visual Studio Code'
-  f = 'Finder'
+  v = 'Visual Studio Code',
+  f = 'Finder',
   -- 4 reserved for dash shortcut 
   -- q = 'steam',
   -- e = 'sublime text',
