@@ -110,7 +110,7 @@ export MANPAGER='less -X'
 # shellcheck disable=SC1090
 [ -f ~/.localrc ] && . ~/.localrc
 
-[ -e "${HOME}/dotfiles/zsh/functions" ] && source "${HOME}/dotfiles/zsh/functions"
+#[ -e "${HOME}/dotfiles/zsh/functions" ] && source "${HOME}/dotfiles/zsh/functions"
 
 antigen init ~/.antigenrc
 
