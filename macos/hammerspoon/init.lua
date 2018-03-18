@@ -14,7 +14,9 @@ local appCuts = {
   d = 'Dictionary',
   i = 'iterm',
   c = 'Google chrome',
-  t = 'kitty',
+  k = 'kitty',
+  v = 'Visual Studio Code'
+  f = 'Finder'
   -- 4 reserved for dash shortcut 
   -- q = 'steam',
   -- e = 'sublime text',
