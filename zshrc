@@ -6,6 +6,8 @@ export EDITOR='nano'
 
 TERM=xterm-256color
 
+KITTY_CONFIG_DIRECTORY="$HOME/.config"
+
 # create history file
 HISTFILE=~/.histfile
 HISTSIZE=10000
