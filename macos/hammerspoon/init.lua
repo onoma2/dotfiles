@@ -14,8 +14,8 @@ local appCuts = {
   d = 'Dictionary',
   i = 'iterm',
   c = 'Google chrome',
-  k = 'kitty',
-  v = 'Visual Studio Code',
+ -- k = 'kitty',
+ -- v = 'Visual Studio Code',
   f = 'Finder',
   -- 4 reserved for dash shortcut 
   s = 'Spotify',
