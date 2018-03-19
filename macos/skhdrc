@@ -1,6 +1,6 @@
 # open terminal, blazingly fast compared to iTerm/Hyper
 cmd - return : open -na /Applications/Kitty.app
-ctrl + cmd + alt - s : open -na /Applications/Spotify.app
+#ctrl + cmd + alt - s : open -na /Applications/Spotify.app
 
 
 # enter fullscreen mode for the focused container
@@ -20,13 +20,13 @@ alt - s : chunkc tiling::desktop --layout monocle
 shift + alt - q : chunkc tiling::window --close
 
 # change focus
-alt - h : chunkc tiling::window --focus west
-alt - j : chunkc tiling::window --focus south
-alt - k : chunkc tiling::window --focus north
-alt - l : chunkc tiling::window --focus east
+alt - j : chunkc tiling::window --focus west
+alt - k : chunkc tiling::window --focus south
+alt - l : chunkc tiling::window --focus north
+alt - ; : chunkc tiling::window --focus east
 
-cmd - j : chunkc tiling::window --focus prev
-cmd - k : chunkc tiling::window --focus next
+cmd - k : chunkc tiling::window --focus prev
+cmd - l : chunkc tiling::window --focus next
 
 # equalize size of windows
 shift + alt - 0 : chunkc tiling::desktop --equalize
