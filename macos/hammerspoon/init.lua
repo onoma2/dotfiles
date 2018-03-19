@@ -18,7 +18,7 @@ local appCuts = {
   v = 'Visual Studio Code',
   f = 'Finder',
   -- 4 reserved for dash shortcut 
-  -- s = 'Spotify',
+  s = 'Spotify',
   -- e = 'sublime text',
   -- r = 'cool-retro-term',
   -- k = 'itunes',
