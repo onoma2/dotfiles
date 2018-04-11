@@ -87,6 +87,11 @@ if [[ $PLATFORM == 'Linux' ]]; then
 	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
 
 	source /usr/share/zsh/share/antigen.zsh
+	
+	setxkbmap -model pc105 -layout us,ru -variant , 
+-option grp:alt_shift_toggle,compose:ralt
+
+	timedatectl set-local-rtc 0
 
 # If the platform is OS X
 elif [[ $PLATFORM == 'Darwin' ]]; then
@@ -117,4 +122,3 @@ export MANPAGER='less -X'
 antigen init ~/.antigenrc
 
 #neofetch --ascii
-
