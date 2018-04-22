@@ -41,6 +41,7 @@ alias wget="wget -c"
 alias zsr="exec zsh"
 alias zss="source ~/.zshrc"
 alias neoa="neofetch --ascii"
+alias .d="source deactivate"
 
 ENABLE_CORRECTION="false"
 HIST_STAMPS="mm/dd/yyyy"
@@ -84,7 +85,7 @@ if [[ $PLATFORM == 'Linux' ]]; then
 	alias afk="systemctl suspend"
 
 
-	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
+	alias condainit='source ~/miniconda3/bin/activate'
 
 	source /usr/share/zsh/share/antigen.zsh
 	

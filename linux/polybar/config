@@ -33,7 +33,7 @@ inherit = bar/master
 monitor =
 
 modules-left   = redshift jgmenu menu i3-workspaces 
-modules-center = play music2
+modules-center = music2
 modules-right  = pkg memory network volume keyboard battery time
 
 
