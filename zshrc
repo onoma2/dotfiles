@@ -41,6 +41,7 @@ alias wget="wget -c"
 alias zsr="exec zsh"
 alias zss="source ~/.zshrc"
 alias neoa="neofetch --ascii"
+alias .d="source deactivate"
 
 ENABLE_CORRECTION="false"
 HIST_STAMPS="mm/dd/yyyy"
@@ -84,9 +85,17 @@ if [[ $PLATFORM == 'Linux' ]]; then
 	alias afk="systemctl suspend"
 
 
+<<<<<<< HEAD
 #	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
+=======
+	alias condainit='source ~/miniconda3/bin/activate'
+>>>>>>> 130bb14bdfd2f9faf216a944be73ed4e409f9d9f
 
 	source /usr/share/zsh/share/antigen.zsh
+	
+	setxkbmap -model pc105 -layout us,ru -variant , -option grp:alt_shift_toggle,compose:ralt
+
+	timedatectl set-local-rtc 0
 
 # If the platform is OS X
 elif [[ $PLATFORM == 'Darwin' ]]; then
@@ -117,5 +126,8 @@ export MANPAGER='less -X'
 antigen init ~/.antigenrc
 
 #neofetch --ascii
+<<<<<<< HEAD
 
 source /Users/onoma/anaconda3/bin/activate
+=======
+>>>>>>> 130bb14bdfd2f9faf216a944be73ed4e409f9d9f

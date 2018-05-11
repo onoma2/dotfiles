@@ -1,0 +1,32 @@
+INFO     Starting Mopidy 2.1.0
+INFO     Loading config from builtin defaults
+INFO     Loading config from /home/onoma/.config/mopidy/mopidy.conf
+INFO     Loading config from command line options
+INFO     Enabled extensions: mpd, http, moped, stream, m3u, youtube, softwaremixer, file, local
+INFO     Disabled extensions: spotify
+WARNING  Found spotify configuration errors, the extension has been automatically disabled:
+WARNING    spotify/username must be set.
+WARNING    spotify/client_secret must be set.
+WARNING    spotify/password must be set.
+WARNING    spotify/client_id must be set.
+WARNING  Please fix the extension configuration errors or disable the extensions to silence these messages.
+INFO     Starting Mopidy mixer: SoftwareMixer
+INFO     Starting Mopidy audio
+INFO     Starting Mopidy backends: StreamBackend, M3UBackend, FileBackend, LocalBackend, YouTubeBackend
+INFO     No local library metadata cache found at /home/onoma/.local/share/mopidy/local/library.json.gz. Please run `mopidy local scan` to index your local music library. If you do not have a local music collection, you can disable the local backend to hide this message.
+INFO     Loaded 0 local tracks using json
+INFO     Audio output set to "tee name=t ! queue ! autoaudiosink t. ! queue ! udpsink port=5555"
+INFO     Starting Mopidy core
+INFO     Starting Mopidy frontends: MpdFrontend, HttpFrontend
+INFO     MPD server running at [::ffff:127.0.0.1]:6600
+INFO     HTTP server running at [::ffff:127.0.0.1]:6680
+INFO     Starting GLib mainloop
+INFO     New MPD connection from [::ffff:127.0.0.1]:53400
+INFO     New MPD connection from [::ffff:127.0.0.1]:53404
+INFO     New MPD connection from [::ffff:127.0.0.1]:53412
+INFO     GLib mainloop got SIGTERM. Exiting...
+INFO     Stopping Mopidy frontends
+INFO     Stopping Mopidy core
+INFO     Stopping Mopidy backends
+INFO     Stopping Mopidy audio
+INFO     Stopping Mopidy mixer
