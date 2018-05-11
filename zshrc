@@ -85,11 +85,7 @@ if [[ $PLATFORM == 'Linux' ]]; then
 	alias afk="systemctl suspend"
 
 
-<<<<<<< HEAD
 #	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
-=======
-	alias condainit='source ~/miniconda3/bin/activate'
->>>>>>> 130bb14bdfd2f9faf216a944be73ed4e409f9d9f
 
 	source /usr/share/zsh/share/antigen.zsh
 	
@@ -101,6 +97,7 @@ if [[ $PLATFORM == 'Linux' ]]; then
 elif [[ $PLATFORM == 'Darwin' ]]; then
 
 #	alias condainit='echo ". /Users/onoma/anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile'
+	source $HOME/anaconda3/bin/activate
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
 	source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
 	export LC_ALL='en_US.UTF-8'
@@ -126,8 +123,6 @@ export MANPAGER='less -X'
 antigen init ~/.antigenrc
 
 #neofetch --ascii
-<<<<<<< HEAD
 
-source /Users/onoma/anaconda3/bin/activate
-=======
->>>>>>> 130bb14bdfd2f9faf216a944be73ed4e409f9d9f
+
+source $HOME/anaconda3/bin/activate
