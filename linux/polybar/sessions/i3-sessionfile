@@ -5,4 +5,4 @@
 
 # sleep 1; al-polybar-session &
 
-/home/onoma/.config/polybar/config i3-bar
+/home/onoma/.config/polybar/config base

@@ -24,8 +24,8 @@ client.background       $bg
 for_window [class="^.*"] border pixel 2, title_format "<b> %class >> %title </b>"
 
 # gaps
-gaps inner 15
-gaps outer 5
+gaps inner 10
+gaps outer 10
 
 # font
 font pango:DroidSansMono 10

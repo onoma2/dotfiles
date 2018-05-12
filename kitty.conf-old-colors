@@ -24,10 +24,10 @@ font_size        14.0
 font_size_delta 2
 
 # The foreground color
-foreground        #c5c8c6
+foreground       #c0b18b
 
 # The background color
-background        #1d1f21
+background       #202020
 
 # The foreground for selections
 selection_foreground #2f2f2f
