@@ -30,9 +30,9 @@ gaps outer 5
 # font
 font pango:DroidSansMono 10
 
-# $Mod = Super or Alt?
+# Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $Mod Mod4
-#set $Mod Mod1
+
 
 # direction keys
 set $up l
@@ -59,8 +59,8 @@ set $WS8 "8"
 #:"
 
 # monitors
-set $Mon1 HDMI1
-set $Mon2 HDMI2
+# set $Mon1 HDMI1
+# set $Mon2 HDMI2
 
 #####################################################
 ###############     Autostart      ##################
@@ -103,8 +103,19 @@ bindsym Mod1+F1 exec --no-startup-id rofr.sh -r
 # core
 bindsym $Mod+e exec --no-startup-id geany
 bindsym $Mod+t exec exo-open --launch TerminalEmulator
-bindsym $Mod+w exec exo-open --launch WebBrowser
+#bindsym $Mod+w exec exo-open --launch WebBrowser
 bindsym $Mod+f exec exo-open --launch FileManager
+
+# jumpapp mash
+bindsym $Mod+Mod1+Ctrl+v exec --no-startup-id jumpapp code 
+bindsym $Mod+Mod1+Ctrl+c exec --no-startup-id jumpapp chromium
+bindsym $Mod+Mod1+Ctrl+k exec --no-startup-id jumpapp kitty
+bindsym $Mod+Mod1+Ctrl+f exec --no-startup-id jumpapp pcmanfm
+bindsym $Mod+Mod1+Ctrl+t exec --no-startup-id jumpapp termite
+bindsym $Mod+Mod1+Ctrl+s exec --no-startup-id jumpapp spotify
+bindsym $Mod+Mod1+Ctrl+r exec --no-startup-id rambox
+
+
 
 # logout script
 bindsym $Mod+x exec --no-startup-id rofr.sh -l
@@ -179,7 +190,7 @@ bindsym $Mod+Shift+c reload
 bindsym $Mod+Shift+space floating toggle
 floating_modifier  Mod1
 
-bindsym $Mod+Shift+z move scratchpad
+bindsym $Mod+Shift+z move scratchpad 
 bindsym $Mod+z scratchpad show
 
 # change focus
@@ -224,8 +235,8 @@ for_window [urgent="latest"] focus
 focus_on_window_activation   focus
 
 # container layout
-bindsym $Mod+h split h
-bindsym $Mod+v split v
+bindsym $Mod+h split h;exec notify-send 'Horizontal Split'
+bindsym $Mod+v split v;exec notify-send 'Vertical Split'
 bindsym $Mod+Shift+t layout tabbed
 bindsym $Mod+Shift+s layout stacking
 bindsym $Mod+Shift+h layout toggle split
@@ -247,6 +258,13 @@ bindsym $Mod+n border normal
 bindsym $Mod+y border 1pixel
 bindsym $Mod+u border none
 
+# Disable and enable gaps
+bindsym $mod+o          gaps inner current set 0; gaps outer current set 0
+bindsym $mod+i          gaps inner current set 10; gaps outer current set 10
+bindsym $mod+Shift+o    gaps inner current set 10; gaps outer current set 40
+bindsym $mod+Shift+i    gaps inner current set 10; gaps outer current set 200
+
+
 # change gaps
 bindsym $Mod+plus        gaps inner current plus  5
 bindsym $Mod+minus       gaps inner current minus 5
@@ -262,14 +280,14 @@ bindsym $Mod+Control+Shift+minus gaps outer all minus 5
 ###################################################
 
 for_window [class="(?i)(?:qt5ct|pinentry)"] floating enable, focus
-for_window [class="(?i)(?:termite|thunar)"] focus
-for_window [class="(?i)(?:geany|firefox)"] focus
+for_window [class="(?i)(?:kitty|pcmanfm)"] focus
+for_window [class="(?i)(?:geany|chromium)"] focus
 
 # Assign Applications to specific workspace
 # get class with xprop
-assign [class="(?i)(?:firefox)"] → $WS1
+assign [class="(?i)(?:chromium)"] → $WS1
 assign [class="(?i)(?:geany)"] → $WS2
-assign [class="(?i)(?:thunar)"] → $WS3
+assign [class="(?i)(?:pcmanfm)"] → $WS3
 
 # focus, floating, & sticky
 for_window [title="(?i)(?:copying|deleting|moving)"] floating enable

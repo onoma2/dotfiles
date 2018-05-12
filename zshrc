@@ -67,6 +67,8 @@ fi
 
 export PLATFORM=$(uname)
 
+# ------- { LINUX
+# -----------------------------------------------
 if [[ $PLATFORM == 'Linux' ]]; then
 
 	PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
@@ -86,23 +88,29 @@ if [[ $PLATFORM == 'Linux' ]]; then
 
 
 #	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
+	alias condainit='source $HOME/miniconda3/bin/activate'
 
 	source /usr/share/zsh/share/antigen.zsh
 	
 	setxkbmap -model pc105 -layout us,ru -variant , -option grp:alt_shift_toggle,compose:ralt
 
 	timedatectl set-local-rtc 0
+# }----- 
 
+
+# ------- {macOS
+# -----------------------------------------------
 # If the platform is OS X
 elif [[ $PLATFORM == 'Darwin' ]]; then
 
-#	alias condainit='echo ". /Users/onoma/anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile'
-	source $HOME/anaconda3/bin/activate
+#	alias condainit='echo ". $HOME/anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile'
+	alias condainit='source $HOME/anaconda3/bin/activate'
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
 	source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
 	export LC_ALL='en_US.UTF-8'
 
 fi
+# }-------
 
 # Prefer US English and use UTF-8.
 export LANG='en_US.UTF-8'; 
@@ -117,6 +125,7 @@ export MANPAGER='less -X'
 # want in your public, versioned repo.
 # shellcheck disable=SC1090
 [ -f ~/.localrc ] && . ~/.localrc
+#
 
 #[ -e "${HOME}/dotfiles/zsh/functions" ] && source "${HOME}/dotfiles/zsh/functions"
 
@@ -125,4 +134,4 @@ antigen init ~/.antigenrc
 #neofetch --ascii
 
 
-source $HOME/anaconda3/bin/activate
+
