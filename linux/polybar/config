@@ -350,7 +350,7 @@ ramp-volume-3-foreground = ${colors.urgent}
 	format          = <label-state> <label-mode>
 	index-sort      = true
 	wrapping-scroll = false
-	strip-wsnumbers = true
+	strip-wsnumbers = false
 
 	label-mode-background = ${xrdb:color7}
 	label-mode-foreground = ${xrdb:color0}
