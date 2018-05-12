@@ -162,6 +162,11 @@ bindsym $Mod+6 workspace $WS6
 bindsym $Mod+7 workspace $WS7
 bindsym $Mod+8 workspace $WS8
 
+# Workspace back and forth (with/without active container)
+workspace_auto_back_and_forth yes
+bindsym $Mod+Ctrl+c workspace back_and_forth
+#bindsym $Mod+Ctrl+c move container to workspace back_and_forth; workspace back_and_forth
+
 # move focused container to workspace
 bindsym $Mod+Shift+1 move container to workspace $WS1; workspace $WS1
 bindsym $Mod+Shift+2 move container to workspace $WS2; workspace $WS2
