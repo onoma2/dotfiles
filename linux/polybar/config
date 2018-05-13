@@ -83,21 +83,22 @@
 	#font-3 = FuraCode Nerd Font Mono:size=4;1
 
 	font-1 = Font Awesome 5 Brands:pixelsize=4;2
-	font-2 = MaterialIcons:size=4:antialias=false;2
-	font-3 = icomoon:size=4:antialias=false;3
+	font-2 = icomoon:size=4:antialias=false;3
+	font-3 = MaterialIcons:size=4:antialias=false;2
 	font-4 = FuraCode Nerd Font:size=5:antialias=false;2
 
 	fixed-center = true
 	override-redirect = true
 	wm-restack = i3
 
+	
 	scroll-up = pamixer -i 2
 	scroll-down = pamixer -d 2
 	double-click-left = networkmanager_dmenu
 	double-click-right = pavucontrol &
 
 	modules-left = workspaces
-	modules-center  = music2
+	modules-center  = previous next music2
 	modules-right   = keyboard volume battery wireless date
 
 ;--------------------------------------------
@@ -137,12 +138,12 @@
 [module/previous]
 	type = custom/text
 
-	content = "back"
+	content = ""
 	content-background = ${xrdb:color0}
 	content-foreground = ${xrdb:color2}
 	content-padding = 1
 
-	click-left = mpc previous
+	click-left = playerctl previous
 
 [module/playpause]
 	type = custom/script
@@ -161,13 +162,13 @@
 [module/next]
 	type = custom/text
 
-	content = "next"
+	content = ""
 
 	content-background = ${xrdb:color0}
 	content-foreground = ${xrdb:color2}
 	content-padding = 1
 
-	click-left = mpc next
+	click-left = playerctl next
 
 [module/spotify]
     type = custom/script
@@ -350,7 +351,13 @@ ramp-volume-3-foreground = ${colors.urgent}
 	format          = <label-state> <label-mode>
 	index-sort      = true
 	wrapping-scroll = false
-	strip-wsnumbers = false
+	strip-wsnumbers = true
+
+	ws-icon-0 = 1;♚
+	ws-icon-1 = 2;♛
+	ws-icon-2 = 3;♜
+	ws-icon-3 = 4;♝
+
 
 	label-mode-background = ${xrdb:color7}
 	label-mode-foreground = ${xrdb:color0}
