@@ -1,3 +1,4 @@
+""""""""""""""""""""""""""""""""""" OPTIONS """""""""""""""""""""""""""""""""""
 "
 " A (not so) minimal vimrc.
 "
@@ -61,3 +62,40 @@ set updatecount =100
 set undofile
 set undodir     =$HOME/.vim/files/undo/
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
+
+
+""""""""""""""""""""""""""""""""""" DEIN """""""""""""""""""""""""""""""""""
+
+set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim " path to dein.vim
+call dein#begin(expand('~/.vim/dein')) " plugins' root path
+call dein#add('Shougo/dein.vim')
+call dein#add('Shougo/vimproc.vim', {
+    \ 'build': {
+    \     'windows': 'tools\\update-dll-mingw',
+    \     'cygwin': 'make -f make_cygwin.mak',
+    \     'mac': 'make -f make_mac.mak',
+    \     'linux': 'make',
+    \     'unix': 'gmake',
+    \    },
+    \ })
+call dein#add('wsdjeg/dein-ui.vim') " dein plugin manager ui
+call dein#add('rafi/vim-badge') "
+call dein#add('junegunn/vim-peekaboo') "
+call dein#add('itchyny/vim-gitbranch') "
+
+" lazy load on command executed
+call dein#add('scrooloose/nerdtree',
+      \{'on_cmd': 'NERDTreeToggle'})
+" lazy load on insert mode
+call dein#add('Shougo/deoplete.nvim',
+      \{'on_i': 1})
+" lazy load on function call
+call dein#add('othree/eregex.vim',
+      \{'on_func': 'eregex#toggle'})
+
+
+
+" and a lot more plugins.....
+
+
+call dein#end()
