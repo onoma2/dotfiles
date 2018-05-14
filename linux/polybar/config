@@ -98,7 +98,7 @@
 	double-click-right = pavucontrol &
 
 	modules-left = workspaces
-	modules-center  = previous next music2
+	modules-center  = previous music2 next
 	modules-right   = keyboard volume battery wireless date pkg
 
 ;--------------------------------------------
