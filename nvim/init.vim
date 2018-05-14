@@ -1,3 +1,9 @@
+" Global Mappings "{{{
+" Use spacebar as leader and ; as secondary-leader
+" Required before loading plugins!
+let g:mapleader="\<Space>"
+let g:maplocalleader=';'
+
 """"""""""""""""""""""""""""""""""" OPTIONS """""""""""""""""""""""""""""""""""
 "
 " A (not so) minimal vimrc.
@@ -78,10 +84,18 @@ call dein#add('Shougo/vimproc.vim', {
     \     'unix': 'gmake',
     \    },
     \ })
+
+ "!!!!!!!!!" NON LAZY "!!!!!!!!!"   
 call dein#add('wsdjeg/dein-ui.vim') " dein plugin manager ui
 call dein#add('rafi/vim-badge') "
 call dein#add('junegunn/vim-peekaboo') "
 call dein#add('itchyny/vim-gitbranch') "
+call dein#add('lifepillar/vim-cheat40') "
+call dein#add('tpope/vim-sleuth') "
+call dein#add('itchyny/cursorword') "
+call dein#add('vim-python/python-syntax') "
+call dein#add('Vimjas/vim-python-pep8-indent') "
+call dein#add('tmhedberg/SimpylFold') "
 
 " lazy load on command executed
 call dein#add('scrooloose/nerdtree',
