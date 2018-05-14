@@ -78,9 +78,9 @@
 
 	font-N = <fontconfig pattern>;<vertical offset>
 	font-0 = Droid Sans:size=5;2
-	#font-1 = Droid Sand Mono:pixelsize=10;1
-	#font-2 = Courier Primal:pixelsize=10;1
-	#font-3 = FuraCode Nerd Font Mono:size=4;1
+	#font-1 = Droid Sand Mono:pixelsize=10;2
+	#font-2 = Courier Primal:pixelsize=10;2
+	#font-3 = FuraCode Nerd Font Mono:size=4;2
 
 	font-1 = Font Awesome 5 Brands:pixelsize=4;2
 	font-2 = icomoon:size=4:antialias=false;3
