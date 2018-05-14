@@ -99,7 +99,7 @@
 
 	modules-left = workspaces
 	modules-center  = previous next music2
-	modules-right   = keyboard volume battery wireless date
+	modules-right   = keyboard volume battery wireless date pkg
 
 ;--------------------------------------------
 ; modules                                   ;
@@ -479,3 +479,13 @@ label-padding = 1
 exec = ~/.config/polybar/mpris.sh
 click-left = playerctl pause
 click-right = playerctl play
+
+;;;;;;;;;
+;; PKG ;;
+;;;;;;;;;
+[module/pkg]
+type = custom/script
+exec = updates.sh
+exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
+label = %{A1:termite --exec=pacli & disown:} %{A3:termite --exec=pacli & disown:}%output%%{A} %{A}
+tail = true
