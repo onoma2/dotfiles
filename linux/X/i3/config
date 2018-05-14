@@ -244,9 +244,9 @@ focus_on_window_activation   focus
 # container layout
 bindsym $Mod+h split h;exec notify-send 'Horizontal Split'
 bindsym $Mod+v split v;exec notify-send 'Vertical Split'
-bindsym $Mod+Shift+t layout tabbed
-bindsym $Mod+Shift+s layout stacking
-bindsym $Mod+Shift+h layout toggle split
+bindsym $Mod+Shift+t layout tabbed; exec notify-send 'Tabbed'
+bindsym $Mod+Shift+s layout stacking; exec notify-send 'Stacking'
+bindsym $Mod+Shift+h layout toggle split; exec notify-send 'Toggle Split'
 default_orientation horizontal
 
 ######################################################
