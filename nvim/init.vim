@@ -15,6 +15,8 @@ set nocompatible
 
 filetype plugin indent on  " Load plugins according to detected filetype.
 syntax on                  " Enable syntax highlighting.
+set number
+set numberwidth=1
 
 set autoindent             " Indent according to previous line.
 set expandtab              " Use spaces instead of tabs.
@@ -63,7 +65,7 @@ set backup
 set backupdir   =$HOME/.vim/files/backup/
 set backupext   =-vimbackup
 set backupskip  =
-set directory   =$HOME/.vim/files/swap//
+set directory   =$HOME/.vim/files/swap/
 set updatecount =100
 set undofile
 set undodir     =$HOME/.vim/files/undo/
@@ -93,7 +95,7 @@ call dein#add('itchyny/vim-gitbranch') "
 call dein#add('lifepillar/vim-cheat40') "
 call dein#add('tpope/vim-sleuth') "
 call dein#add('itchyny/cursorword') "
-call dein#add('vim-python/python-syntax') "
+call dein#add('vim-python/python-syntax') " python_highlight_all option
 call dein#add('Vimjas/vim-python-pep8-indent') "
 call dein#add('tmhedberg/SimpylFold') "
 
@@ -113,3 +115,10 @@ call dein#add('othree/eregex.vim',
 
 
 call dein#end()
+
+""""""""""""""""""""""""""""""""""" PLUG-IN OPTIONS """"""""""""""""""""""""
+
+let g:python_highlight_all = 1
+
+
+
