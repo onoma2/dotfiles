@@ -73,6 +73,11 @@ set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 
 
 """"""""""""""""""""""""""""""""""" DEIN """""""""""""""""""""""""""""""""""
+" Setup dein  ---------------------------------------------------------------{{{
+  if (!isdirectory(expand("$HOME/.vim/dein/repos/github.com/Shougo/dein.vim")))
+    call system(expand("mkdir -p $HOME/.vim/dein/repos/github.com/"))
+    call system(expand("git clone https://github.com/Shougo/dein.vim $HOME/.vim/dein/repos/github.com/Shougo/dein.vim"))
+  endif
 
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim " path to dein.vim
 call dein#begin(expand('~/.vim/dein')) " plugins' root path
@@ -98,6 +103,19 @@ call dein#add('itchyny/cursorword') "
 call dein#add('vim-python/python-syntax') " python_highlight_all option
 call dein#add('Vimjas/vim-python-pep8-indent') "
 call dein#add('tmhedberg/SimpylFold') "
+call dein#add('haya14busa/dein-command.vim') " multiple dein commands
+call dein#add('Yggdroot/indentLine')
+call dein#add('junegunn/vim-easy-align')
+call dein#add('itmammoth/doorboy.vim')
+call dein#add('tpope/vim-surround') 
+call dein#add('tpope/vim-commentary')
+call dein#add('tpope/vim-sleuth')
+call dein#add('tpope/vim-eunuch')
+call dein#add('tpope/vim-flagship')
+call dein#add('tpope/vim-commentary')
+call dein#add('tpope/vim-repeat')
+call dein#add('tpope/vim-abolish')
+call dein#add('svermeulen/vim-easyclip')
 
 " lazy load on command executed
 call dein#add('scrooloose/nerdtree',
@@ -119,6 +137,8 @@ call dein#end()
 """"""""""""""""""""""""""""""""""" PLUG-IN OPTIONS """"""""""""""""""""""""
 
 let g:python_highlight_all = 1
-
+set laststatus=2
+set showtabline=2
+set guioptions-=epope/vim-sleuth
 
 
