@@ -15,7 +15,7 @@ set nocompatible
 
 filetype plugin indent on  " Load plugins according to detected filetype.
 syntax on                  " Enable syntax highlighting.
-set number
+set relativenumber number
 set numberwidth=1
 
 set autoindent             " Indent according to previous line.
@@ -113,6 +113,13 @@ call dein#add('svermeulen/vim-easyclip')
 call dein#add('tpope/vim-unimpaired')
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
+call dein#add('ryanoasis/vim-devicons')
+call dein#add('tpope/vim-fugitive')
+call dein#add('tpope/vim-rhubarb')
+call dein#add('chemzqm/vim-easygit')
+call dein#add('jreybert/vimagit', {'on_cmd': ['Magit', 'MagitOnly']})
+call dein#add('rhysd/committia.vim')
+call dein#add('tomtom/tcomment_vim')
 
 " lazy load on command executed
 call dein#add('scrooloose/nerdtree',
@@ -126,10 +133,14 @@ call dein#add('othree/eregex.vim',
 
 
 " and a lot more plugins.....
-
+if dein#check_install()
+  call dein#install()
+  let pluginsExist=1
+endif
 
 call dein#end()
 """"""""""""""""""""""""""""""""""" MAPPINGS """"""""""""""""""""""
+noremap <silent> <F3> :NERDTreeToggle<CR>
 nnoremap  ;  :
 nnoremap  :  ;
 nnoremap <Leader>x /\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgn
@@ -139,8 +150,8 @@ nnoremap <Leader>p "+p
 nnoremap Q @q
 nnoremap <Leader>w :w<cr>
 nnoremap <Leader>q :q<cr>
-nnoremap d "_d
-nnoremap c "_c
+nnoremap <Leader>d "_d
+nnoremap <Leader>c "_c
 "nnoremap r d
 nnoremap <Left> :cp<CR>
 nnoremap <Right> :cn<CR>
@@ -148,11 +159,18 @@ nnoremap <Right> :cn<CR>
 "nnoremap <C-S-A-e> ':source $MYVIMRC<CR>''
 " Search mappings: These will make it so that going to the next one in a
 " search will center on the line it's found in.
-nnnoremap n nzzzv
+nnoremap n nzzzv
 nnoremap N Nzzzv
+vnoremap <c-/> :TComment<cr>
+noremap <silent> <esc> :noh<cr>
+noremap H ^
+noremap L g_
+noremap J 5j
+noremap K 5k
+vmap < <gv
+vmap > >gv
 
-
-
+inoremap <c-d> <esc>ddi
 inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
 inoremap jj <Esc>
 
