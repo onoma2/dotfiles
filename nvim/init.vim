@@ -132,9 +132,18 @@ call dein#end()
 """"""""""""""""""""""""""""""""""" MAPPINGS """"""""""""""""""""""
 nnoremap  ;  :
 nnoremap  :  ;
+nnoremap <Leader>x /\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgn
+nnoremap <Leader>X ?\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgN
+nnoremap <Leader><Leader> <c-w><c-p>
+nnoremap <Leader>p "+p
+nnoremap Q @q
+nnoremap <Leader>w :w<cr>
+nnoremap <Leader>q :q<cr>
+nnoremap d "_d
+nnoremap c "_c
+nnoremap r d
 
-
-""""""""""""""""""""""""""""""""""" HIGHLIGHT """"""""""""""""""""""""
+"""""""""""""""""""""""""""""""""" HIGHLIGHT """"""""""""""""""""""""
 
 " OR ELSE just the 81st column of wide lines...
 highlight ColorColumn ctermbg=magenta
