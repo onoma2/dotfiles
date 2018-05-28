@@ -141,12 +141,15 @@ nnoremap <Leader>w :w<cr>
 nnoremap <Leader>q :q<cr>
 nnoremap d "_d
 nnoremap c "_c
-nnoremap r d
-noremap <Left> :cp<CR>
+"nnoremap r d
+nnoremap <Left> :cp<CR>
 nnoremap <Right> :cn<CR>
+"nnoremap <C-S-e> ':e $MYVIMRC<CR>'
+"nnoremap <C-S-A-e> ':source $MYVIMRC<CR>''
 
 
 inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
+inoremap jj <Esc>
 
 
 """""""""""""""""""""""""""""""""" HIGHLIGHT """"""""""""""""""""""""
@@ -163,7 +166,7 @@ call matchadd('ColorColumn', '\%81v', 100)
 let g:python_highlight_all = 1
 set laststatus=2
 set showtabline=2
-set guioptions-=epope/vim-sleuth
+set guioptions-=tpope/vim-sleuth
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16_default'
 
