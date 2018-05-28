@@ -146,10 +146,26 @@ nnoremap <Left> :cp<CR>
 nnoremap <Right> :cn<CR>
 "nnoremap <C-S-e> ':e $MYVIMRC<CR>'
 "nnoremap <C-S-A-e> ':source $MYVIMRC<CR>''
+" Search mappings: These will make it so that going to the next one in a
+" search will center on the line it's found in.
+nnnoremap n nzzzv
+nnoremap N Nzzzv
+
 
 
 inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
 inoremap jj <Esc>
+
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qall qall
 
 
 """""""""""""""""""""""""""""""""" HIGHLIGHT """"""""""""""""""""""""
