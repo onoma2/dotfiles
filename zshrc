@@ -45,6 +45,7 @@ alias zss="source ~/.zshrc"
 alias neoa="neofetch --ascii"
 alias .d="source deactivate"
 alias v="nvim"
+alias r="ranger"
 
 ENABLE_CORRECTION="false"
 HIST_STAMPS="mm/dd/yyyy"
