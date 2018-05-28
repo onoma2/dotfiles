@@ -142,6 +142,12 @@ nnoremap <Leader>q :q<cr>
 nnoremap d "_d
 nnoremap c "_c
 nnoremap r d
+noremap <Left> :cp<CR>
+nnoremap <Right> :cn<CR>
+
+
+inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
+
 
 """""""""""""""""""""""""""""""""" HIGHLIGHT """"""""""""""""""""""""
 
