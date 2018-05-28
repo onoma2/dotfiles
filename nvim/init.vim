@@ -53,12 +53,6 @@ else
   let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
 endif
 
-" The fish shell is not very compatible to other shells and unexpectedly
-" breaks things that use 'shell'.
-if &shell =~# 'fish$'
-  set shell=/bin/bash
-endif
-
 " Put all temporary files under the same directory.
 " https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
 set backup
@@ -99,7 +93,7 @@ call dein#add('junegunn/vim-peekaboo') "
 call dein#add('itchyny/vim-gitbranch') "
 call dein#add('lifepillar/vim-cheat40') "
 call dein#add('tpope/vim-sleuth') "
-call dein#add('itchyny/cursorword') "
+call dein#add('itchyny/vim-cursorword') "
 call dein#add('vim-python/python-syntax') " python_highlight_all option
 call dein#add('Vimjas/vim-python-pep8-indent') "
 call dein#add('tmhedberg/SimpylFold') "
@@ -116,6 +110,9 @@ call dein#add('tpope/vim-commentary')
 call dein#add('tpope/vim-repeat')
 call dein#add('tpope/vim-abolish')
 call dein#add('svermeulen/vim-easyclip')
+call dein#add('tpope/vim-unimpaired')
+call dein#add('vim-airline/vim-airline')
+call dein#add('vim-airline/vim-airline-themes')
 
 " lazy load on command executed
 call dein#add('scrooloose/nerdtree',
@@ -128,11 +125,23 @@ call dein#add('othree/eregex.vim',
       \{'on_func': 'eregex#toggle'})
 
 
-
 " and a lot more plugins.....
 
 
 call dein#end()
+""""""""""""""""""""""""""""""""""" MAPPINGS """"""""""""""""""""""
+nnoremap  ;  :
+nnoremap  :  ;
+
+
+""""""""""""""""""""""""""""""""""" HIGHLIGHT """"""""""""""""""""""""
+
+" OR ELSE just the 81st column of wide lines...
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
+
+
 
 """"""""""""""""""""""""""""""""""" PLUG-IN OPTIONS """"""""""""""""""""""""
 
@@ -140,5 +149,6 @@ let g:python_highlight_all = 1
 set laststatus=2
 set showtabline=2
 set guioptions-=epope/vim-sleuth
-
+let g:airline_powerline_fonts = 1
+let g:airline_theme='base16_default'
 

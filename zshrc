@@ -2,7 +2,9 @@
 [[ $- != *i* ]] && return
 
 export PATH=$HOME/bin:$PATH
-export EDITOR='nano'
+export EDITOR=nvim
+export VISUAL=nvim
+export PAGEG=more
 
 TERM=xterm-256color
 
@@ -93,7 +95,7 @@ if [[ $PLATFORM == 'Linux' ]]; then
 
 	source /usr/share/zsh/share/antigen.zsh
 	
-	setxkbmap -model pc105 -layout us,ru -variant , -option grp:alt_shift_toggle,compose:ralt
+	setxkbmap -model pc105 -layout us,ru -variant , -option grp:alt_shift_toggle,compose:ralt,ctrl:nocaps
 
 	timedatectl set-local-rtc 0
 # }----- 
