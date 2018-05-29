@@ -157,10 +157,16 @@ nnoremap <Left> :cp<CR>
 nnoremap <Right> :cn<CR>
 "nnoremap <C-S-e> ':e $MYVIMRC<CR>'
 "nnoremap <C-S-A-e> ':source $MYVIMRC<CR>''
-" Search mappings: These will make it so that going to the next one in a
+
+""" Searching
+set ignorecase
+set smartcase
+
+ Search mappings: These will make it so that going to the next one in a
 " search will center on the line it's found in.
 nnoremap n nzzzv
 nnoremap N Nzzzv
+
 vnoremap <c-/> :TComment<cr>
 noremap <silent> <esc> :noh<cr>
 noremap H ^
@@ -169,6 +175,7 @@ noremap J 5j
 noremap K 5k
 vmap < <gv
 vmap > >gv
+
 
 inoremap <c-d> <esc>ddi
 inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
@@ -193,7 +200,25 @@ highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
 
 
+""""""""""""""""""""""""""""""""""" WINDOW MOVEMENT """"""""""""""""""""""""
+function! WinMove(key)
+  let t:curwin = winnr()
+  exec "wincmd ".a:key
+  if (t:curwin == winnr()) "we havent moved
+    if (match(a:key,'[jk]')) "were we going up/down
+      wincmd v
+    else
+      wincmd s
+    endif
+    exec "wincmd ".a:key
+  endif
+endfunction
 
+
+map <leader>h              :call WinMove('h')<cr>
+map <leader>k              :call WinMove('k')<cr>
+map <leader>l              :call WinMove('l')<cr>
+map <leader>j              :call WinMove('j')<cr>
 
 """"""""""""""""""""""""""""""""""" PLUG-IN OPTIONS """"""""""""""""""""""""
 
@@ -201,6 +226,14 @@ let g:python_highlight_all = 1
 set laststatus=2
 set showtabline=2
 set guioptions-=tpope/vim-sleuth
+
+" vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline_theme='base16_default'
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
+let g:airline_skip_empty_sections = 1
+
 
