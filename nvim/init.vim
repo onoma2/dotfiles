@@ -46,6 +46,7 @@ set wrapscan               " Searches wrap around end-of-file.
 set report      =0         " Always report changed lines.
 set synmaxcol   =200       " Only highlight the first 200 columns.
 
+set wildmenu
 set list                   " Show non-printable characters.
 if has('multi_byte') && &encoding ==# 'utf-8'
   let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
@@ -125,14 +126,9 @@ call dein#add('tomtom/tcomment_vim')
 call dein#add('vim-scripts/indentpython.vim')
 call dein#add('Valloric/YouCompleteMe')
 call dein#add('bronson/vim-trailing-whitespace')
-""""""""""""""""""""""""""""""""""""""" Unite """""""""""""""""""""""""""""""""
-"   depend on vimproc
-"   ------------- VERY IMPORTANT ------------
-"   you have to go to .vim/plugin/vimproc.vim and do a ./make
-"   -----------------------------------------
-call dein#add('Shougo/vimproc.vim, {'build' : 'make'})
 call dein#add('Shougo/unite.vim')
-
+call dein#add('wellle/targets.vim')
+call dein#add('michaeljsmith/vim-indent-object)
 let g:unite_source_history_yank_enable = 1
 try
   let g:unite_source_rec_async_command='ag --nocolor --nogroup -g ""'
@@ -148,7 +144,7 @@ call dein#add('rking/ag.vim')
 
 " --- type ° to search the word in all files in the current dir
 nmap ° :Ag <c-r>=expand("<cword>")<cr><cr>
-nnoremap <space>/ :Ag
+nnoremap <space>/ :Ag 
 
 " lazy load on command executed
 call dein#add('scrooloose/nerdtree',
@@ -205,6 +201,14 @@ noremap K 5k
 vmap < <gv
 vmap > >gv
 
+" Quickly select the text that was just pasted. This allows you to, e.g.,
+" indent it after pasting.
+noremap gV `[v`]
+
+" Make Ctrl-e jump to the end of the current line in the insert mode. This is
+" handy when you are in the middle of a line and would like to go to its end
+" without switching to the normal mode.
+inoremap <C-e> <C-o>$
 
 inoremap <c-d> <esc>ddi
 inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
