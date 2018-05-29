@@ -65,10 +65,12 @@ set undofile
 set undodir     =$HOME/.vim/files/undo/
 set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 
-
-""""""""""""""""""""""""""""""""""" DEIN """""""""""""""""""""""""""""""""""
-" Setup dein  ---------------------------------------------------------------{{{
-  if (!isdirectory(expand("$HOME/.vim/dein/repos/github.com/Shougo/dein.vim")))
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+""""""""""""""""""""""""""""""""""" dein """""""""""""""""""""""""""""""""""
+" setup dein  ---------------------------------------------------------------{{{
+  if (!isdirectory(expand("$home/.vim/dein/repos/github.com/shougo/dein.vim")))
     call system(expand("mkdir -p $HOME/.vim/dein/repos/github.com/"))
     call system(expand("git clone https://github.com/Shougo/dein.vim $HOME/.vim/dein/repos/github.com/Shougo/dein.vim"))
   endif
@@ -120,6 +122,33 @@ call dein#add('chemzqm/vim-easygit')
 call dein#add('jreybert/vimagit', {'on_cmd': ['Magit', 'MagitOnly']})
 call dein#add('rhysd/committia.vim')
 call dein#add('tomtom/tcomment_vim')
+call dein#add('vim-scripts/indentpython.vim')
+call dein#add('Valloric/YouCompleteMe')
+call dein#add('bronson/vim-trailing-whitespace')
+""""""""""""""""""""""""""""""""""""""" Unite """""""""""""""""""""""""""""""""
+"   depend on vimproc
+"   ------------- VERY IMPORTANT ------------
+"   you have to go to .vim/plugin/vimproc.vim and do a ./make
+"   -----------------------------------------
+call dein#add('Shougo/vimproc.vim, {'build' : 'make'})
+call dein#add('Shougo/unite.vim')
+
+let g:unite_source_history_yank_enable = 1
+try
+  let g:unite_source_rec_async_command='ag --nocolor --nogroup -g ""'
+  call unite#filters#matcher_default#use(['matcher_fuzzy'])
+catch
+endtry
+" search a file in the filetree
+nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec/async<cr>
+" reset not it is <C-l> normally
+:nnoremap <space>r <Plug>(unite_restart)
+""""""""""""""""""""""""""""""""""""""" AG """"""""""""""""""""""""""""""""""""
+call dein#add('rking/ag.vim')
+
+" --- type ° to search the word in all files in the current dir
+nmap ° :Ag <c-r>=expand("<cword>")<cr><cr>
+nnoremap <space>/ :Ag
 
 " lazy load on command executed
 call dein#add('scrooloose/nerdtree',
@@ -143,8 +172,8 @@ call dein#end()
 noremap <silent> <F3> :NERDTreeToggle<CR>
 nnoremap  ;  :
 nnoremap  :  ;
-nnoremap <Leader>x /\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgn
-nnoremap <Leader>X ?\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgN
+nnoremap <Leader>* /\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgn
+nnoremap <Leader># ?\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgN
 nnoremap <Leader><Leader> <c-w><c-p>
 nnoremap <Leader>p "+p
 nnoremap Q @q
@@ -162,7 +191,7 @@ nnoremap <Right> :cn<CR>
 set ignorecase
 set smartcase
 
- Search mappings: These will make it so that going to the next one in a
+"Search mappings: These will make it so that going to the next one in a
 " search will center on the line it's found in.
 nnoremap n nzzzv
 nnoremap N Nzzzv
@@ -219,7 +248,12 @@ map <leader>h              :call WinMove('h')<cr>
 map <leader>k              :call WinMove('k')<cr>
 map <leader>l              :call WinMove('l')<cr>
 map <leader>j              :call WinMove('j')<cr>
-
+""""""""""""""""""""""""""""""""""" SPLIT MOVEMENT """"""""""""""""""""""""" 
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 """"""""""""""""""""""""""""""""""" PLUG-IN OPTIONS """"""""""""""""""""""""
 
 let g:python_highlight_all = 1
@@ -236,4 +270,37 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
 
+let g:SimpylFold_docstring_preview=1
+
+let g:ycm_autoclose_preview_window_after_completion=1
+map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+" Easy align interactive
+vnoremap <silent> <Enter> :EasyAlign<cr>
+""""""""""""""""""""""""""""""""""" PYTHON """""""""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+
+"python with virtualenv support
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+  project_base_dir = os.environ['VIRTUAL_ENV']
+  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+  execfile(activate_this, dict(__file__=activate_this))
+EOF
+""""""""""""""""""""""""""""""""""" LANGUAGES """"""""""""""""""""""""""""""
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
 
