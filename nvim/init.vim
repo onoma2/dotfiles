@@ -88,7 +88,7 @@ call dein#add('Shougo/vimproc.vim', {
     \    },
     \ })
 
- "!!!!!!!!!" NON LAZY "!!!!!!!!!"   
+ "!!!!!!!!!" NON LAZY "!!!!!!!!!"
 call dein#add('wsdjeg/dein-ui.vim') " dein plugin manager ui
 call dein#add('rafi/vim-badge') "
 call dein#add('junegunn/vim-peekaboo') "
@@ -119,7 +119,7 @@ call dein#add('tpope/vim-rhubarb')
 call dein#add('chemzqm/vim-easygit')
 call dein#add('jreybert/vimagit', {'on_cmd': ['Magit', 'MagitOnly']})
 call dein#add('rhysd/committia.vim')
-call dein#add('tomtom/tcomment_vim')
+call dein#add('tpope/vim-commentary')
 call dein#add('vim-scripts/indentpython.vim')
 call dein#add('bronson/vim-trailing-whitespace')
 call dein#add('Shougo/denite.nvim')
@@ -130,9 +130,9 @@ call dein#add('Shougo/deoplete.nvim')
 call dein#add('junegunn/fzf')
 call dein#add('majutsushi/tagbar')
 call dein#add('xolox/vim-misc')
-call dein#add('xolox/vim-easytags')
+"call dein#add('xolox/vim-easytags')
 call dein#add('mkitt/tabline.vim')
-call dein#add('neomake/neomake')
+call dein#add('w0rp/ale')
 call dein#add('mattn/emmet-vim', {'on_ft': 'html'})
 call dein#add('facebook/vim-flow', {'autoload': {'filetypes': 'javascript'}})
 call dein#add('Shougo/neoinclude.vim')
@@ -140,6 +140,16 @@ call dein#add('othree/yajs.vim', {'on_ft': 'javascript'})
 call dein#add('othree/jsdoc-syntax.vim', {'on_ft':['javascript', 'typescript']})
 call dein#add('othree/es.next.syntax.vim', {'on_ft': 'javascript'})
 call dein#add('terryma/vim-multiple-cursors')
+call dein#add('gko/vim-coloresque')
+call dein#add('machakann/vim-highlightedyank')
+call dein#add('terryma/vim-multiple-cursors')
+call dein#add('ludovicchabant/vim-gutentags')
+call dein#add('vimoutliner/vimoutliner')
+call dein#add('dahu/LearnVim')
+call dein#add('lepture/vim-jinja')
+call dein#add('junegunn/goyo.vim')
+call dein#add('yuttie/comfortable-motion.vim')
+call dein#add('nathanaelkane/vim-indent-guides')
 
 
 if !has('nvim')
@@ -154,11 +164,18 @@ nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec/async<cr>
 " reset not it is <C-l> normally
 :nnoremap <space>r <Plug>(unite_restart)
 """"""""""""""""""""""""""""""""""""""" AG """"""""""""""""""""""""""""""""""""
-call dein#add('rking/ag.vim')
+call dein#add('mileszs/ack.vim')
 
 " --- type ° to search the word in all files in the current dir
 "nnoremap ° :Ag <c-r>=expand("<cword>")<cr><cr>
-nnoremap <Leader>/ :Ag 
+nnoremap <Leader>/ :Ack 
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep --nogroup --nocolor --column' 
+endif
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
 
 " lazy load on command executed
 call dein#add('scrooloose/nerdtree',
@@ -177,114 +194,7 @@ endif
 call dein#end()
 """"""""""""""""""""""""""""""""""" MAPPINGS """"""""""""""""""""""
 noremap <silent> <F3> :NERDTreeToggle<CR>
-noremap <silent> <Leader><F3> :TagbarToggle<CR>
-nnoremap  ;  :
-nnoremap  :  ;
-nnoremap <Leader>* /\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgn
-nnoremap <Leader># ?\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgN
-nnoremap <Leader><Leader> <c-w><c-p>
-nnoremap <Leader>p "+p
-vnoremap <Leader>y "+y
-nnoremap Q @q
-nnoremap <Leader>w :w<cr>
-nnoremap <Leader>q :q<cr>
-nnoremap <Leader>d "_d
-nnoremap <Leader>c "_c
-nnoremap <Left> :cp<CR>
-nnoremap <Right> :cn<CR>
-" edit vimrc/zshrc and load vimrc bindings
-nnoremap <leader>ev :vsp $MYVIMRC<CR>
-nnoremap <leader>ez :vsp ~/.zshrc<CR>
-nnoremap <leader>sv :source $MYVIMRC<CR>
-""" Searching
-set ignorecase
-set smartcase
-
-"Search mappings: These will make it so that going to the next one in a
-" search will center on the line it's found in.
-nnoremap n nzzzv
-nnoremap N Nzzzv
-
-"vnoremap <c-/> :TComment<cr>
-noremap <silent> <esc> :noh<cr>
-noremap H ^
-noremap L g_
-noremap J 5j
-noremap K 5k
-vmap < <gv
-vmap > >gv
-
-" Quickly select the text that was just pasted. This allows you to, e.g.,
-" indent it after pasting.
-noremap gV `[v`]
-
-" Make Ctrl-e jump to the end of the current line in the insert mode. This is
-" handy when you are in the middle of a line and would like to go to its end
-" without switching to the normal mode.
-inoremap <C-e> <C-o>$
-
-inoremap <c-d> <esc>ddi
-"inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
-inoremap jj <Esc>
-
-cnoreabbrev W! w!
-cnoreabbrev Q! q!
-cnoreabbrev Qall! qall!
-cnoreabbrev Wq wq
-cnoreabbrev Wa wa
-cnoreabbrev wQ wq
-cnoreabbrev WQ wq
-cnoreabbrev W w
-cnoreabbrev Q q
-cnoreabbrev Qall qall
-
-
-"""""""""""""""""""""""""""""""""" HIGHLIGHT """"""""""""""""""""""""
-
-" OR ELSE just the 81st column of wide lines...
-highlight ColorColumn ctermbg=magenta
-call matchadd('ColorColumn', '\%81v', 100)
-
-
-""""""""""""""""""""""""""""""""""" WINDOW MOVEMENT """"""""""""""""""""""""
-function! WinMove(key)
-  let t:curwin = winnr()
-  exec "wincmd ".a:key
-  if (t:curwin == winnr()) "we havent moved
-    if (match(a:key,'[jk]')) "were we going up/down
-      wincmd v
-    else
-      wincmd s
-    endif
-    exec "wincmd ".a:key
-  endif
-endfunction
-
-
-map <leader>h              :call WinMove('h')<cr>
-map <leader>k              :call WinMove('k')<cr>
-map <leader>l              :call WinMove('l')<cr>
-map <leader>j              :call WinMove('j')<cr>
-""""""""""""""""""""""""""""""""""" SPLIT MOVEMENT """""""""""""""""""""""""
-"split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
-""""""""""""""""""""""""""""""""""" PLUG-IN OPTIONS """"""""""""""""""""""""
-
-let g:python_highlight_all = 1
-set laststatus=2
-set showtabline=2
-set guioptions-=tpope/vim-sleuth
-
-" vim-airline
-let g:airline_powerline_fonts = 1
-let g:airline_theme='base16_default'
-let g:airline#extensions#syntastic#enabled = 1
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tagbar#enabled = 1
+noremap <silent> <Leader><F3> :tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
 
 let g:SimpylFold_docstring_preview=1
@@ -400,12 +310,30 @@ let g:deoplete#sources.vim = ['vim']
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 "}}}
 
-" When writing a buffer (no delay).
-call neomake#configure#automake('w')
-" When writing a buffer (no delay), and on normal mode changes (after 750ms).
-call neomake#configure#automake('nw', 750)
-" When reading a buffer (after 1s), and when writing (no delay).
-call neomake#configure#automake('rw', 1000)
-" Full config: when writing or reading a buffer, and on changes in insert and
-" normal mode (after 1s; no delay when writing).
-call neomake#configure#automake('nrwi', 500)
+function g:Multiple_cursors_before()
+    call deoplete#custom#buffer_option('auto_complete', v:false)
+endfunction
+function g:Multiple_cursors_after()
+    call deoplete#custom#buffer_option('auto_complete', v:true)
+endfunction
+
+au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
+
+"=====================================================
+"" AirLine settings
+"=====================================================
+let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#formatter='unique_tail'
+let g:airline#extensions#ale#enabled=1
+let g:airline_powerline_fonts=1
+
+"=====================================================
+"" TagBar settings
+"=====================================================
+let g:tagbar_autofocus=0
+let g:tagbar_width=42
+autocmd BufEnter *.py :call tagbar#autoopen(0)
+autocmd BufWinLeave *.py :TagbarClose
+
+let g:comfortable_motion_scroll_down_key = "j"
+let g:comfortable_motion_scroll_up_key = "k"
