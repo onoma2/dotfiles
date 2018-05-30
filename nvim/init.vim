@@ -46,7 +46,6 @@ set wrapscan               " Searches wrap around end-of-file.
 set report      =0         " Always report changed lines.
 set synmaxcol   =200       " Only highlight the first 200 columns.
 
-set wildmenu
 set list                   " Show non-printable characters.
 if has('multi_byte') && &encoding ==# 'utf-8'
   let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
@@ -104,12 +103,10 @@ call dein#add('haya14busa/dein-command.vim') " multiple dein commands
 call dein#add('Yggdroot/indentLine')
 call dein#add('junegunn/vim-easy-align')
 call dein#add('itmammoth/doorboy.vim')
-call dein#add('tpope/vim-surround') 
-call dein#add('tpope/vim-commentary')
+call dein#add('tpope/vim-surround')
 call dein#add('tpope/vim-sleuth')
 call dein#add('tpope/vim-eunuch')
 call dein#add('tpope/vim-flagship')
-call dein#add('tpope/vim-commentary')
 call dein#add('tpope/vim-repeat')
 call dein#add('tpope/vim-abolish')
 call dein#add('svermeulen/vim-easyclip')
@@ -124,17 +121,34 @@ call dein#add('jreybert/vimagit', {'on_cmd': ['Magit', 'MagitOnly']})
 call dein#add('rhysd/committia.vim')
 call dein#add('tomtom/tcomment_vim')
 call dein#add('vim-scripts/indentpython.vim')
-call dein#add('Valloric/YouCompleteMe')
 call dein#add('bronson/vim-trailing-whitespace')
-call dein#add('Shougo/unite.vim')
+call dein#add('Shougo/denite.nvim')
 call dein#add('wellle/targets.vim')
-call dein#add('michaeljsmith/vim-indent-object)
-let g:unite_source_history_yank_enable = 1
-try
-  let g:unite_source_rec_async_command='ag --nocolor --nogroup -g ""'
-  call unite#filters#matcher_default#use(['matcher_fuzzy'])
-catch
-endtry
+call dein#add('michaeljsmith/vim-indent-object')
+call dein#add('sjl/gundo.vim')
+call dein#add('Shougo/deoplete.nvim')
+call dein#add('junegunn/fzf')
+call dein#add('majutsushi/tagbar')
+call dein#add('xolox/vim-misc')
+call dein#add('xolox/vim-easytags')
+call dein#add('mkitt/tabline.vim')
+call dein#add('neomake/neomake')
+call dein#add('mattn/emmet-vim', {'on_ft': 'html'})
+call dein#add('facebook/vim-flow', {'autoload': {'filetypes': 'javascript'}})
+call dein#add('Shougo/neoinclude.vim')
+call dein#add('othree/yajs.vim', {'on_ft': 'javascript'})
+call dein#add('othree/jsdoc-syntax.vim', {'on_ft':['javascript', 'typescript']})
+call dein#add('othree/es.next.syntax.vim', {'on_ft': 'javascript'})
+call dein#add('terryma/vim-multiple-cursors')
+
+
+if !has('nvim')
+  call dein#add('roxma/nvim-yarp')
+  call dein#add('roxma/vim-hug-neovim-rpc')
+endif
+
+call dein#add('Shougo/neosnippet.vim')
+call dein#add('Shougo/neosnippet-snippets')
 " search a file in the filetree
 nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec/async<cr>
 " reset not it is <C-l> normally
@@ -143,18 +157,15 @@ nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec/async<cr>
 call dein#add('rking/ag.vim')
 
 " --- type ° to search the word in all files in the current dir
-nmap ° :Ag <c-r>=expand("<cword>")<cr><cr>
-nnoremap <space>/ :Ag 
+"nnoremap ° :Ag <c-r>=expand("<cword>")<cr><cr>
+nnoremap <Leader>/ :Ag 
 
 " lazy load on command executed
 call dein#add('scrooloose/nerdtree',
       \{'on_cmd': 'NERDTreeToggle'})
 " lazy load on insert mode
-call dein#add('Shougo/deoplete.nvim',
-      \{'on_i': 1})
-" lazy load on function call
-call dein#add('othree/eregex.vim',
-      \{'on_func': 'eregex#toggle'})
+"* call dein#add('Shougo/deoplete.nvim', */
+"      \{'on_i': 1})
 
 
 " and a lot more plugins.....
@@ -166,23 +177,25 @@ endif
 call dein#end()
 """"""""""""""""""""""""""""""""""" MAPPINGS """"""""""""""""""""""
 noremap <silent> <F3> :NERDTreeToggle<CR>
+noremap <silent> <Leader><F3> :TagbarToggle<CR>
 nnoremap  ;  :
 nnoremap  :  ;
 nnoremap <Leader>* /\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgn
 nnoremap <Leader># ?\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgN
 nnoremap <Leader><Leader> <c-w><c-p>
 nnoremap <Leader>p "+p
+vnoremap <Leader>y "+y
 nnoremap Q @q
 nnoremap <Leader>w :w<cr>
 nnoremap <Leader>q :q<cr>
 nnoremap <Leader>d "_d
 nnoremap <Leader>c "_c
-"nnoremap r d
 nnoremap <Left> :cp<CR>
 nnoremap <Right> :cn<CR>
-"nnoremap <C-S-e> ':e $MYVIMRC<CR>'
-"nnoremap <C-S-A-e> ':source $MYVIMRC<CR>''
-
+" edit vimrc/zshrc and load vimrc bindings
+nnoremap <leader>ev :vsp $MYVIMRC<CR>
+nnoremap <leader>ez :vsp ~/.zshrc<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
 """ Searching
 set ignorecase
 set smartcase
@@ -192,7 +205,7 @@ set smartcase
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
-vnoremap <c-/> :TComment<cr>
+"vnoremap <c-/> :TComment<cr>
 noremap <silent> <esc> :noh<cr>
 noremap H ^
 noremap L g_
@@ -211,7 +224,7 @@ noremap gV `[v`]
 inoremap <C-e> <C-o>$
 
 inoremap <c-d> <esc>ddi
-inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
+"inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
 inoremap jj <Esc>
 
 cnoreabbrev W! w!
@@ -252,7 +265,7 @@ map <leader>h              :call WinMove('h')<cr>
 map <leader>k              :call WinMove('k')<cr>
 map <leader>l              :call WinMove('l')<cr>
 map <leader>j              :call WinMove('j')<cr>
-""""""""""""""""""""""""""""""""""" SPLIT MOVEMENT """"""""""""""""""""""""" 
+""""""""""""""""""""""""""""""""""" SPLIT MOVEMENT """""""""""""""""""""""""
 "split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -275,9 +288,6 @@ let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
 
 let g:SimpylFold_docstring_preview=1
-
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Easy align interactive
 vnoremap <silent> <Enter> :EasyAlign<cr>
@@ -307,4 +317,95 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
+"""""""""""""""""""""""""""""""""""" DEOPLETE """""""""""""""""""""""""""""""
+" deoplete.vim contains vim settings relevant to the deoplete autocompletion
+" plugin
+" for more details about my neovim setup see:
+" http://afnan.io/2018-04-12/my-neovim-development-setup/
 
+" deoplete options
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#enable_smart_case = 1
+
+" disable autocomplete by default
+let b:deoplete_disable_auto_complete=1
+let g:deoplete_disable_auto_complete=1
+call deoplete#custom#buffer_option('auto_complete', v:false)
+
+if !exists('g:deoplete#omni#input_patterns')
+    let g:deoplete#omni#input_patterns = {}
+endif
+
+" Disable the candidates in Comment/String syntaxes.
+call deoplete#custom#source('_',
+            \ 'disabled_syntaxes', ['Comment', 'String'])
+
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+
+" set sources
+let g:deoplete#sources = {}
+let g:deoplete#sources.cpp = ['LanguageClient']
+let g:deoplete#sources.python = ['LanguageClient']
+let g:deoplete#sources.python3 = ['LanguageClient']
+let g:deoplete#sources.rust = ['LanguageClient']
+let g:deoplete#sources.c = ['LanguageClient']
+let g:deoplete#sources.vim = ['vim']
+
+" Denite --------------------------------------------------------------------{{{
+
+  let s:menus = {}
+  call denite#custom#option('_', {
+        \ 'prompt': '❯',
+        \ 'winheight': 10,
+        \ 'updatetime': 1,
+        \ 'auto_resize': 0,
+        \ 'highlight_matched_char': 'Underlined',
+        \ 'highlight_mode_normal': 'CursorLine',
+        \ 'reversed': 1,
+        \})
+  call denite#custom#option('TSDocumentSymbol', {
+        \ 'prompt': ' @' ,
+        \ 'reversed': 0,
+        \})
+  call denite#custom#option('TSWorkspaceSymbol', {
+        \ 'reversed': 0,
+        \ 'prompt': ' #' ,
+        \})
+  call denite#custom#source('file_rec', 'vars', {
+        \ 'command': [
+        \ 'ag', '--follow','--nogroup','--hidden', '--column', '-g', '', '--ignore', '.git', '--ignore', '*.png', '--ignore', 'node_modules'
+        \] })
+  call denite#custom#source('file_rec', 'sorters', ['sorter_sublime'])
+  call denite#custom#source('file_rec', 'matchers', ['matcher_cpsm'])
+
+ 	call denite#custom#var('grep', 'command', ['ag'])
+	call denite#custom#var('grep', 'default_opts', ['-i', '--vimgrep'])
+	call denite#custom#var('grep', 'recursive_opts', [])
+	call denite#custom#var('grep', 'pattern_opt', [])
+	call denite#custom#var('grep', 'separator', ['--'])
+	call denite#custom#var('grep', 'final_opts', [])
+
+  nnoremap <silent> <c-p> :Denite file_rec<CR>
+  "* nnoremap <silent> <leader>h :Denite  help<CR> */
+  "* nnoremap <silent> <leader>c :Denite colorscheme<CR> */
+  "* nnoremap <silent> <leader>b :Denite buffer<CR> */
+  "* nnoremap <silent> <leader>a :Denite grep:::!<CR> */
+  "* nnoremap <silent> <leader>u :call dein#update()<CR> */
+  call denite#custom#map('insert','<C-n>','<denite:move_to_next_line>','noremap')
+	call denite#custom#map('insert','<C-p>','<denite:move_to_previous_line>','noremap')
+  call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
+    \ [ '.git/', '.ropeproject/', '__pycache__/',
+    \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
+  call denite#custom#var('menu', 'menus', s:menus)
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+"}}}
+
+" When writing a buffer (no delay).
+call neomake#configure#automake('w')
+" When writing a buffer (no delay), and on normal mode changes (after 750ms).
+call neomake#configure#automake('nw', 750)
+" When reading a buffer (after 1s), and when writing (no delay).
+call neomake#configure#automake('rw', 1000)
+" Full config: when writing or reading a buffer, and on changes in insert and
+" normal mode (after 1s; no delay when writing).
+call neomake#configure#automake('nrwi', 500)
