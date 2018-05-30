@@ -194,7 +194,115 @@ endif
 call dein#end()
 """"""""""""""""""""""""""""""""""" MAPPINGS """"""""""""""""""""""
 noremap <silent> <F3> :NERDTreeToggle<CR>
-noremap <silent> <Leader><F3> :tagbar#enabled = 1
+noremap <silent> <Leader><F3> :TagbarToggle<CR>
+nnoremap  ;  :
+nnoremap  :  ;
+nnoremap <Leader>* /\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgn
+nnoremap <Leader># ?\<<C-R>=expand('<cword>')<CR>\>\C<CR>``cgN
+nnoremap <Leader><Leader> <c-w><c-p>
+nnoremap <Leader>p "+p
+vnoremap <Leader>y "+y
+nnoremap Q @q
+nnoremap <Leader>w :w<cr>
+nnoremap <Leader>q :q<cr>
+nnoremap <Leader>d "_d
+nnoremap <Leader>c "_c
+nnoremap <Left> :cp<CR>
+nnoremap <Right> :cn<CR>
+" edit vimrc/zshrc and load vimrc bindings
+nnoremap <leader>ev :vsp $MYVIMRC<CR>
+nnoremap <leader>ez :vsp ~/.zshrc<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
+""" Searching
+set ignorecase
+set smartcase
+
+"Search mappings: These will make it so that going to the next one in a
+" search will center on the line it's found in.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+"vnoremap <c-/> :TComment<cr>
+noremap <silent> <esc> :noh<cr>
+noremap H ^
+noremap L g_
+noremap J 5j
+noremap K 5k
+vmap < <gv
+vmap > >gv
+
+" Quickly select the text that was just pasted. This allows you to, e.g.,
+" indent it after pasting.
+noremap gV `[v`]
+
+" Make Ctrl-e jump to the end of the current line in the insert mode. This is
+" handy when you are in the middle of a line and would like to go to its end
+" without switching to the normal mode.
+inoremap <C-e> <C-o>$
+
+inoremap <c-d> <esc>ddi
+"inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
+inoremap jj <Esc>
+
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qall qall
+
+
+"""""""""""""""""""""""""""""""""" HIGHLIGHT """"""""""""""""""""""""
+
+" OR ELSE just the 81st column of wide lines...
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
+
+""""""""""""""""""""""""""""""""""" WINDOW MOVEMENT """"""""""""""""""""""""
+function! WinMove(key)
+  let t:curwin = winnr()
+  exec "wincmd ".a:key
+  if (t:curwin == winnr()) "we havent moved
+    if (match(a:key,'[jk]')) "were we going up/down
+      wincmd v
+    else
+      wincmd s
+    endif
+    exec "wincmd ".a:key
+  endif
+endfunction
+
+
+map <leader>h              :call WinMove('h')<cr>
+map <leader>k              :call WinMove('k')<cr>
+map <leader>l              :call WinMove('l')<cr>
+map <leader>j              :call WinMove('j')<cr>
+""""""""""""""""""""""""""""""""""" SPLIT MOVEMENT """""""""""""""""""""""""
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+""""""""""""""""""""""""""""""""""" PLUG-IN OPTIONS """"""""""""""""""""""""
+
+let g:python_highlight_all = 1
+set laststatus=2
+set showtabline=2
+set guioptions=tpope/vim-sleuth
+
+" vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme='base16_default'
+let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
+
 let g:airline_skip_empty_sections = 1
 
 let g:SimpylFold_docstring_preview=1
@@ -214,14 +322,14 @@ au BufNewFile,BufRead *.py
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 "python with virtualenv support
-py << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-  project_base_dir = os.environ['VIRTUAL_ENV']
-  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-  execfile(activate_this, dict(__file__=activate_this))
-EOF
+"py << EOF
+"import os
+"import sys
+"if 'VIRTUAL_ENV' in os.environ:
+"  project_base_dir = os.environ['VIRTUAL_ENV']
+"  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+"  execfile(activate_this, dict(__file__=activate_this))
+"EOF
 """"""""""""""""""""""""""""""""""" LANGUAGES """"""""""""""""""""""""""""""
 au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
