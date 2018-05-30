@@ -1,0 +1,331 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+) display_help	macos/hammerspoon/init.lua	/^  hs.hotkey.bind(mash_app, '\/', function() display_help() end)$/;"	f
+:	nvim/init.vim	/^nnoremap  :  ;$/;"	m
+;	nvim/init.vim	/^nnoremap  ;  :$/;"	m
+<	nvim/init.vim	/^vmap < <gv$/;"	m
+<C-H>	nvim/init.vim	/^nnoremap <C-H> <C-W><C-H>$/;"	m
+<C-J>	nvim/init.vim	/^nnoremap <C-J> <C-W><C-J>$/;"	m
+<C-K>	nvim/init.vim	/^nnoremap <C-K> <C-W><C-K>$/;"	m
+<C-L>	nvim/init.vim	/^nnoremap <C-L> <C-W><C-L>$/;"	m
+<C-e>	nvim/init.vim	/^inoremap <C-e> <C-o>\$$/;"	m
+<Enter>	nvim/init.vim	/^vnoremap <silent> <Enter> :EasyAlign<cr>$/;"	m
+<F3>	nvim/init.vim	/^noremap <silent> <F3> :NERDTreeToggle<CR>$/;"	m
+<Leader>#	nvim/init.vim	/^nnoremap <Leader># ?\\<<C-R>=expand('<cword>')<CR>\\>\\C<CR>``cgN$/;"	m
+<Leader>*	nvim/init.vim	/^nnoremap <Leader>* \/\\<<C-R>=expand('<cword>')<CR>\\>\\C<CR>``cgn$/;"	m
+<Leader>/	nvim/init.vim	/^nnoremap <Leader>\/ :Ack $/;"	m
+<Leader><F3>	nvim/init.vim	/^noremap <silent> <Leader><F3> :TagbarToggle<CR>$/;"	m
+<Leader><Leader>	nvim/init.vim	/^nnoremap <Leader><Leader> <c-w><c-p>$/;"	m
+<Leader>c	nvim/init.vim	/^nnoremap <Leader>c "_c$/;"	m
+<Leader>d	nvim/init.vim	/^nnoremap <Leader>d "_d$/;"	m
+<Leader>p	nvim/init.vim	/^nnoremap <Leader>p "+p$/;"	m
+<Leader>q	nvim/init.vim	/^nnoremap <Leader>q :q<cr>$/;"	m
+<Leader>w	nvim/init.vim	/^nnoremap <Leader>w :w<cr>$/;"	m
+<Leader>y	nvim/init.vim	/^vnoremap <Leader>y "+y$/;"	m
+<Left>	nvim/init.vim	/^nnoremap <Left> :cp<CR>$/;"	m
+<Right>	nvim/init.vim	/^nnoremap <Right> :cn<CR>$/;"	m
+<c-d>	nvim/init.vim	/^inoremap <c-d> <esc>ddi$/;"	m
+<c-p>	nvim/init.vim	/^  nnoremap <silent> <c-p> :Denite file_rec<CR>$/;"	m
+<esc>	nvim/init.vim	/^noremap <silent> <esc> :noh<cr>$/;"	m
+<leader>ev	nvim/init.vim	/^nnoremap <leader>ev :vsp $MYVIMRC<CR>$/;"	m
+<leader>ez	nvim/init.vim	/^nnoremap <leader>ez :vsp ~\/.zshrc<CR>$/;"	m
+<leader>h	nvim/init.vim	/^map <leader>h              :call WinMove('h')<cr>$/;"	m
+<leader>j	nvim/init.vim	/^map <leader>j              :call WinMove('j')<cr>$/;"	m
+<leader>k	nvim/init.vim	/^map <leader>k              :call WinMove('k')<cr>$/;"	m
+<leader>l	nvim/init.vim	/^map <leader>l              :call WinMove('l')<cr>$/;"	m
+<leader>sv	nvim/init.vim	/^nnoremap <leader>sv :source $MYVIMRC<CR>$/;"	m
+<space><space>	nvim/init.vim	/^nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec\/async<cr>$/;"	m
+>	nvim/init.vim	/^vmap > >gv$/;"	m
+AG	nvim/init.vim	/^cnoreabbrev AG Ack$/;"	m
+ALLOWED_FLAGS	ranger/commands_full.py	/^        from ranger.core.runner import ALLOWED_FLAGS$/;"	i
+AS_YOU_TYPE	ranger/commands_full.py	/^    AS_YOU_TYPE     = 't'$/;"	v	class:scout
+AUTO_OPEN	ranger/commands_full.py	/^    AUTO_OPEN       = 'a'$/;"	v	class:scout
+Ag	nvim/init.vim	/^cnoreabbrev Ag Ack$/;"	m
+FILTER	ranger/commands_full.py	/^    FILTER          = 'f'$/;"	v	class:scout
+FILTER_DIRS	ranger/commands_full.py	/^    FILTER_DIRS  = 'd'$/;"	v	class:filter_inode_type
+FILTER_FILES	ranger/commands_full.py	/^    FILTER_FILES = 'f'$/;"	v	class:filter_inode_type
+FILTER_LINKS	ranger/commands_full.py	/^    FILTER_LINKS = 'l'$/;"	v	class:filter_inode_type
+File	ranger/commands_full.py	/^        from ranger.container.file import File$/;"	i
+FileSystemObject	ranger/commands_full.py	/^        from ranger.container.fsobject import FileSystemObject$/;"	i
+H	nvim/init.vim	/^noremap H ^$/;"	m
+IGNORE_CASE	ranger/commands_full.py	/^    IGNORE_CASE     = 'i'$/;"	v	class:scout
+INVERT	ranger/commands_full.py	/^    INVERT          = 'v'$/;"	v	class:scout
+J	nvim/init.vim	/^noremap J 5j$/;"	m
+K	nvim/init.vim	/^noremap K 5k$/;"	m
+KEEP_OPEN	ranger/commands_full.py	/^    KEEP_OPEN       = 'k'$/;"	v	class:scout
+L	nvim/init.vim	/^noremap L g_$/;"	m
+MARK	ranger/commands_full.py	/^    MARK            = 'm'$/;"	v	class:scout
+Multiple_cursors_after	nvim/init.vim	/^function g:Multiple_cursors_after()$/;"	f
+Multiple_cursors_before	nvim/init.vim	/^function g:Multiple_cursors_before()$/;"	f
+N	nvim/init.vim	/^nnoremap N Nzzzv$/;"	m
+OPEN_ON_ENTER	ranger/commands_full.py	/^    OPEN_ON_ENTER   = 'e'$/;"	v	class:scout
+PATH_RE	ranger/commands_full.py	/^    PATH_RE = re.compile(r'^\\s*path="?(.*?)"?\\s*$')$/;"	v	class:setlocal
+PERM_FILTER	ranger/commands_full.py	/^    PERM_FILTER     = 'p'$/;"	v	class:scout
+Q	nvim/init.vim	/^cnoreabbrev Q q$/;"	m
+Q	nvim/init.vim	/^nnoremap Q @q$/;"	m
+Q!	nvim/init.vim	/^cnoreabbrev Q! q!$/;"	m
+Qall	nvim/init.vim	/^cnoreabbrev Qall qall$/;"	m
+Qall!	nvim/init.vim	/^cnoreabbrev Qall! qall!$/;"	m
+SMART_CASE	ranger/commands_full.py	/^    SMART_CASE      = 's'$/;"	v	class:scout
+SM_GLOB	ranger/commands_full.py	/^    SM_GLOB         = 'g'$/;"	v	class:scout
+SM_LETTERSKIP	ranger/commands_full.py	/^    SM_LETTERSKIP   = 'l'$/;"	v	class:scout
+SM_REGEX	ranger/commands_full.py	/^    SM_REGEX        = 'r'$/;"	v	class:scout
+UNMARK	ranger/commands_full.py	/^    UNMARK          = 'M'$/;"	v	class:scout
+VcsError	ranger/commands_full.py	/^        from ranger.ext.vcs import VcsError$/;"	i
+W	nvim/init.vim	/^cnoreabbrev W w$/;"	m
+W!	nvim/init.vim	/^cnoreabbrev W! w!$/;"	m
+WQ	nvim/init.vim	/^cnoreabbrev WQ wq$/;"	m
+Wa	nvim/init.vim	/^cnoreabbrev Wa wa$/;"	m
+WinMove	nvim/init.vim	/^function! WinMove(key)$/;"	f
+Wq	nvim/init.vim	/^cnoreabbrev Wq wq$/;"	m
+__init__	ranger/commands_full.py	/^    def __init__(self, *args, **kws):$/;"	m	class:scout
+_build_regex	ranger/commands_full.py	/^    def _build_regex(self):$/;"	m	class:scout
+_command_name	ranger/commands_full.py	/^    _command_name = "meta"$/;"	v	class:prompt_metadata
+_console_chain	ranger/commands_full.py	/^    _console_chain = None$/;"	v	class:prompt_metadata
+_count	ranger/commands_full.py	/^    def _count(self, move=False, offset=0):$/;"	m	class:scout
+_fill_console	ranger/commands_full.py	/^    def _fill_console(self, key):$/;"	m	class:prompt_metadata
+_get_app_flags_mode	ranger/commands_full.py	/^    def _get_app_flags_mode(self, string):$/;"	m	class:open_with
+_is_app	ranger/commands_full.py	/^    def _is_app(self, arg):$/;"	m	class:open_with
+_is_flags	ranger/commands_full.py	/^    def _is_flags(self, arg):$/;"	m	class:open_with
+_is_mode	ranger/commands_full.py	/^    def _is_mode(self, arg):$/;"	m	class:open_with
+_process_command_stack	ranger/commands_full.py	/^    def _process_command_stack(self):$/;"	m	class:prompt_metadata
+_question_callback	ranger/commands_full.py	/^    def _question_callback(self, files, answer):$/;"	m	class:delete
+aG	nvim/init.vim	/^cnoreabbrev aG Ack$/;"	m
+access	ranger/commands_full.py	/^        from os import access$/;"	i
+ag	nvim/init.vim	/^cnoreabbrev ag Ack$/;"	m
+alias	ranger/commands_full.py	/^class alias(Command):$/;"	c
+allow_abbrev	ranger/commands_full.py	/^    allow_abbrev = False$/;"	v	class:delete
+allow_abbrev	ranger/commands_full.py	/^    allow_abbrev = False$/;"	v	class:quit_bang
+argparse	linux/polybar/spotify_show.py	/^import argparse$/;"	i
+args	linux/polybar/spotify_show.py	/^args = parser.parse_args()$/;"	v
+artist	linux/polybar/spotify_show.py	/^    artist = metadata['xesam:artist'][0]$/;"	v
+b:deoplete_disable_auto_complete	nvim/init.vim	/^let b:deoplete_disable_auto_complete=1$/;"	v
+basename	ranger/commands_full.py	/^        from os.path import dirname, basename, expanduser, join$/;"	i
+bulkrename	ranger/commands_full.py	/^class bulkrename(Command):$/;"	c
+callback	ranger/commands_full.py	/^        def callback(answer):$/;"	f	function:help_.execute
+cancel	ranger/commands_full.py	/^    def cancel(self):$/;"	m	class:scout
+cd	ranger/commands_full.py	/^class cd(Command):$/;"	c
+chain	ranger/commands_full.py	/^class chain(Command):$/;"	c
+chmod	ranger/commands_full.py	/^class chmod(Command):$/;"	c
+cmap	ranger/commands_full.py	/^class cmap(map_):$/;"	c
+console	ranger/commands_full.py	/^class console(Command):$/;"	c
+context	ranger/commands_full.py	/^    context = 'browser'$/;"	v	class:alias
+context	ranger/commands_full.py	/^    context = 'browser'$/;"	v	class:copymap
+context	ranger/commands_full.py	/^    context = 'browser'$/;"	v	class:cunmap
+context	ranger/commands_full.py	/^    context = 'browser'$/;"	v	class:map_
+context	ranger/commands_full.py	/^    context = 'browser'$/;"	v	class:unmap
+context	ranger/commands_full.py	/^    context = 'console'$/;"	v	class:cmap
+context	ranger/commands_full.py	/^    context = 'console'$/;"	v	class:copycmap
+context	ranger/commands_full.py	/^    context = 'pager'$/;"	v	class:copypmap
+context	ranger/commands_full.py	/^    context = 'pager'$/;"	v	class:pmap
+context	ranger/commands_full.py	/^    context = 'pager'$/;"	v	class:punmap
+context	ranger/commands_full.py	/^    context = 'taskview'$/;"	v	class:copytmap
+context	ranger/commands_full.py	/^    context = 'taskview'$/;"	v	class:tmap
+context	ranger/commands_full.py	/^    context = 'taskview'$/;"	v	class:tunmap
+copy_buffer_filename	ranger/commands_full.py	/^    copy_buffer_filename = 'copy_buffer'$/;"	v	class:load_copy_buffer
+copy_buffer_filename	ranger/commands_full.py	/^    copy_buffer_filename = 'copy_buffer'$/;"	v	class:save_copy_buffer
+copycmap	ranger/commands_full.py	/^class copycmap(copymap):$/;"	c
+copymap	ranger/commands_full.py	/^class copymap(Command):$/;"	c
+copypmap	ranger/commands_full.py	/^class copypmap(copymap):$/;"	c
+copytmap	ranger/commands_full.py	/^class copytmap(copymap):$/;"	c
+cunmap	ranger/commands_full.py	/^class cunmap(unmap):$/;"	c
+dbus	linux/polybar/spotify_show.py	/^import dbus$/;"	i
+default_linemode	ranger/commands_full.py	/^class default_linemode(Command):$/;"	c
+delete	ranger/commands_full.py	/^class delete(Command):$/;"	c
+dirname	ranger/commands_full.py	/^        from os.path import dirname, basename, expanduser, join$/;"	i
+display_help	macos/hammerspoon/init.lua	/^local function display_help()$/;"	f
+do_mark	ranger/commands_full.py	/^    do_mark = False$/;"	v	class:unmark_tag
+do_mark	ranger/commands_full.py	/^    do_mark = True$/;"	v	class:mark_tag
+dump	ranger/scope.sh	/^dump() { \/bin\/echo "$output"; }$/;"	f
+echo	ranger/commands_full.py	/^class echo(Command):$/;"	c
+edit	ranger/commands_full.py	/^class edit(Command):$/;"	c
+esc	ranger/commands_full.py	/^        from ranger.ext.shell_escape import shell_escape as esc$/;"	i
+escape_macros_for_shell	ranger/commands_full.py	/^    escape_macros_for_shell = True$/;"	v	class:delete
+escape_macros_for_shell	ranger/commands_full.py	/^    escape_macros_for_shell = True$/;"	v	class:shell
+eval_	ranger/commands_full.py	/^class eval_(Command):$/;"	c
+execute	ranger/commands.py	/^    def execute(self):$/;"	m	class:my_edit
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:alias
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:bulkrename
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:cd
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:chain
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:chmod
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:console
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:copymap
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:default_linemode
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:delete
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:echo
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:edit
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:eval_
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:filter_inode_type
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:flat
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:grep
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:help_
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:linemode
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:load_copy_buffer
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:map_
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:mark_tag
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:meta
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:mkdir
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:open_with
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:prompt_metadata
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:quit
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:quitall
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:relink
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:rename
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:rename_append
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:save_copy_buffer
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:scout
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:set_
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:setintag
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:setlocal
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:shell
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:stage
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:terminal
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:touch
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:unmap
+execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:unstage
+exists	ranger/commands_full.py	/^        from os.path import exists$/;"	i
+expanduser	ranger/commands_full.py	/^        from os.path import dirname, basename, expanduser, join$/;"	i
+expanduser	ranger/commands_full.py	/^        from os.path import join, expanduser, lexists$/;"	i
+filter_inode_type	ranger/commands_full.py	/^class filter_inode_type(Command):$/;"	c
+flat	ranger/commands_full.py	/^class flat(Command):$/;"	c
+g:SimpylFold_docstring_preview	nvim/init.vim	/^let g:SimpylFold_docstring_preview=1$/;"	v
+g:ackprg	nvim/init.vim	/^  let g:ackprg = 'ag --vimgrep --nogroup --nocolor --column' $/;"	v
+g:airline#extensions#ale#enabled	nvim/init.vim	/^let g:airline#extensions#ale#enabled=1$/;"	v
+g:airline#extensions#branch#enabled	nvim/init.vim	/^let g:airline#extensions#branch#enabled = 1$/;"	v
+g:airline#extensions#syntastic#enabled	nvim/init.vim	/^let g:airline#extensions#syntastic#enabled = 1$/;"	v
+g:airline#extensions#tabline#enabled	nvim/init.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
+g:airline#extensions#tabline#enabled	nvim/init.vim	/^let g:airline#extensions#tabline#enabled=1$/;"	v
+g:airline#extensions#tabline#formatter	nvim/init.vim	/^let g:airline#extensions#tabline#formatter='unique_tail'$/;"	v
+g:airline#extensions#tagbar#enabled	nvim/init.vim	/^let g:airline#extensions#tagbar#enabled = 1$/;"	v
+g:airline_powerline_fonts	nvim/init.vim	/^let g:airline_powerline_fonts = 1$/;"	v
+g:airline_powerline_fonts	nvim/init.vim	/^let g:airline_powerline_fonts=1$/;"	v
+g:airline_skip_empty_sections	nvim/init.vim	/^let g:airline_skip_empty_sections = 1$/;"	v
+g:airline_theme	nvim/init.vim	/^let g:airline_theme='base16_default'$/;"	v
+g:comfortable_motion_scroll_down_key	nvim/init.vim	/^let g:comfortable_motion_scroll_down_key = "j"$/;"	v
+g:comfortable_motion_scroll_up_key	nvim/init.vim	/^let g:comfortable_motion_scroll_up_key = "k"$/;"	v
+g:ctrlp_user_command	nvim/init.vim	/^  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'$/;"	v
+g:deoplete#enable_at_startup	nvim/init.vim	/^let g:deoplete#enable_at_startup = 1$/;"	v
+g:deoplete#enable_smart_case	nvim/init.vim	/^let g:deoplete#enable_smart_case = 1$/;"	v
+g:deoplete#omni#input_patterns	nvim/init.vim	/^    let g:deoplete#omni#input_patterns = {}$/;"	v
+g:deoplete#sources	nvim/init.vim	/^let g:deoplete#sources = {}$/;"	v
+g:deoplete#sources	nvim/init.vim	/^let g:deoplete#sources.c = ['LanguageClient']$/;"	v
+g:deoplete#sources	nvim/init.vim	/^let g:deoplete#sources.cpp = ['LanguageClient']$/;"	v
+g:deoplete#sources	nvim/init.vim	/^let g:deoplete#sources.python = ['LanguageClient']$/;"	v
+g:deoplete#sources	nvim/init.vim	/^let g:deoplete#sources.python3 = ['LanguageClient']$/;"	v
+g:deoplete#sources	nvim/init.vim	/^let g:deoplete#sources.rust = ['LanguageClient']$/;"	v
+g:deoplete#sources	nvim/init.vim	/^let g:deoplete#sources.vim = ['vim']$/;"	v
+g:deoplete_disable_auto_complete	nvim/init.vim	/^let g:deoplete_disable_auto_complete=1$/;"	v
+g:mapleader	nvim/init.vim	/^let g:mapleader="\\<Space>"$/;"	v
+g:maplocalleader	nvim/init.vim	/^let g:maplocalleader=';'$/;"	v
+g:python_highlight_all	nvim/init.vim	/^let g:python_highlight_all = 1$/;"	v
+g:tagbar_autofocus	nvim/init.vim	/^let g:tagbar_autofocus=0$/;"	v
+g:tagbar_width	nvim/init.vim	/^let g:tagbar_width=42$/;"	v
+gV	nvim/init.vim	/^noremap gV `[v`]$/;"	m
+get_all_colorschemes	ranger/commands_full.py	/^        from ranger.gui.colorscheme import get_all_colorschemes$/;"	i
+get_executables	ranger/commands_full.py	/^        from ranger.ext.get_executables import get_executables$/;"	i
+get_term	ranger/commands_full.py	/^        from ranger.ext.get_executables import get_term$/;"	i
+grep	ranger/commands_full.py	/^class grep(Command):$/;"	c
+help_	ranger/commands_full.py	/^class help_(Command):$/;"	c
+init	macos/hammerspoon/init.lua	/^local function init()$/;"	f
+init_app_binding	macos/hammerspoon/init.lua	/^local function init_app_binding()$/;"	f
+is_directory_with_files	ranger/commands_full.py	/^        def is_directory_with_files(f):$/;"	f	function:delete.execute
+jj	nvim/init.vim	/^inoremap jj <Esc>$/;"	m
+join	ranger/commands_full.py	/^        from os.path import dirname, basename, expanduser, join$/;"	i
+join	ranger/commands_full.py	/^        from os.path import join, expanduser, lexists$/;"	i
+lexists	ranger/commands_full.py	/^        from os.path import join, expanduser, lexists$/;"	i
+linemode	ranger/commands_full.py	/^class linemode(default_linemode):$/;"	c
+load_copy_buffer	ranger/commands_full.py	/^class load_copy_buffer(Command):$/;"	c
+makedirs	ranger/commands_full.py	/^        from os import makedirs$/;"	i
+map_	ranger/commands_full.py	/^class map_(Command):$/;"	c
+mark_tag	ranger/commands_full.py	/^class mark_tag(Command):$/;"	c
+meta	ranger/commands_full.py	/^class meta(prompt_metadata):$/;"	c
+metadata	linux/polybar/spotify_show.py	/^    metadata = spotify_properties.Get("org.mpris.MediaPlayer2.Player", "Metadata")$/;"	v
+mkdir	ranger/commands_full.py	/^class mkdir(Command):$/;"	c
+my_edit	ranger/commands.py	/^class my_edit(Command):$/;"	c
+n	nvim/init.vim	/^nnoremap n nzzzv$/;"	m
+name	ranger/commands_full.py	/^    name = 'eval'$/;"	v	class:eval_
+name	ranger/commands_full.py	/^    name = 'help'$/;"	v	class:help_
+name	ranger/commands_full.py	/^    name = 'map'$/;"	v	class:map_
+name	ranger/commands_full.py	/^    name = 'quit!'$/;"	v	class:quit_bang
+name	ranger/commands_full.py	/^    name = 'set'  # don't override the builtin set class$/;"	v	class:set_
+open_with	ranger/commands_full.py	/^class open_with(Command):$/;"	c
+os	linux/polybar/Play-dark.py	/^import os$/;"	i
+os	linux/polybar/Play.py	/^import os$/;"	i
+os	ranger/commands.py	/^import os$/;"	i
+os	ranger/commands_full.py	/^            import os.path$/;"	i
+os	ranger/commands_full.py	/^        import os$/;"	i
+os	ranger/commands_full.py	/^        import os.path$/;"	i
+output	linux/polybar/spotify_show.py	/^    output = artist + ': ' + song$/;"	v
+parser	linux/polybar/spotify_show.py	/^parser = argparse.ArgumentParser()$/;"	v
+partial	ranger/commands_full.py	/^        from functools import partial$/;"	i
+path	ranger/commands_full.py	/^            import os.path$/;"	i
+path	ranger/commands_full.py	/^        import os.path$/;"	i
+pluginsExist	nvim/init.vim	/^  let pluginsExist=1$/;"	v
+pmap	ranger/commands_full.py	/^class pmap(map_):$/;"	c
+prompt_metadata	ranger/commands_full.py	/^class prompt_metadata(Command):$/;"	c
+punmap	ranger/commands_full.py	/^class punmap(unmap):$/;"	c
+quick	ranger/commands_full.py	/^    def quick(self):$/;"	m	class:scout
+quit	ranger/commands_full.py	/^class quit(Command):$/;"	c
+quit_bang	ranger/commands_full.py	/^class quit_bang(quitall):$/;"	c
+quitall	ranger/commands_full.py	/^class quitall(Command):$/;"	c
+ranger	ranger/commands_full.py	/^        import ranger$/;"	i
+re	ranger/commands_full.py	/^        import re$/;"	i
+relink	ranger/commands_full.py	/^class relink(Command):$/;"	c
+rename	ranger/commands_full.py	/^class rename(Command):$/;"	c
+rename_append	ranger/commands_full.py	/^class rename_append(Command):$/;"	c
+resolve_macros	ranger/commands_full.py	/^    resolve_macros = False$/;"	v	class:alias
+resolve_macros	ranger/commands_full.py	/^    resolve_macros = False$/;"	v	class:eval_
+resolve_macros	ranger/commands_full.py	/^    resolve_macros = False$/;"	v	class:map_
+s:menus	nvim/init.vim	/^  let s:menus = {}$/;"	v
+safepipe	ranger/scope.sh	/^safepipe() { "$@"; test $? = 0 -o $? = 141; }$/;"	f
+save_copy_buffer	ranger/commands_full.py	/^class save_copy_buffer(Command):$/;"	c
+scout	ranger/commands_full.py	/^class scout(Command):$/;"	c
+session_bus	linux/polybar/spotify_show.py	/^    session_bus = dbus.SessionBus()$/;"	v
+set_	ranger/commands_full.py	/^class set_(Command):$/;"	c
+setintag	ranger/commands_full.py	/^class setintag(setlocal):$/;"	c
+setlocal	ranger/commands_full.py	/^class setlocal(set_):$/;"	c
+shell	ranger/commands_full.py	/^class shell(Command):$/;"	c
+shlex	ranger/commands_full.py	/^        import shlex$/;"	i
+song	linux/polybar/spotify_show.py	/^        song = song[0:trunclen]$/;"	v
+song	linux/polybar/spotify_show.py	/^    song = metadata['xesam:title']$/;"	v
+spotify_bus	linux/polybar/spotify_show.py	/^    spotify_bus = session_bus.get_object("org.mpris.MediaPlayer2.spotify", "\/org\/mpris\/MediaPlayer2")$/;"	v
+spotify_properties	linux/polybar/spotify_show.py	/^    spotify_properties = dbus.Interface(spotify_bus, "org.freedesktop.DBus.Properties")$/;"	v
+stage	ranger/commands_full.py	/^class stage(Command):$/;"	c
+sys	linux/polybar/spotify_show.py	/^import sys$/;"	i
+sys	ranger/commands_full.py	/^        import sys$/;"	i
+tab	ranger/commands.py	/^    def tab(self, tabnum):$/;"	m	class:my_edit
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:cd
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:default_linemode
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:delete
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:edit
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:meta
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:mkdir
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:open_with
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:relink
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:rename
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:scout
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:set_
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:shell
+tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:touch
+tempfile	ranger/commands_full.py	/^        import tempfile$/;"	i
+terminal	ranger/commands_full.py	/^class terminal(Command):$/;"	c
+tmap	ranger/commands_full.py	/^class tmap(map_):$/;"	c
+touch	ranger/commands_full.py	/^class touch(Command):$/;"	c
+trim	ranger/scope.sh	/^trim() { head -n "$maxln"; }$/;"	f
+trunclen	linux/polybar/spotify_show.py	/^    trunclen = 25$/;"	v
+trunclen	linux/polybar/spotify_show.py	/^    trunclen = args.trunclen$/;"	v
+try	ranger/scope.sh	/^try() { output=$(eval '"$@"'); }$/;"	f
+tunmap	ranger/commands_full.py	/^class tunmap(unmap):$/;"	c
+unmap	ranger/commands_full.py	/^class unmap(Command):$/;"	c
+unmark_tag	ranger/commands_full.py	/^class unmark_tag(mark_tag):$/;"	c
+unstage	ranger/commands_full.py	/^class unstage(Command):$/;"	c
+val	linux/polybar/Play-dark.py	/^    val = 0$/;"	v
+val	linux/polybar/Play-dark.py	/^    val = os.popen('playerctl status').read()$/;"	v
+val	linux/polybar/Play.py	/^    val = '0'$/;"	v
+val	linux/polybar/Play.py	/^    val = os.popen('playerctl status').read()$/;"	v
+wQ	nvim/init.vim	/^cnoreabbrev wQ wq$/;"	m
