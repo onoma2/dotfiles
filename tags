@@ -38,7 +38,6 @@
 <leader>k	nvim/init.vim	/^map <leader>k              :call WinMove('k')<cr>$/;"	m
 <leader>l	nvim/init.vim	/^map <leader>l              :call WinMove('l')<cr>$/;"	m
 <leader>sv	nvim/init.vim	/^nnoremap <leader>sv :source $MYVIMRC<CR>$/;"	m
-<space><space>	nvim/init.vim	/^nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec\/async<cr>$/;"	m
 >	nvim/init.vim	/^vmap > >gv$/;"	m
 AG	nvim/init.vim	/^cnoreabbrev AG Ack$/;"	m
 ALLOWED_FLAGS	ranger/commands_full.py	/^        from ranger.core.runner import ALLOWED_FLAGS$/;"	i
