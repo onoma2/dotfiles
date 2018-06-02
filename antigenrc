@@ -70,11 +70,11 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle trapd00r/zsh-syntax-highlighting-filetypes
 antigen bundle mafredri/zsh-async
-antigen bundle sindresorhus/pure
+#antigen bundle sindresorhus/pure
 antigen bundle rupa/z
 
 # Load the theme.
 #antigen theme bhilburn/powerlevel9k powerlevel9k
-
+antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
 # Tell Antigen that you're done.
 antigen apply
