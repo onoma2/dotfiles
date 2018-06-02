@@ -175,6 +175,10 @@ endif
 
 " Put all temporary files under the same directory.
 " https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
+" create directory if needed
+if !isdirectory($HOME.'/.vim/files') && exists('*mkdir')
+  call mkdir($HOME.'/.vim/files')
+endif
 set backup
 set backupdir   =$HOME/.vim/files/backup/
 set backupext   =-vimbackup
