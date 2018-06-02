@@ -86,7 +86,7 @@ call dein#add('lepture/vim-jinja')
 call dein#add('junegunn/goyo.vim')
 call dein#add('yuttie/comfortable-motion.vim')
 call dein#add('nathanaelkane/vim-indent-guides')
-
+call dein#add('christoomey/vim-tmux-navigator')
 
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
@@ -260,30 +260,30 @@ call matchadd('ColorColumn', '\%81v', 100)
 
 
 """"""""""""""""""""""""""""""""""" WINDOW MOVEMENT """"""""""""""""""""""""
-function! WinMove(key)
-  let t:curwin = winnr()
-  exec "wincmd ".a:key
-  if (t:curwin == winnr()) "we havent moved
-    if (match(a:key,'[jk]')) "were we going up/down
-      wincmd v
-    else
-      wincmd s
-    endif
-    exec "wincmd ".a:key
-  endif
-endfunction
+"function! WinMove(key)
+"  let t:curwin = winnr()
+"  exec "wincmd ".a:key
+"  if (t:curwin == winnr()) "we havent moved
+"    if (match(a:key,'[jk]')) "were we going up/down
+"      wincmd v
+"    else
+"      wincmd s
+"    endif
+"    exec "wincmd ".a:key
+"  endif
+"endfunction
 
 
-map <leader>h              :call WinMove('h')<cr>
-map <leader>k              :call WinMove('k')<cr>
-map <leader>l              :call WinMove('l')<cr>
-map <leader>j              :call WinMove('j')<cr>
+"map <leader>h              :call WinMove('h')<cr>
+"map <leader>k              :call WinMove('k')<cr>
+"map <leader>l              :call WinMove('l')<cr>
+"map <leader>j              :call WinMove('j')<cr>
 """"""""""""""""""""""""""""""""""" SPLIT MOVEMENT """""""""""""""""""""""""
 "split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+"nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-K> <C-W><C-K>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
 """"""""""""""""""""""""""""""""""" PLUG-IN OPTIONS """"""""""""""""""""""""
 
 let g:python_highlight_all = 1
