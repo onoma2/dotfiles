@@ -3,8 +3,10 @@
 " Required before loading plugins!
 let g:mapleader="\<Space>"
 let g:maplocalleader=';'
+"""""""""""""""""""""""""""""""""" TEST """""""""""""""""""""""""""""""""" 
 
-"""""""""""""""""""""""""""""""""" dein """""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""" dein """""""""""""""""""""""""""""""""""
+
 " setup dein  ---------------------------------------------------------------{{{
   if (!isdirectory(expand("$home/.vim/dein/repos/github.com/shougo/dein.vim")))
     call system(expand("mkdir -p $HOME/.vim/dein/repos/github.com/"))
@@ -87,7 +89,8 @@ call dein#add('junegunn/goyo.vim')
 call dein#add('yuttie/comfortable-motion.vim')
 call dein#add('nathanaelkane/vim-indent-guides')
 call dein#add('christoomey/vim-tmux-navigator')
-
+call dein#add('zchee/deoplete-jedi')
+call dein#add('ternjs/tern_for_vim', { 'do': 'npm install' })
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
   call dein#add('roxma/vim-hug-neovim-rpc')
@@ -176,18 +179,18 @@ endif
 " Put all temporary files under the same directory.
 " https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
 " create directory if needed
-if !isdirectory($HOME.'/.vim/files') && exists('*mkdir')
-  call mkdir($HOME.'/.vim/files')
-endif
-set backup
-set backupdir   =$HOME/.vim/files/backup/
-set backupext   =-vimbackup
-set backupskip  =
-set directory   =$HOME/.vim/files/swap/
-set updatecount =100
-set undofile
-set undodir     =$HOME/.vim/files/undo/
-set viminfo     ='100,n$HOME/.vim/files/info/viminfo
+" if !isdirectory($HOME.'/.vim/files') && exists('*mkdir')
+"   call mkdir($HOME.'/.vim/files')
+" endif
+" set backup
+" set backupdir   =$HOME/.vim/files/backup/
+" set backupext   =-vimbackup
+" set backupskip  =
+" set directory   =$HOME/.vim/files/swap/
+" set updatecount =100
+" set undofile
+" set undodir     =$HOME/.vim/files/undo/
+" set viminfo     ='100,n$HOME/.vim/files/info/viminfo
 
 " Enable folding
 set foldmethod=indent
@@ -292,18 +295,9 @@ call matchadd('ColorColumn', '\%81v', 100)
 
 let g:python_highlight_all = 1
 set laststatus=2
-set showtabline=2
+set showtabline=0
 set guioptions=tpope/vim-sleuth
 
-" vim-airline
-let g:airline_powerline_fonts = 1
-let g:airline_theme='base16_default'
-let g:airline#extensions#syntastic#enabled = 1
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tagbar#enabled = 1
-
-let g:airline_skip_empty_sections = 1
 
 let g:SimpylFold_docstring_preview=1
 
@@ -343,6 +337,7 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 " deoplete options
 let g:deoplete#enable_at_startup = 1
+
 let g:deoplete#enable_smart_case = 1
 
 " disable autocomplete by default
@@ -359,8 +354,12 @@ call deoplete#custom#source('_',
             \ 'disabled_syntaxes', ['Comment', 'String'])
 
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-
+" deoplete tab-complete
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+" tern
+autocmd FileType javascript nnoremap <silent> <buffer> gb :TernDef<CR>
 " set sources
+"
 let g:deoplete#sources = {}
 let g:deoplete#sources.cpp = ['LanguageClient']
 let g:deoplete#sources.python = ['LanguageClient']
@@ -403,12 +402,12 @@ let g:deoplete#sources.vim = ['vim']
 	call denite#custom#var('grep', 'separator', ['--'])
 	call denite#custom#var('grep', 'final_opts', [])
 
-  nnoremap <silent> <c-p> :Denite file_rec<CR>
+nnoremap <silent> <c-p> :Denite file_rec<CR>
   "* nnoremap <silent> <leader>h :Denite  help<CR> */
   "* nnoremap <silent> <leader>c :Denite colorscheme<CR> */
   "* nnoremap <silent> <leader>b :Denite buffer<CR> */
   "* nnoremap <silent> <leader>a :Denite grep:::!<CR> */
-  "* nnoremap <silent> <leader>u :call dein#update()<CR> */
+nnoremap <silent> <leader>u :call dein#update()<CR> */
   call denite#custom#map('insert','<C-n>','<denite:move_to_next_line>','noremap')
 	call denite#custom#map('insert','<C-p>','<denite:move_to_previous_line>','noremap')
   call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
@@ -430,10 +429,14 @@ au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
 "=====================================================
 "" AirLine settings
 "=====================================================
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#tabline#formatter='unique_tail'
-let g:airline#extensions#ale#enabled=1
-let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#ale#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='base16_default'
+let g:airline#extensions#branch#enabled = 1
+let g:airline#extensions#tagbar#enabled = 1
+let g:airline_skip_empty_sections = 1
 
 "=====================================================
 "" TagBar settings

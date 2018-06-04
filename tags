@@ -30,6 +30,7 @@
 <leader>ev	nvim/init.vim	/^nnoremap <leader>ev :vsp $MYVIMRC<CR>$/;"	m
 <leader>ez	nvim/init.vim	/^nnoremap <leader>ez :vsp ~\/.zshrc<CR>$/;"	m
 <leader>sv	nvim/init.vim	/^nnoremap <leader>sv :source $MYVIMRC<CR>$/;"	m
+<tab>	nvim/init.vim	/^inoremap <expr><tab> pumvisible() ? "\\<c-n>" : "\\<tab>"$/;"	m
 >	nvim/init.vim	/^vmap > >gv$/;"	m
 AG	nvim/init.vim	/^cnoreabbrev AG Ack$/;"	m
 ALLOWED_FLAGS	ranger/commands_full.py	/^        from ranger.core.runner import ALLOWED_FLAGS$/;"	i
