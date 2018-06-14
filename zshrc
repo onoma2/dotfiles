@@ -4,7 +4,7 @@
 export PATH=$HOME/bin:$PATH
 export EDITOR=nvim
 export VISUAL=nvim
-export PAGEG=more
+export PAGER=more
 
 TERM=xterm-256color
 
@@ -113,7 +113,7 @@ elif [[ $PLATFORM == 'Darwin' ]]; then
 #	alias condainit='echo ". $HOME/anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile'
 	alias condainit='source $HOME/anaconda3/bin/activate'
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
-	source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
+	source ~/antigen/antigen.zsh
 	export LC_ALL='en_US.UTF-8'
 
 fi
