@@ -89,6 +89,7 @@ fancy_echo "Updating Homebrew formulae ..."
 brew update --force # https://github.com/Homebrew/brew/issues/1151
 brew bundle --file=- <<EOF
 cask_args appdir: "/Users/onoma/MyApps"
+tap "crisidev/homebrew-chunkwm"
 tap "thoughtbot/formulae"
 tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
@@ -122,6 +123,8 @@ cask "karabiner-elements"
 cask "rambox"
 cask "visual-studio-code"
 cask "kitty"
+brew "chunkwm"
+brew "koekeishiya/formulae/skhd"
 
 # Programming language prerequisites and package managers
 brew "libyaml" # should come after openssl
