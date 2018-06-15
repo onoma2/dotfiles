@@ -113,7 +113,7 @@ elif [[ $PLATFORM == 'Darwin' ]]; then
 #	alias condainit='echo ". $HOME/anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile'
 	alias condainit='source $HOME/anaconda3/bin/activate'
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
-	source ~/antigen/antigen.zsh
+	source ~/git/antigen/antigen.zsh
 	export LC_ALL='en_US.UTF-8'
 
 fi

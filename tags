@@ -1,10 +1,101 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
-!_TAG_PROGRAM_NAME	Exuberant Ctags	//
-!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
-!_TAG_PROGRAM_VERSION	5.8	//
-) display_help	macos/hammerspoon/init.lua	/^  hs.hotkey.bind(mash_app, '\/', function() display_help() end)$/;"	f
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/44a0e97/
+*	linux/pcmanfm/default/desktop-items-0.conf	/^[*]$/;"	s
+0	linux/polybar/master.conf	/^font-0 = "DejaVu Sans Mono:size=10:antialias=false;2"$/;"	k	section:bar/master
+0	linux/polybar/modules.conf	/^animation-charging-0 = " "$/;"	k	section:module/battery
+0	linux/polybar/modules.conf	/^animation-packetloss-0 = ⚠$/;"	k	section:module/wireless-network
+0	linux/polybar/modules.conf	/^bar-volume-foreground-0 = #92A3F7$/;"	k	section:module/volume-bar
+0	linux/polybar/modules.conf	/^blacklist-0 = num lock$/;"	k	section:module/keyboard
+0	linux/polybar/modules.conf	/^icon-0 = 1;$/;"	k	section:module/workspaces
+0	linux/polybar/modules.conf	/^menu-0-0 = "  "$/;"	k	section:module/menu
+0	linux/polybar/modules.conf	/^menu-1-0 = "  "$/;"	k	section:module/menu
+0	linux/polybar/modules.conf	/^menu-2-0 = "  "$/;"	k	section:module/menu
+0	linux/polybar/modules.conf	/^menu-3-0 = "  "$/;"	k	section:module/menu
+0	linux/polybar/modules.conf	/^mount-0 = \/$/;"	k	section:module/filesystem
+0	linux/polybar/modules.conf	/^ramp-0 = ""$/;"	k	section:module/temperature
+0	linux/polybar/modules.conf	/^ramp-capacity-0 = $/;"	k	section:module/battery
+0	linux/polybar/modules.conf	/^ramp-coreload-0 = ▂$/;"	k	section:module/coreuse
+0	linux/polybar/modules.conf	/^ramp-signal-0 = $/;"	k	section:module/wireless-network
+0	linux/polybar/modules.conf	/^ramp-volume-0 = $/;"	k	section:module/volume
+0	linux/polybar/modules.conf	/^ws-icon-0 = 1;$/;"	k	section:module/i3-workspaces
+0	linux/polybar/modules.conf	/^ws-icon-0 = I;$/;"	k	section:module/bspwm
+1	linux/polybar/master.conf	/^font-1 = "Font Awesome 5 Brands:pixelsize=11;1"$/;"	k	section:bar/master
+1	linux/polybar/modules.conf	/^animation-charging-1 = " "$/;"	k	section:module/battery
+1	linux/polybar/modules.conf	/^animation-packetloss-1 = 📶$/;"	k	section:module/wireless-network
+1	linux/polybar/modules.conf	/^bar-volume-foreground-1 = #92A3F7$/;"	k	section:module/volume-bar
+1	linux/polybar/modules.conf	/^blacklist-1 = scroll lock$/;"	k	section:module/keyboard
+1	linux/polybar/modules.conf	/^icon-1 = 2;$/;"	k	section:module/workspaces
+1	linux/polybar/modules.conf	/^menu-0-1 = "  "$/;"	k	section:module/menu
+1	linux/polybar/modules.conf	/^menu-1-1 = "  "$/;"	k	section:module/menu
+1	linux/polybar/modules.conf	/^menu-2-1 = "  "$/;"	k	section:module/menu
+1	linux/polybar/modules.conf	/^menu-3-1 = "   "$/;"	k	section:module/menu
+1	linux/polybar/modules.conf	/^ramp-1 = ""$/;"	k	section:module/temperature
+1	linux/polybar/modules.conf	/^ramp-capacity-1 = $/;"	k	section:module/battery
+1	linux/polybar/modules.conf	/^ramp-coreload-1 = ▃$/;"	k	section:module/coreuse
+1	linux/polybar/modules.conf	/^ramp-signal-1 = $/;"	k	section:module/wireless-network
+1	linux/polybar/modules.conf	/^ramp-volume-1 = $/;"	k	section:module/volume
+1	linux/polybar/modules.conf	/^ws-icon-1 = 2;$/;"	k	section:module/i3-workspaces
+1	linux/polybar/modules.conf	/^ws-icon-1 = II;$/;"	k	section:module/bspwm
+2	linux/polybar/master.conf	/^font-2 = "MaterialIcons:size=10:antialias=false;2"$/;"	k	section:bar/master
+2	linux/polybar/modules.conf	/^animation-charging-2 = " "$/;"	k	section:module/battery
+2	linux/polybar/modules.conf	/^bar-volume-foreground-2 = #6BB3E7$/;"	k	section:module/volume-bar
+2	linux/polybar/modules.conf	/^icon-2 = 3;$/;"	k	section:module/workspaces
+2	linux/polybar/modules.conf	/^menu-0-2 = "    |"$/;"	k	section:module/menu
+2	linux/polybar/modules.conf	/^menu-1-2 = "  "$/;"	k	section:module/menu
+2	linux/polybar/modules.conf	/^menu-2-2 = "  "$/;"	k	section:module/menu
+2	linux/polybar/modules.conf	/^menu-3-2 = "   "$/;"	k	section:module/menu
+2	linux/polybar/modules.conf	/^ramp-2 = ""$/;"	k	section:module/temperature
+2	linux/polybar/modules.conf	/^ramp-capacity-2 = $/;"	k	section:module/battery
+2	linux/polybar/modules.conf	/^ramp-coreload-2 = ▄$/;"	k	section:module/coreuse
+2	linux/polybar/modules.conf	/^ramp-signal-2 = $/;"	k	section:module/wireless-network
+2	linux/polybar/modules.conf	/^ramp-volume-2 = $/;"	k	section:module/volume
+2	linux/polybar/modules.conf	/^ws-icon-2 = 3;$/;"	k	section:module/i3-workspaces
+2	linux/polybar/modules.conf	/^ws-icon-2 = III;$/;"	k	section:module/bspwm
+3	linux/polybar/master.conf	/^font-3 = "icomoon:size=10:antialias=false;2"$/;"	k	section:bar/master
+3	linux/polybar/modules.conf	/^animation-charging-3 = " "$/;"	k	section:module/battery
+3	linux/polybar/modules.conf	/^bar-volume-foreground-3 = #6BB3E7$/;"	k	section:module/volume-bar
+3	linux/polybar/modules.conf	/^icon-3 = 4;$/;"	k	section:module/workspaces
+3	linux/polybar/modules.conf	/^menu-1-3 = "    |"$/;"	k	section:module/menu
+3	linux/polybar/modules.conf	/^menu-2-3 = "    |"$/;"	k	section:module/menu
+3	linux/polybar/modules.conf	/^menu-3-3 = "      |"$/;"	k	section:module/menu
+3	linux/polybar/modules.conf	/^ramp-3 = ""$/;"	k	section:module/temperature
+3	linux/polybar/modules.conf	/^ramp-capacity-3 = $/;"	k	section:module/battery
+3	linux/polybar/modules.conf	/^ramp-coreload-3 = ▅$/;"	k	section:module/coreuse
+3	linux/polybar/modules.conf	/^ramp-signal-3 = $/;"	k	section:module/wireless-network
+3	linux/polybar/modules.conf	/^ramp-volume-3 = $/;"	k	section:module/volume
+3	linux/polybar/modules.conf	/^ws-icon-3 = 4;$/;"	k	section:module/i3-workspaces
+3	linux/polybar/modules.conf	/^ws-icon-3 = IV;$/;"	k	section:module/bspwm
+4	linux/polybar/master.conf	/^font-4 = "Ubuntu Nerd Font:size=10:antialias=false;2"$/;"	k	section:bar/master
+4	linux/polybar/modules.conf	/^animation-charging-4 = " "$/;"	k	section:module/battery
+4	linux/polybar/modules.conf	/^bar-volume-foreground-4 = #6BB3E7$/;"	k	section:module/volume-bar
+4	linux/polybar/modules.conf	/^icon-4 = 5;$/;"	k	section:module/workspaces
+4	linux/polybar/modules.conf	/^ramp-capacity-4 = $/;"	k	section:module/battery
+4	linux/polybar/modules.conf	/^ramp-coreload-4 = ▆$/;"	k	section:module/coreuse
+4	linux/polybar/modules.conf	/^ramp-signal-4 = $/;"	k	section:module/wireless-network
+4	linux/polybar/modules.conf	/^ws-icon-4 = 5;$/;"	k	section:module/i3-workspaces
+4	linux/polybar/modules.conf	/^ws-icon-4 = V;$/;"	k	section:module/bspwm
+5	linux/polybar/modules.conf	/^bar-volume-foreground-5 = #6BE7D8$/;"	k	section:module/volume-bar
+5	linux/polybar/modules.conf	/^icon-5 = 6;$/;"	k	section:module/workspaces
+5	linux/polybar/modules.conf	/^ramp-coreload-5 = ▇$/;"	k	section:module/coreuse
+5	linux/polybar/modules.conf	/^ramp-signal-5 = $/;"	k	section:module/wireless-network
+5	linux/polybar/modules.conf	/^ws-icon-5 = 6;$/;"	k	section:module/i3-workspaces
+5	linux/polybar/modules.conf	/^ws-icon-5 = VI;$/;"	k	section:module/bspwm
+6	linux/polybar/modules.conf	/^bar-volume-foreground-6 = #6BE7D8$/;"	k	section:module/volume-bar
+6	linux/polybar/modules.conf	/^icon-6 = 7;$/;"	k	section:module/workspaces
+6	linux/polybar/modules.conf	/^ws-icon-6 = 7;$/;"	k	section:module/i3-workspaces
+6	linux/polybar/modules.conf	/^ws-icon-6 = VII;$/;"	k	section:module/bspwm
+7	linux/polybar/modules.conf	/^icon-7 = 8;$/;"	k	section:module/workspaces
+7	linux/polybar/modules.conf	/^ws-icon-7 = 8;$/;"	k	section:module/i3-workspaces
+7	linux/polybar/modules.conf	/^ws-icon-7 = VIII;$/;"	k	section:module/bspwm
+8	linux/polybar/modules.conf	/^icon-8 = 9;$/;"	k	section:module/workspaces
+8	linux/polybar/modules.conf	/^ws-icon-8 = IX;$/;"	k	section:module/bspwm
+9	linux/polybar/modules.conf	/^icon-9 = 10;$/;"	k	section:module/workspaces
+9	linux/polybar/modules.conf	/^ws-icon-9 = X;$/;"	k	section:module/bspwm
 :	nvim/init.vim	/^nnoremap  :  ;$/;"	m
 ;	nvim/init.vim	/^nnoremap  ;  :$/;"	m
 <	nvim/init.vim	/^vmap < <gv$/;"	m
@@ -25,24 +116,21 @@
 <Left>	nvim/init.vim	/^nnoremap <Left> :cp<CR>$/;"	m
 <Right>	nvim/init.vim	/^nnoremap <Right> :cn<CR>$/;"	m
 <c-d>	nvim/init.vim	/^inoremap <c-d> <esc>ddi$/;"	m
-<c-p>	nvim/init.vim	/^  nnoremap <silent> <c-p> :Denite file_rec<CR>$/;"	m
+<c-p>	nvim/init.vim	/^nnoremap <silent> <c-p> :Denite file_rec<CR>$/;"	m
 <esc>	nvim/init.vim	/^noremap <silent> <esc> :noh<cr>$/;"	m
 <leader>ev	nvim/init.vim	/^nnoremap <leader>ev :vsp $MYVIMRC<CR>$/;"	m
 <leader>ez	nvim/init.vim	/^nnoremap <leader>ez :vsp ~\/.zshrc<CR>$/;"	m
 <leader>sv	nvim/init.vim	/^nnoremap <leader>sv :source $MYVIMRC<CR>$/;"	m
+<leader>u	nvim/init.vim	/^nnoremap <silent> <leader>u :call dein#update()<CR> *\/$/;"	m
 <tab>	nvim/init.vim	/^inoremap <expr><tab> pumvisible() ? "\\<c-n>" : "\\<tab>"$/;"	m
 >	nvim/init.vim	/^vmap > >gv$/;"	m
-AG	nvim/init.vim	/^cnoreabbrev AG Ack$/;"	m
-ALLOWED_FLAGS	ranger/commands_full.py	/^        from ranger.core.runner import ALLOWED_FLAGS$/;"	i
 AS_YOU_TYPE	ranger/commands_full.py	/^    AS_YOU_TYPE     = 't'$/;"	v	class:scout
 AUTO_OPEN	ranger/commands_full.py	/^    AUTO_OPEN       = 'a'$/;"	v	class:scout
-Ag	nvim/init.vim	/^cnoreabbrev Ag Ack$/;"	m
+EOD	macos-custom-stuff.sh	/^osascript <<EOD$/;"	h
 FILTER	ranger/commands_full.py	/^    FILTER          = 'f'$/;"	v	class:scout
 FILTER_DIRS	ranger/commands_full.py	/^    FILTER_DIRS  = 'd'$/;"	v	class:filter_inode_type
 FILTER_FILES	ranger/commands_full.py	/^    FILTER_FILES = 'f'$/;"	v	class:filter_inode_type
 FILTER_LINKS	ranger/commands_full.py	/^    FILTER_LINKS = 'l'$/;"	v	class:filter_inode_type
-File	ranger/commands_full.py	/^        from ranger.container.file import File$/;"	i
-FileSystemObject	ranger/commands_full.py	/^        from ranger.container.fsobject import FileSystemObject$/;"	i
 H	nvim/init.vim	/^noremap H ^$/;"	m
 IGNORE_CASE	ranger/commands_full.py	/^    IGNORE_CASE     = 'i'$/;"	v	class:scout
 INVERT	ranger/commands_full.py	/^    INVERT          = 'v'$/;"	v	class:scout
@@ -57,22 +145,130 @@ N	nvim/init.vim	/^nnoremap N Nzzzv$/;"	m
 OPEN_ON_ENTER	ranger/commands_full.py	/^    OPEN_ON_ENTER   = 'e'$/;"	v	class:scout
 PATH_RE	ranger/commands_full.py	/^    PATH_RE = re.compile(r'^\\s*path="?(.*?)"?\\s*$')$/;"	v	class:setlocal
 PERM_FILTER	ranger/commands_full.py	/^    PERM_FILTER     = 'p'$/;"	v	class:scout
-Q	nvim/init.vim	/^cnoreabbrev Q q$/;"	m
 Q	nvim/init.vim	/^nnoremap Q @q$/;"	m
-Q!	nvim/init.vim	/^cnoreabbrev Q! q!$/;"	m
-Qall	nvim/init.vim	/^cnoreabbrev Qall qall$/;"	m
-Qall!	nvim/init.vim	/^cnoreabbrev Qall! qall!$/;"	m
 SMART_CASE	ranger/commands_full.py	/^    SMART_CASE      = 's'$/;"	v	class:scout
 SM_GLOB	ranger/commands_full.py	/^    SM_GLOB         = 'g'$/;"	v	class:scout
 SM_LETTERSKIP	ranger/commands_full.py	/^    SM_LETTERSKIP   = 'l'$/;"	v	class:scout
 SM_REGEX	ranger/commands_full.py	/^    SM_REGEX        = 'r'$/;"	v	class:scout
 UNMARK	ranger/commands_full.py	/^    UNMARK          = 'M'$/;"	v	class:scout
-VcsError	ranger/commands_full.py	/^        from ranger.ext.vcs import VcsError$/;"	i
-W	nvim/init.vim	/^cnoreabbrev W w$/;"	m
-W!	nvim/init.vim	/^cnoreabbrev W! w!$/;"	m
-WQ	nvim/init.vim	/^cnoreabbrev WQ wq$/;"	m
-Wa	nvim/init.vim	/^cnoreabbrev Wa wa$/;"	m
-Wq	nvim/init.vim	/^cnoreabbrev Wq wq$/;"	m
+X	ranger/rifle.conf	/^ext s[wmf]c, has snes9x-gtk,X = snes9x-gtk "$1"$/;"	k
+\x20            terminal	ranger/rifle.conf	/^ext x?html?, has w3m,             terminal = w3m "$@"$/;"	k
+\x20           terminal	ranger/rifle.conf	/^ext x?html?, has lynx,            terminal = lynx -- "$@"$/;"	k
+\x20          terminal	ranger/rifle.conf	/^ext x?html?, has links,           terminal = links "$@"$/;"	k
+\x20         terminal	ranger/rifle.conf	/^ext x?html?, has elinks,          terminal = elinks "$@"$/;"	k
+\x20         terminal	ranger/rifle.conf	/^ext x?html?, has links2,          terminal = links2 "$@"$/;"	k
+\x20       pager_move  up	ranger/rc.conf	/^pmap  <up>        pager_move  up=1$/;"	k
+\x20       taskview_move up	ranger/rc.conf	/^tmap <up>        taskview_move up=1$/;"	k
+\x20      move right	ranger/rc.conf	/^map <CR>       move right=1$/;"	k
+\x20      move up	ranger/rc.conf	/^map <UP>       move up=1$/;"	k
+\x20      pager_move  down	ranger/rc.conf	/^pmap  <C-d>       pager_move  down=0.5  pages=True$/;"	k
+\x20      pager_move  to	ranger/rc.conf	/^pmap  <end>       pager_move  to=-1$/;"	k
+\x20      pager_move  up	ranger/rc.conf	/^pmap  <C-u>       pager_move  up=0.5    pages=True$/;"	k
+\x20      taskview_move down	ranger/rc.conf	/^tmap <C-d>       taskview_move down=0.5  pages=True$/;"	k
+\x20      taskview_move to	ranger/rc.conf	/^tmap <end>       taskview_move to=-1$/;"	k
+\x20      taskview_move up	ranger/rc.conf	/^tmap <C-u>       taskview_move up=0.5    pages=True$/;"	k
+\x20      terminal	ranger/rifle.conf	/^ext docx?, has catdoc,       terminal = catdoc -- "$@" | "$PAGER"$/;"	k
+\x20     move to	ranger/rc.conf	/^map <END>      move to=-1$/;"	k
+\x20     pager_move  down	ranger/rc.conf	/^pmap  <down>      pager_move  down=1$/;"	k
+\x20     pager_move  left	ranger/rc.conf	/^pmap  <left>      pager_move  left=4$/;"	k
+\x20     pager_move  to	ranger/rc.conf	/^pmap  <home>      pager_move  to=0$/;"	k
+\x20     taskview_move down	ranger/rc.conf	/^tmap <down>      taskview_move down=1$/;"	k
+\x20     taskview_move to	ranger/rc.conf	/^tmap <home>      taskview_move to=0$/;"	k
+\x20    move down	ranger/rc.conf	/^map <DOWN>     move down=1$/;"	k
+\x20    move left	ranger/rc.conf	/^map <LEFT>     move left=1$/;"	k
+\x20    move to	ranger/rc.conf	/^map <HOME>     move to=0$/;"	k
+\x20    pager_move  right	ranger/rc.conf	/^pmap  <right>     pager_move  right=4$/;"	k
+\x20   move right	ranger/rc.conf	/^map <RIGHT>    move right=1$/;"	k
+\x20   pager_move  up	ranger/rc.conf	/^pmap  <pageup>    pager_move  up=1.0    pages=True$/;"	k
+\x20   taskview_move up	ranger/rc.conf	/^tmap <pageup>    taskview_move up=1.0    pages=True$/;"	k
+\x20  move up	ranger/rc.conf	/^map <PAGEUP>   move up=1     pages=True$/;"	k
+\x20 label editor	ranger/rifle.conf	/^mime ^text,  label editor = $EDITOR -- "$@"$/;"	k
+\x20 label pager	ranger/rifle.conf	/^mime ^text,  label pager  = "$PAGER" -- "$@"$/;"	k
+\x20 pager_move  down	ranger/rc.conf	/^pmap  <pagedown>  pager_move  down=1.0  pages=True$/;"	k
+\x20 taskview_move down	ranger/rc.conf	/^tmap <pagedown>  taskview_move down=1.0  pages=True$/;"	k
+\x20X	ranger/rifle.conf	/^ext nes, has fceux, X         = fceux "$1"$/;"	k
+\x20X	ranger/rifle.conf	/^ext s[wmf]c, has zsnes, X     = zsnes "$1"$/;"	k
+\x20X	ranger/rifle.conf	/^label wallpaper, number 11, mime ^image, has feh, X = feh --bg-scale "$1"$/;"	k
+\x20X	ranger/rifle.conf	/^label wallpaper, number 12, mime ^image, has feh, X = feh --bg-tile "$1"$/;"	k
+\x20X	ranger/rifle.conf	/^label wallpaper, number 13, mime ^image, has feh, X = feh --bg-center "$1"$/;"	k
+\x20X	ranger/rifle.conf	/^label wallpaper, number 14, mime ^image, has feh, X = feh --bg-fill "$1"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext                        sxc|xlsx?|xlt|xlw|gnm|gnumeric, has gnumeric,    X, flag f = gnumeric/;"	k
+\x20flag f	ranger/rifle.conf	/^ext                        sxc|xlsx?|xlt|xlw|gnm|gnumeric, has kspread,     X, flag f = kspread /;"	k
+\x20flag f	ranger/rifle.conf	/^ext djvu, has atril,  X, flag f = atril -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext djvu, has evince, X, flag f = evince -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext djvu, has zathura,X, flag f = zathura -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pdf, has apvlv,    X, flag f = apvlv -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pdf, has atril,    X, flag f = atril -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pdf, has epdfview, X, flag f = epdfview -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pdf, has evince,   X, flag f = evince -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pdf, has llpp,     X, flag f = llpp "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pdf, has mupdf,    X, flag f = mupdf "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pdf, has mupdf-x11,X, flag f = mupdf-x11 "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pdf, has okular,   X, flag f = okular -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pdf, has qpdfview, X, flag f = qpdfview "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pdf, has xpdf,     X, flag f = xpdf -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pdf, has zathura,  X, flag f = zathura -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pptx?|od[dfgpst]|docx?|sxc|xlsx?|xlt|xlw|gnm|gnumeric, has libreoffice, X, flag f = libreoff/;"	k
+\x20flag f	ranger/rifle.conf	/^ext pptx?|od[dfgpst]|docx?|sxc|xlsx?|xlt|xlw|gnm|gnumeric, has ooffice,     X, flag f = ooffice /;"	k
+\x20flag f	ranger/rifle.conf	/^ext pptx?|od[dfgpst]|docx?|sxc|xlsx?|xlt|xlw|gnm|gnumeric, has soffice,     X, flag f = soffice /;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has chromium,       X, flag f = chromium -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has dwb,            X, flag f = dwb -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has epiphany,       X, flag f = epiphany -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has firefox,        X, flag f = firefox -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has iceweasel,      X, flag f = iceweasel -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has jumanji,        X, flag f = jumanji -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has konqueror,      X, flag f = konqueror -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has luakit,         X, flag f = luakit -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has midori,         X, flag f = midori -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has opera,          X, flag f = opera -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has qutebrowser,    X, flag f = qutebrowser -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has seamonkey,      X, flag f = seamonkey -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has surf,           X, flag f = surf -- file:\/\/"$1"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has uzbl,           X, flag f = uzbl -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has uzbl-browser,   X, flag f = uzbl-browser -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has uzbl-core,      X, flag f = uzbl-core -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has uzbl-tabbed,    X, flag f = uzbl-tabbed -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has vimprobable,    X, flag f = vimprobable -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext x?html?, has vimprobable2,   X, flag f = vimprobable2 -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^ext xcf,                    X, flag f = gimp -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^image, has eog,       X, flag f = eog -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^image, has eom,       X, flag f = eom -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^image, has feh,       X, flag f = feh -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^image, has gimp,      X, flag f = gimp -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^image, has mirage,    X, flag f = mirage -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^image, has pqiv,      X, flag f = pqiv -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^image, has ristretto, X, flag f = ristretto "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^image, has sxiv,      X, flag f = sxiv -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^image\/svg, has display,  X, flag f = display -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^image\/svg, has inkscape, X, flag f = inkscape -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^video,       has mplayer,  X, flag f = mplayer -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^video,       has mplayer,  X, flag f = mplayer -fs -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^video,       has mplayer2, X, flag f = mplayer2 -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^video,       has mplayer2, X, flag f = mplayer2 -fs -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^video,       has mpv,      X, flag f = mpv -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^video,       has mpv,      X, flag f = mpv --fs -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^video|audio, has gmplayer, X, flag f = gmplayer -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^video|audio, has smplayer, X, flag f = smplayer "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^video|audio, has totem,    X, flag f = totem -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^video|audio, has totem,    X, flag f = totem --fullscreen -- "$@"$/;"	k
+\x20flag f	ranger/rifle.conf	/^mime ^video|audio, has vlc,      X, flag f = vlc -- "$@"$/;"	k
+\x20has 7z	ranger/rifle.conf	/^ext 7z, has 7z = 7z -p l "$@" | "$PAGER"$/;"	k
+\x20has als	ranger/rifle.conf	/^ext ace|ar|arc|bz2?|cab|cpio|cpt|deb|dgc|dmg|gz,  has als     = als -- "$@" | "$PAGER"$/;"	k
+\x20has als	ranger/rifle.conf	/^ext iso|jar|msi|pkg|rar|shar|tar|tgz|xar|xpi|xz|zip, has als     = als -- "$@" | "$PAGER"$/;"	k
+\x20has aunpack	ranger/rifle.conf	/^ext 7z|ace|ar|arc|bz2?|cab|cpio|cpt|deb|dgc|dmg|gz,  has aunpack = aunpack -- "$@"$/;"	k
+\x20has aunpack	ranger/rifle.conf	/^ext iso|jar|msi|pkg|rar|shar|tar|tgz|xar|xpi|xz|zip, has aunpack = aunpack -- "$@"$/;"	k
+\x20has mplayer	ranger/rifle.conf	/^mime ^audio|ogg$, terminal, has mplayer  = mplayer -- "$@"$/;"	k
+\x20has mplayer	ranger/rifle.conf	/^mime ^video, terminal, !X, has mplayer   = mplayer -- "$@"$/;"	k
+\x20has mplayer2	ranger/rifle.conf	/^mime ^audio|ogg$, terminal, has mplayer2 = mplayer2 -- "$@"$/;"	k
+\x20has mplayer2	ranger/rifle.conf	/^mime ^video, terminal, !X, has mplayer2  = mplayer2 -- "$@"$/;"	k
+\x20has mpv	ranger/rifle.conf	/^mime ^audio|ogg$, terminal, has mpv      = mpv -- "$@"$/;"	k
+\x20has mpv	ranger/rifle.conf	/^mime ^video, terminal, !X, has mpv       = mpv -- "$@"$/;"	k
+\x20has tar	ranger/rifle.conf	/^ext tar|gz, has tar = tar vvtf "$@" | "$PAGER"$/;"	k
+\x20has tar	ranger/rifle.conf	/^ext tar|gz, has tar = tar vvxf "$@"$/;"	k
+\x20has wildmidi	ranger/rifle.conf	/^ext midi?,        terminal, has wildmidi = wildmidi -- "$@"$/;"	k
+\x20mark_files toggle	ranger/rc.conf	/^map <Space> mark_files toggle=True$/;"	k
+\x20move down	ranger/rc.conf	/^map <PAGEDOWN> move down=1   pages=True$/;"	k
+\x20tag_toggle tag	ranger/rc.conf	/^map "<any>  tag_toggle tag=%any$/;"	k
 __init__	ranger/commands_full.py	/^    def __init__(self, *args, **kws):$/;"	m	class:scout
 _build_regex	ranger/commands_full.py	/^    def _build_regex(self):$/;"	m	class:scout
 _command_name	ranger/commands_full.py	/^    _command_name = "meta"$/;"	v	class:prompt_metadata
@@ -85,24 +281,60 @@ _is_flags	ranger/commands_full.py	/^    def _is_flags(self, arg):$/;"	m	class:op
 _is_mode	ranger/commands_full.py	/^    def _is_mode(self, arg):$/;"	m	class:open_with
 _process_command_stack	ranger/commands_full.py	/^    def _process_command_stack(self):$/;"	m	class:prompt_metadata
 _question_callback	ranger/commands_full.py	/^    def _question_callback(self, files, answer):$/;"	m	class:delete
-aG	nvim/init.vim	/^cnoreabbrev aG Ack$/;"	m
-access	ranger/commands_full.py	/^        from os import access$/;"	i
-ag	nvim/init.vim	/^cnoreabbrev ag Ack$/;"	m
+active	linux/polybar/modules.conf	/^label-active = %icon% %name%$/;"	k	section:module/workspaces
+adapter	linux/polybar/modules.conf	/^adapter = AC$/;"	k	section:module/battery
 alias	ranger/commands_full.py	/^class alias(Command):$/;"	c
 allow_abbrev	ranger/commands_full.py	/^    allow_abbrev = False$/;"	v	class:delete
 allow_abbrev	ranger/commands_full.py	/^    allow_abbrev = False$/;"	v	class:quit_bang
-argparse	linux/polybar/spotify_show.py	/^import argparse$/;"	i
+allow_cache	mopidy.conf	/^allow_cache = true$/;"	k	section:spotify
+allow_network	mopidy.conf	/^allow_network = true$/;"	k	section:spotify
+allow_playlists	mopidy.conf	/^allow_playlists = true$/;"	k	section:spotify
+alt	linux/polybar/modules.conf	/^date-alt = " %Y-%m-%d"$/;"	k	section:module/time
+alt	linux/polybar/modules.conf	/^time-alt = %H:%M:%S$/;"	k	section:module/time
+always_show_tabs	linux/pcmanfm/default/pcmanfm.conf	/^always_show_tabs=0$/;"	k	section:ui
 args	linux/polybar/spotify_show.py	/^args = parser.parse_args()$/;"	v
 artist	linux/polybar/spotify_show.py	/^    artist = metadata['xesam:artist'][0]$/;"	v
+at	linux/polybar/modules.conf	/^full-at = 98$/;"	k	section:module/battery
+audio	mopidy.conf	/^[audio]$/;"	s
+autorun	linux/pcmanfm/default/pcmanfm.conf	/^[autorun]$/;"	s
+autorun	linux/pcmanfm/default/pcmanfm.conf	/^autorun=1$/;"	k	section:volume
 b:deoplete_disable_auto_complete	nvim/init.vim	/^let b:deoplete_disable_auto_complete=1$/;"	v
-basename	ranger/commands_full.py	/^        from os.path import dirname, basename, expanduser, join$/;"	i
+background	linux/polybar/master.conf	/^background = #1d1f21$/;"	k	section:colors
+background	linux/polybar/master.conf	/^background = ${colors.background}$/;"	k	section:bar/master
+background	linux/polybar/master.conf	/^compositing-background = source$/;"	k	section:settings
+background	linux/polybar/master.conf	/^format-background = ${colors.background}$/;"	k	section:settings
+background	linux/polybar/modules.conf	/^label-dimmed-focused-background = ${colors.purple}$/;"	k	section:module/bspwm
+backward	ranger/rc.conf	/^cmap <A-d>        eval fm.ui.console.delete_word(backward=False)$/;"	k
+bar/master	linux/polybar/master.conf	/^[bar\/master]$/;"	s
+battery	linux/polybar/modules.conf	/^battery = BAT0$/;"	k	section:module/battery
+bitrate	mopidy.conf	/^bitrate = 320$/;"	k	section:spotify
+blue	linux/polybar/master.conf	/^blue = #8fa1b3$/;"	k	section:colors
+bm_open_method	linux/pcmanfm/default/pcmanfm.conf	/^bm_open_method=0$/;"	k	section:config
+border	linux/polybar/master.conf	/^border = #c0c5ce$/;"	k	section:colors
+border	linux/polybar/master.conf	/^compositing-border = source$/;"	k	section:settings
+bottom	linux/polybar/master.conf	/^bottom = false$/;"	k	section:bar/master
 bulkrename	ranger/commands_full.py	/^class bulkrename(Command):$/;"	c
-callback	ranger/commands_full.py	/^        def callback(answer):$/;"	f	function:help_.execute
+callback	ranger/commands_full.py	/^        def callback(answer):$/;"	f	member:help_.execute	file:
 cancel	ranger/commands_full.py	/^    def cancel(self):$/;"	m	class:scout
 cd	ranger/commands_full.py	/^class cd(Command):$/;"	c
+center	linux/polybar/master.conf	/^fixed-center = true$/;"	k	section:bar/master
 chain	ranger/commands_full.py	/^class chain(Command):$/;"	c
+change_tab_on_drop	linux/pcmanfm/default/pcmanfm.conf	/^change_tab_on_drop=1$/;"	k	section:ui
+charging	linux/polybar/modules.conf	/^format-charging    = <animation-charging> <label-charging>$/;"	k	section:module/battery
 chmod	ranger/commands_full.py	/^class chmod(Command):$/;"	c
+click	linux/polybar/modules.conf	/^enable-click = true$/;"	k	section:module/bspwm
+click	linux/polybar/modules.conf	/^enable-click = true$/;"	k	section:module/i3-workspaces
+click	linux/polybar/modules.conf	/^enable-click = true$/;"	k	section:module/workspaces
+close	linux/polybar/modules.conf	/^label-close = "    "$/;"	k	section:module/menu
+close_on_unmount	linux/pcmanfm/default/pcmanfm.conf	/^close_on_unmount=1$/;"	k	section:ui
 cmap	ranger/commands_full.py	/^class cmap(map_):$/;"	c
+color	linux/polybar/master.conf	/^border-color = ${colors.border}$/;"	k	section:bar/master
+colors	linux/polybar/master.conf	/^[colors]$/;"	s
+config	linux/pcmanfm/default/pcmanfm.conf	/^[config]$/;"	s
+connected	linux/polybar/modules.conf	/^format-connected = <label-connected>$/;"	k	section:module/wired-network
+connected	linux/polybar/modules.conf	/^format-connected = <ramp-signal>  <label-connected>$/;"	k	section:module/wireless-network
+connected	linux/polybar/modules.conf	/^label-connected = " %local_ip% "$/;"	k	section:module/wireless-network
+connected	linux/polybar/modules.conf	/^label-connected =  %local_ip%$/;"	k	section:module/wired-network
 console	ranger/commands_full.py	/^class console(Command):$/;"	c
 context	ranger/commands_full.py	/^    context = 'browser'$/;"	v	class:alias
 context	ranger/commands_full.py	/^    context = 'browser'$/;"	v	class:copymap
@@ -123,21 +355,68 @@ copycmap	ranger/commands_full.py	/^class copycmap(copymap):$/;"	c
 copymap	ranger/commands_full.py	/^class copymap(Command):$/;"	c
 copypmap	ranger/commands_full.py	/^class copypmap(copymap):$/;"	c
 copytmap	ranger/commands_full.py	/^class copytmap(copymap):$/;"	c
+core	mopidy.conf	/^[core]$/;"	s
 cunmap	ranger/commands_full.py	/^class cunmap(unmap):$/;"	c
-dbus	linux/polybar/spotify_show.py	/^import dbus$/;"	i
+date	linux/polybar/modules.conf	/^date =$/;"	k	section:module/time
+default	linux/polybar/modules.conf	/^icon-default =$/;"	k	section:module/workspaces
 default_linemode	ranger/commands_full.py	/^class default_linemode(Command):$/;"	c
 delete	ranger/commands_full.py	/^class delete(Command):$/;"	c
-dirname	ranger/commands_full.py	/^        from os.path import dirname, basename, expanduser, join$/;"	i
+desktop_bg	linux/pcmanfm/default/desktop-items-0.conf	/^desktop_bg=#000000$/;"	k	section:*
+desktop_fg	linux/pcmanfm/default/desktop-items-0.conf	/^desktop_fg=#ffffff$/;"	k	section:*
+desktop_folder_new_win	linux/pcmanfm/default/pcmanfm.conf	/^desktop_folder_new_win=0$/;"	k	section:ui
+desktop_font	linux/pcmanfm/default/desktop-items-0.conf	/^desktop_font=Sans 12$/;"	k	section:*
+desktop_shadow	linux/pcmanfm/default/desktop-items-0.conf	/^desktop_shadow=#000000$/;"	k	section:*
+dirarg	ranger/rc.conf	/^map dG  eval fm.cut(dirarg=dict(to=-1), narg=quantifier)$/;"	k
+dirarg	ranger/rc.conf	/^map dgg eval fm.cut(dirarg=dict(to=0), narg=quantifier)$/;"	k
+dirarg	ranger/rc.conf	/^map dj  eval fm.cut(dirarg=dict(down=1), narg=quantifier)$/;"	k
+dirarg	ranger/rc.conf	/^map dk  eval fm.cut(dirarg=dict(up=1), narg=quantifier)$/;"	k
+dirarg	ranger/rc.conf	/^map yG  eval fm.copy(dirarg=dict(to=-1), narg=quantifier)$/;"	k
+dirarg	ranger/rc.conf	/^map ygg eval fm.copy(dirarg=dict(to=0), narg=quantifier)$/;"	k
+dirarg	ranger/rc.conf	/^map yj  eval fm.copy(dirarg=dict(down=1), narg=quantifier)$/;"	k
+dirarg	ranger/rc.conf	/^map yk  eval fm.copy(dirarg=dict(up=1), narg=quantifier)$/;"	k
+discharging	linux/polybar/modules.conf	/^format-discharging = <ramp-capacity> <label-discharging>$/;"	k	section:module/battery
+disconnected	linux/polybar/modules.conf	/^format-disconnected = <label-disconnected>$/;"	k	section:module/wired-network
 display_help	macos/hammerspoon/init.lua	/^local function display_help()$/;"	f
 do_mark	ranger/commands_full.py	/^    do_mark = False$/;"	v	class:unmark_tag
 do_mark	ranger/commands_full.py	/^    do_mark = True$/;"	v	class:mark_tag
+down	linux/polybar/master.conf	/^scroll-down = pamixer -d 2$/;"	k	section:bar/master
 dump	ranger/scope.sh	/^dump() { \/bin\/echo "$output"; }$/;"	f
+earch_track_count	mopidy.conf	/^earch_track_count = 50$/;"	k	section:spotify
 echo	ranger/commands_full.py	/^class echo(Command):$/;"	c
 edit	ranger/commands_full.py	/^class edit(Command):$/;"	c
-esc	ranger/commands_full.py	/^        from ranger.ext.shell_escape import shell_escape as esc$/;"	i
+empty	linux/polybar/modules.conf	/^bar-progress-empty = ▒$/;"	k	section:module/mpd
+empty	linux/polybar/modules.conf	/^bar-volume-empty = ·$/;"	k	section:module/volume-bar
+empty	linux/polybar/modules.conf	/^label-empty = %icon% %name%$/;"	k	section:module/bspwm
+empty	linux/polybar/modules.conf	/^label-empty = %icon% %name%$/;"	k	section:module/workspaces
+enabled	mopidy.conf	/^enabled = true$/;"	k	section:spotify
+esc	ranger/commands_full.py	/^        from ranger.ext.shell_escape import shell_escape as esc$/;"	x	member:bulkrename.execute	file:
 escape_macros_for_shell	ranger/commands_full.py	/^    escape_macros_for_shell = True$/;"	v	class:delete
 escape_macros_for_shell	ranger/commands_full.py	/^    escape_macros_for_shell = True$/;"	v	class:shell
 eval_	ranger/commands_full.py	/^class eval_(Command):$/;"	c
+exec	linux/polybar/modules.conf	/^exec = check-network$/;"	k	section:module/network
+exec	linux/polybar/modules.conf	/^exec = echo "  "$/;"	k	section:module/window_switch
+exec	linux/polybar/modules.conf	/^exec = echo ""$/;"	k	section:module/jgmenu
+exec	linux/polybar/modules.conf	/^exec = python3 ~\/.config\/polybar\/Play.py$/;"	k	section:module/play
+exec	linux/polybar/modules.conf	/^exec = toggle.sh -c$/;"	k	section:module/compton_toggle
+exec	linux/polybar/modules.conf	/^exec = toggle.sh -r$/;"	k	section:module/redshift
+exec	linux/polybar/modules.conf	/^exec = updates.sh$/;"	k	section:module/pkg
+exec	linux/polybar/modules.conf	/^exec = ~\/.config\/polybar\/mpris.sh$/;"	k	section:module/music2
+exec	linux/polybar/modules.conf	/^menu-0-0-exec = menu-open-1$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-0-1-exec = menu-open-2$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-0-2-exec = menu-open-3$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-1-0-exec = menu-open-0$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-1-1-exec = exo-open --launch WebBrowser$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-1-2-exec = exo-open --launch TerminalEmulator$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-1-3-exec = exo-open --launch FileManager$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-2-0-exec = menu-open-0$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-2-1-exec = termite --exec=pacli &$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-2-2-exec = xfce4-settings-manager &$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-2-3-exec = pavucontrol &$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-3-0-exec = menu-open-0$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-3-1-exec = i3lock-fancy -p -f Ubuntu &$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-3-2-exec = systemctl reboot$/;"	k	section:module/menu
+exec	linux/polybar/modules.conf	/^menu-3-3-exec = systemctl poweroff$/;"	k	section:module/menu
+executable	ranger/rifle.conf	/^mime application\/x-executable = "$1"$/;"	k
 execute	ranger/commands.py	/^    def execute(self):$/;"	m	class:my_edit
 execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:alias
 execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:bulkrename
@@ -179,22 +458,112 @@ execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:terminal
 execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:touch
 execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:unmap
 execute	ranger/commands_full.py	/^    def execute(self):$/;"	m	class:unstage
-exists	ranger/commands_full.py	/^        from os.path import exists$/;"	i
-expanduser	ranger/commands_full.py	/^        from os.path import dirname, basename, expanduser, join$/;"	i
-expanduser	ranger/commands_full.py	/^        from os.path import join, expanduser, lexists$/;"	i
+ext 1	ranger/rifle.conf	/^ext 1                         = man "$1"$/;"	k
+ext exe	ranger/rifle.conf	/^ext exe                       = wine "$1"$/;"	k
+ext js	ranger/rifle.conf	/^ext js  = node -- "$1"$/;"	k
+ext php	ranger/rifle.conf	/^ext php = php -- "$1"$/;"	k
+ext pl	ranger/rifle.conf	/^ext pl  = perl -- "$1"$/;"	k
+ext py	ranger/rifle.conf	/^ext py  = python -- "$1"$/;"	k
+ext rb	ranger/rifle.conf	/^ext rb  = ruby -- "$1"$/;"	k
+ext sh	ranger/rifle.conf	/^ext sh  = sh -- "$1"$/;"	k
+file	mopidy.conf	/^[file]$/;"	s
+fill	linux/polybar/modules.conf	/^bar-progress-fill = █$/;"	k	section:module/mpd
+fill	linux/polybar/modules.conf	/^bar-volume-fill = •$/;"	k	section:module/volume-bar
 filter_inode_type	ranger/commands_full.py	/^class filter_inode_type(Command):$/;"	c
 flat	ranger/commands_full.py	/^class flat(Command):$/;"	c
+floating	linux/polybar/modules.conf	/^label-floating = $/;"	k	section:module/bspwm
+focus_previous	linux/pcmanfm/default/pcmanfm.conf	/^focus_previous=0$/;"	k	section:ui
+focused	linux/polybar/modules.conf	/^label-focused = "%name% %icon%"$/;"	k	section:module/i3-workspaces
+focused	linux/polybar/modules.conf	/^label-focused = %icon% %name%$/;"	k	section:module/bspwm
+font	linux/polybar/modules.conf	/^bar-progress-empty-font = 2$/;"	k	section:module/mpd
+font	linux/polybar/modules.conf	/^bar-progress-fill-font = 2$/;"	k	section:module/mpd
+font	linux/polybar/modules.conf	/^bar-progress-indicator-font = 2$/;"	k	section:module/mpd
+font	linux/polybar/modules.conf	/^bar-volume-font = 2$/;"	k	section:module/volume-bar
+for	linux/polybar/master.conf	/^throttle-input-for = 30$/;"	k	section:settings
+for	linux/polybar/master.conf	/^throttle-output-for = 10$/;"	k	section:settings
+foreground	linux/polybar/master.conf	/^compositing-foreground = source$/;"	k	section:settings
+foreground	linux/polybar/master.conf	/^foreground = #c5c8c6$/;"	k	section:colors
+foreground	linux/polybar/master.conf	/^foreground = ${colors.foreground}$/;"	k	section:bar/master
+foreground	linux/polybar/master.conf	/^format-foreground = ${colors.foreground}$/;"	k	section:settings
+foreground	linux/polybar/modules.conf	/^animation-packetloss-0-foreground = #ffa64c$/;"	k	section:module/wireless-network
+foreground	linux/polybar/modules.conf	/^animation-packetloss-1-foreground = #000000$/;"	k	section:module/wireless-network
+foreground	linux/polybar/modules.conf	/^bar-progress-empty-foreground = #44$/;"	k	section:module/mpd
+foreground	linux/polybar/modules.conf	/^bar-progress-fill-foreground = #bb$/;"	k	section:module/mpd
+foreground	linux/polybar/modules.conf	/^bar-progress-indicator-foreground = #A85659$/;"	k	section:module/mpd
+foreground	linux/polybar/modules.conf	/^bar-volume-empty-foreground = #666666$/;"	k	section:module/volume-bar
+foreground	linux/polybar/modules.conf	/^format-connected-foreground = ${colors.purple}$/;"	k	section:module/wired-network
+foreground	linux/polybar/modules.conf	/^format-foreground = ${colors.foreground}$/;"	k	section:module/play
+foreground	linux/polybar/modules.conf	/^format-muted-foreground = #E76BB4$/;"	k	section:module/volume-bar
+foreground	linux/polybar/modules.conf	/^format-prefix-foreground = ${colors.foreground}$/;"	k	section:module/time
+foreground	linux/polybar/modules.conf	/^label-active-foreground = ${colors.blue}$/;"	k	section:module/workspaces
+foreground	linux/polybar/modules.conf	/^label-close-foreground = ${colors.urgent}$/;"	k	section:module/menu
+foreground	linux/polybar/modules.conf	/^label-dimmed-foreground = ${colors.purple}$/;"	k	section:module/bspwm
+foreground	linux/polybar/modules.conf	/^label-empty-foreground = ${colors.foreground}$/;"	k	section:module/workspaces
+foreground	linux/polybar/modules.conf	/^label-focused-foreground = ${colors.blue}$/;"	k	section:module/bspwm
+foreground	linux/polybar/modules.conf	/^label-foreground = ${colors.foreground}$/;"	k	section:module/time
+foreground	linux/polybar/modules.conf	/^label-locked-foreground = ${colors.yellow}$/;"	k	section:module/bspwm
+foreground	linux/polybar/modules.conf	/^label-mounted-foreground = ${colors.yellow}$/;"	k	section:module/filesystem
+foreground	linux/polybar/modules.conf	/^label-muted-foreground   = #888$/;"	k	section:module/volume
+foreground	linux/polybar/modules.conf	/^label-private-foreground = ${colors.urgent}$/;"	k	section:module/bspwm
+foreground	linux/polybar/modules.conf	/^label-sticky-foreground = ${colors.purple}$/;"	k	section:module/bspwm
+foreground	linux/polybar/modules.conf	/^label-urgent-foreground = ${colors.urgent}$/;"	k	section:module/bspwm
+foreground	linux/polybar/modules.conf	/^label-urgent-foreground = ${colors.urgent}$/;"	k	section:module/workspaces
+foreground	linux/polybar/modules.conf	/^label-volume-foreground = #B6C2E7$/;"	k	section:module/volume-bar
+foreground	linux/polybar/modules.conf	/^label-volume-foreground = ${colors.foreground}$/;"	k	section:module/volume
+foreground	linux/polybar/modules.conf	/^label-warn-foreground = ${colors.urgent}$/;"	k	section:module/temperature
+foreground	linux/polybar/modules.conf	/^menu-1-0-foreground = ${colors.urgent}$/;"	k	section:module/menu
+foreground	linux/polybar/modules.conf	/^menu-2-0-foreground = ${colors.urgent}$/;"	k	section:module/menu
+foreground	linux/polybar/modules.conf	/^menu-3-0-foreground = ${colors.urgent}$/;"	k	section:module/menu
+foreground	linux/polybar/modules.conf	/^ramp-0-foreground = ${colors.blue}$/;"	k	section:module/temperature
+foreground	linux/polybar/modules.conf	/^ramp-1-foreground = ${colors.pink}$/;"	k	section:module/temperature
+foreground	linux/polybar/modules.conf	/^ramp-2-foreground = ${colors.purple}$/;"	k	section:module/temperature
+foreground	linux/polybar/modules.conf	/^ramp-3-foreground = ${colors.urgent}$/;"	k	section:module/temperature
+foreground	linux/polybar/modules.conf	/^ramp-capacity-0-foreground = ${colors.urgent}$/;"	k	section:module/battery
+foreground	linux/polybar/modules.conf	/^ramp-capacity-1-foreground = #ffa900$/;"	k	section:module/battery
+foreground	linux/polybar/modules.conf	/^ramp-capacity-foreground   = ${colors.blue}$/;"	k	section:module/battery
+foreground	linux/polybar/modules.conf	/^ramp-coreload-0-foreground = ${colors.foreground}$/;"	k	section:module/coreuse
+foreground	linux/polybar/modules.conf	/^ramp-coreload-1-foreground = ${colors.foreground}$/;"	k	section:module/coreuse
+foreground	linux/polybar/modules.conf	/^ramp-coreload-2-foreground = ${colors.yellow}$/;"	k	section:module/coreuse
+foreground	linux/polybar/modules.conf	/^ramp-coreload-3-foreground = ${colors.yellow}$/;"	k	section:module/coreuse
+foreground	linux/polybar/modules.conf	/^ramp-coreload-4-foreground = ${colors.urgent}$/;"	k	section:module/coreuse
+foreground	linux/polybar/modules.conf	/^ramp-coreload-5-foreground = ${colors.urgent}$/;"	k	section:module/coreuse
+foreground	linux/polybar/modules.conf	/^ramp-signal-0-foreground = #F03051$/;"	k	section:module/wireless-network
+foreground	linux/polybar/modules.conf	/^ramp-signal-1-foreground = #F07127$/;"	k	section:module/wireless-network
+foreground	linux/polybar/modules.conf	/^ramp-signal-2-foreground = #F9CE56$/;"	k	section:module/wireless-network
+foreground	linux/polybar/modules.conf	/^ramp-signal-3-foreground = ${colors.purple}$/;"	k	section:module/wireless-network
+foreground	linux/polybar/modules.conf	/^ramp-signal-4-foreground = ${colors.purple}$/;"	k	section:module/wireless-network
+foreground	linux/polybar/modules.conf	/^ramp-signal-5-foreground = ${colors.purple}$/;"	k	section:module/wireless-network
+foreground	linux/polybar/modules.conf	/^ramp-volume-0-foreground = ${colors.foreground}$/;"	k	section:module/volume
+foreground	linux/polybar/modules.conf	/^ramp-volume-1-foreground = ${colors.blue}$/;"	k	section:module/volume
+foreground	linux/polybar/modules.conf	/^ramp-volume-2-foreground = ${colors.orange}$/;"	k	section:module/volume
+foreground	linux/polybar/modules.conf	/^ramp-volume-3-foreground = ${colors.urgent}$/;"	k	section:module/volume
+foreground	linux/polybar/modules.conf	/^toggle-off-foreground = #55$/;"	k	section:module/mpd
+foreground	linux/polybar/modules.conf	/^toggle-on-foreground =$/;"	k	section:module/mpd
+format	linux/polybar/modules.conf	/^bar-progress-format = %{+o +u}%fill%%{-o -u}%indicator%%{+o +u}%empty%%{-u -o}$/;"	k	section:module/mpd
+format	linux/polybar/modules.conf	/^format = <label-layout>$/;"	k	section:module/keyboard
+format	linux/polybar/modules.conf	/^format = <label-state> <label-mode>$/;"	k	section:module/bspwm
+format	linux/polybar/modules.conf	/^format = <label-state>$/;"	k	section:module/workspaces
+format	linux/polybar/modules.conf	/^format = <label-state><label-mode>$/;"	k	section:module/i3-workspaces
+format	linux/polybar/modules.conf	/^format = <label>$/;"	k	section:module/clock
+format	linux/polybar/modules.conf	/^format = <label>$/;"	k	section:module/compton_toggle
+format	linux/polybar/modules.conf	/^format = <label>$/;"	k	section:module/memory
+format	linux/polybar/modules.conf	/^format = <label>$/;"	k	section:module/play
+format	linux/polybar/modules.conf	/^format = <label>$/;"	k	section:module/window_switch
+format	linux/polybar/modules.conf	/^format = <label><ramp-coreload>$/;"	k	section:module/coreuse
+format	linux/polybar/modules.conf	/^format = <ramp><label>$/;"	k	section:module/temperature
+format	linux/polybar/modules.conf	/^time-format = %H:%M$/;"	k	section:module/battery
+framerate	linux/polybar/modules.conf	/^animation-charging-framerate = 750$/;"	k	section:module/battery
+framerate	linux/polybar/modules.conf	/^animation-packetloss-framerate = 500$/;"	k	section:module/wireless-network
+full	linux/polybar/modules.conf	/^format-full        = <ramp-capacity> <label-full>$/;"	k	section:module/battery
+fullscreen	linux/polybar/modules.conf	/^label-fullscreen = $/;"	k	section:module/bspwm
 g:SimpylFold_docstring_preview	nvim/init.vim	/^let g:SimpylFold_docstring_preview=1$/;"	v
 g:ackprg	nvim/init.vim	/^  let g:ackprg = 'ag --vimgrep --nogroup --nocolor --column' $/;"	v
-g:airline#extensions#ale#enabled	nvim/init.vim	/^let g:airline#extensions#ale#enabled=1$/;"	v
+g:airline#extensions#ale#enabled	nvim/init.vim	/^let g:airline#extensions#ale#enabled = 1$/;"	v
 g:airline#extensions#branch#enabled	nvim/init.vim	/^let g:airline#extensions#branch#enabled = 1$/;"	v
-g:airline#extensions#syntastic#enabled	nvim/init.vim	/^let g:airline#extensions#syntastic#enabled = 1$/;"	v
 g:airline#extensions#tabline#enabled	nvim/init.vim	/^let g:airline#extensions#tabline#enabled = 1$/;"	v
-g:airline#extensions#tabline#enabled	nvim/init.vim	/^let g:airline#extensions#tabline#enabled=1$/;"	v
-g:airline#extensions#tabline#formatter	nvim/init.vim	/^let g:airline#extensions#tabline#formatter='unique_tail'$/;"	v
+g:airline#extensions#tabline#formatter	nvim/init.vim	/^let g:airline#extensions#tabline#formatter = 'unique_tail'$/;"	v
 g:airline#extensions#tagbar#enabled	nvim/init.vim	/^let g:airline#extensions#tagbar#enabled = 1$/;"	v
 g:airline_powerline_fonts	nvim/init.vim	/^let g:airline_powerline_fonts = 1$/;"	v
-g:airline_powerline_fonts	nvim/init.vim	/^let g:airline_powerline_fonts=1$/;"	v
 g:airline_skip_empty_sections	nvim/init.vim	/^let g:airline_skip_empty_sections = 1$/;"	v
 g:airline_theme	nvim/init.vim	/^let g:airline_theme='base16_default'$/;"	v
 g:comfortable_motion_scroll_down_key	nvim/init.vim	/^let g:comfortable_motion_scroll_down_key = "j"$/;"	v
@@ -217,26 +586,154 @@ g:python_highlight_all	nvim/init.vim	/^let g:python_highlight_all = 1$/;"	v
 g:tagbar_autofocus	nvim/init.vim	/^let g:tagbar_autofocus=0$/;"	v
 g:tagbar_width	nvim/init.vim	/^let g:tagbar_width=42$/;"	v
 gV	nvim/init.vim	/^noremap gV `[v`]$/;"	m
-get_all_colorschemes	ranger/commands_full.py	/^        from ranger.gui.colorscheme import get_all_colorschemes$/;"	i
-get_executables	ranger/commands_full.py	/^        from ranger.ext.get_executables import get_executables$/;"	i
-get_term	ranger/commands_full.py	/^        from ranger.ext.get_executables import get_term$/;"	i
+gradient	linux/polybar/modules.conf	/^bar-volume-gradient = true$/;"	k	section:module/volume-bar
 grep	ranger/commands_full.py	/^class grep(Command):$/;"	c
+height	linux/polybar/master.conf	/^height = 24$/;"	k	section:bar/master
 help_	ranger/commands_full.py	/^class help_(Command):$/;"	c
+http	mopidy.conf	/^[http]$/;"	s
+if	linux/polybar/modules.conf	/^exec-if = "ping -q -w 2 -c 1 176.34.135.167 > \/dev\/null"$/;"	k	section:module/pkg
+indicator	linux/polybar/modules.conf	/^bar-progress-indicator = █$/;"	k	section:module/mpd
+indicator	linux/polybar/modules.conf	/^bar-volume-indicator = |$/;"	k	section:module/volume-bar
 init	macos/hammerspoon/init.lua	/^local function init()$/;"	f
 init_app_binding	macos/hammerspoon/init.lua	/^local function init_app_binding()$/;"	f
-is_directory_with_files	ranger/commands_full.py	/^        def is_directory_with_files(f):$/;"	f	function:delete.execute
+interface	linux/polybar/modules.conf	/^interface =$/;"	k	section:module/wired-network
+interface	linux/polybar/modules.conf	/^interface =$/;"	k	section:module/wireless-network
+interval	linux/polybar/modules.conf	/^interval = 1$/;"	k	section:module/coreuse
+interval	linux/polybar/modules.conf	/^interval = 10$/;"	k	section:module/jgmenu
+interval	linux/polybar/modules.conf	/^interval = 1200$/;"	k	section:module/filesystem
+interval	linux/polybar/modules.conf	/^interval = 2$/;"	k	section:module/music2
+interval	linux/polybar/modules.conf	/^interval = 2$/;"	k	section:module/play
+interval	linux/polybar/modules.conf	/^interval = 3$/;"	k	section:module/memory
+interval	linux/polybar/modules.conf	/^interval = 3$/;"	k	section:module/temperature
+interval	linux/polybar/modules.conf	/^interval = 5$/;"	k	section:module/clock
+interval	linux/polybar/modules.conf	/^interval = 5$/;"	k	section:module/time
+interval	linux/polybar/modules.conf	/^interval = 5$/;"	k	section:module/window_switch
+interval	linux/polybar/modules.conf	/^poll-interval = 5$/;"	k	section:module/battery
+is_directory_with_files	ranger/commands_full.py	/^        def is_directory_with_files(f):$/;"	f	member:delete.execute	file:
 jj	nvim/init.vim	/^inoremap jj <Esc>$/;"	m
-join	ranger/commands_full.py	/^        from os.path import dirname, basename, expanduser, join$/;"	i
-join	ranger/commands_full.py	/^        from os.path import join, expanduser, lexists$/;"	i
-lexists	ranger/commands_full.py	/^        from os.path import join, expanduser, lexists$/;"	i
+label	linux/polybar/modules.conf	/^label = %date% %time%$/;"	k	section:module/time
+label	linux/polybar/modules.conf	/^label = %output%$/;"	k	section:module/compton_toggle
+label	linux/polybar/modules.conf	/^label = %output%$/;"	k	section:module/jgmenu
+label	linux/polybar/modules.conf	/^label = %output%$/;"	k	section:module/redshift
+label	linux/polybar/modules.conf	/^label = %output%$/;"	k	section:module/window_switch
+label	linux/polybar/modules.conf	/^label = %output:0:305:...%$/;"	k	section:module/music2
+label	linux/polybar/modules.conf	/^label = %{A1:gsimplecal & disown:} %{A3:gsimplecal & disown:} %time% %{A}%{A}$/;"	k	section:module/clock
+label	linux/polybar/modules.conf	/^label = %{A1:termite --exec='watch sensors' & disown:} %temperature%%{A}$/;"	k	section:module/temperature
+label	linux/polybar/modules.conf	/^label = %{A1:termite --exec=htop & disown:} %percentage%% %{A}$/;"	k	section:module/coreuse
+label	linux/polybar/modules.conf	/^label = %{A1:termite --exec=htop & disown:} %percentage_used%%%{A}$/;"	k	section:module/memory
+label	linux/polybar/modules.conf	/^label = %{A1:termite --exec=pacli & disown:} %{A3:termite --exec=pacli & disown:}%output%%{A} %{/;"	k	section:module/pkg
+layout	linux/polybar/modules.conf	/^label-layout = %{A1:mintlocale & disown:} %{A3:mintlocale & disown:} %layout%%{A} %{A}$/;"	k	section:module/keyboard
+left	linux/polybar/master.conf	/^double-click-left = networkmanager_dmenu$/;"	k	section:bar/master
+left	linux/polybar/master.conf	/^padding-left = 0$/;"	k	section:bar/master
+left	linux/polybar/modules.conf	/^click-left = "jgmenu_run >\/dev\/null 2>&1 &"$/;"	k	section:module/jgmenu
+left	linux/polybar/modules.conf	/^click-left = networkmanager_dmenu &$/;"	k	section:module/network
+left	linux/polybar/modules.conf	/^click-left = playerctl pause$/;"	k	section:module/music2
+left	linux/polybar/modules.conf	/^click-left = playerctl play$/;"	k	section:module/play
+left	linux/polybar/modules.conf	/^click-left = skippy-xd$/;"	k	section:module/window_switch
+left	linux/polybar/modules.conf	/^click-left = toggle.sh -c -tg &$/;"	k	section:module/compton_toggle
+left	linux/polybar/modules.conf	/^click-left = toggle.sh -r -tg &$/;"	k	section:module/redshift
+left	ranger/rc.conf	/^cmap <a-left>   eval fm.ui.console.move_word(left=1)$/;"	k
+left	ranger/rc.conf	/^cmap <left>  eval fm.ui.console.move(left=1)$/;"	k
 linemode	ranger/commands_full.py	/^class linemode(default_linemode):$/;"	c
 load_copy_buffer	ranger/commands_full.py	/^class load_copy_buffer(Command):$/;"	c
-makedirs	ranger/commands_full.py	/^        from os import makedirs$/;"	i
+local	mopidy.conf	/^[local]$/;"	s
+locked	linux/polybar/modules.conf	/^label-locked = $/;"	k	section:module/bspwm
+logging	mopidy.conf	/^[logging]$/;"	s
+m3u	mopidy.conf	/^[m3u]$/;"	s
+map	ranger/rc.conf	/^map :  console$/;"	k
+map	ranger/rc.conf	/^map =  chmod$/;"	k
+map J  move down	ranger/rc.conf	/^map J  move down=0.5  pages=True$/;"	k
+map K  move up	ranger/rc.conf	/^map K  move up=0.5    pages=True$/;"	k
+map N  search_next forward	ranger/rc.conf	/^map N  search_next forward=False$/;"	k
+map ca search_next order	ranger/rc.conf	/^map ca search_next order=atime$/;"	k
+map cc search_next order	ranger/rc.conf	/^map cc search_next order=ctime$/;"	k
+map ci search_next order	ranger/rc.conf	/^map ci search_next order=mimetype$/;"	k
+map cm search_next order	ranger/rc.conf	/^map cm search_next order=mtime$/;"	k
+map cs search_next order	ranger/rc.conf	/^map cs search_next order=size$/;"	k
+map ct search_next order	ranger/rc.conf	/^map ct search_next order=tag$/;"	k
+map da cut mode	ranger/rc.conf	/^map da cut mode=add$/;"	k
+map dr cut mode	ranger/rc.conf	/^map dr cut mode=remove$/;"	k
+map dt cut mode	ranger/rc.conf	/^map dt cut mode=toggle$/;"	k
+map oA chain set sort	ranger/rc.conf	/^map oA chain set sort=atime;     set sort_reverse=True$/;"	k
+map oB chain set sort	ranger/rc.conf	/^map oB chain set sort=basename;  set sort_reverse=True$/;"	k
+map oC chain set sort	ranger/rc.conf	/^map oC chain set sort=ctime;     set sort_reverse=True$/;"	k
+map oE chain set sort	ranger/rc.conf	/^map oE chain set sort=extension; set sort_reverse=True$/;"	k
+map oM chain set sort	ranger/rc.conf	/^map oM chain set sort=mtime;     set sort_reverse=True$/;"	k
+map oN chain set sort	ranger/rc.conf	/^map oN chain set sort=natural;   set sort_reverse=True$/;"	k
+map oS chain set sort	ranger/rc.conf	/^map oS chain set sort=size;      set sort_reverse=True$/;"	k
+map oT chain set sort	ranger/rc.conf	/^map oT chain set sort=type;      set sort_reverse=True$/;"	k
+map oa chain set sort	ranger/rc.conf	/^map oa chain set sort=atime;     set sort_reverse=False$/;"	k
+map ob chain set sort	ranger/rc.conf	/^map ob chain set sort=basename;  set sort_reverse=False$/;"	k
+map oc chain set sort	ranger/rc.conf	/^map oc chain set sort=ctime;     set sort_reverse=False$/;"	k
+map oe chain set sort	ranger/rc.conf	/^map oe chain set sort=extension; set sort_reverse=False$/;"	k
+map om chain set sort	ranger/rc.conf	/^map om chain set sort=mtime;     set sort_reverse=False$/;"	k
+map on chain set sort	ranger/rc.conf	/^map on chain set sort=natural;   set sort_reverse=False$/;"	k
+map os chain set sort	ranger/rc.conf	/^map os chain set sort=size;      set sort_reverse=False$/;"	k
+map ot chain set sort	ranger/rc.conf	/^map ot chain set sort=type;      set sort_reverse=False$/;"	k
+map oz set sort	ranger/rc.conf	/^map oz set sort=random$/;"	k
+map pL paste_symlink relative	ranger/rc.conf	/^map pL paste_symlink relative=True$/;"	k
+map pO paste overwrite	ranger/rc.conf	/^map pO paste overwrite=True append=True$/;"	k
+map pP paste append	ranger/rc.conf	/^map pP paste append=True$/;"	k
+map pl paste_symlink relative	ranger/rc.conf	/^map pl paste_symlink relative=False$/;"	k
+map po paste overwrite	ranger/rc.conf	/^map po paste overwrite=True$/;"	k
+map uV      toggle_visual_mode reverse	ranger/rc.conf	/^map uV      toggle_visual_mode reverse=True$/;"	k
+map uv      mark_files all	ranger/rc.conf	/^map uv      mark_files all=True val=False$/;"	k
+map v       mark_files all	ranger/rc.conf	/^map v       mark_files all=True toggle=True$/;"	k
+map ya copy mode	ranger/rc.conf	/^map ya copy mode=add$/;"	k
+map yr copy mode	ranger/rc.conf	/^map yr copy mode=remove$/;"	k
+map yt copy mode	ranger/rc.conf	/^map yt copy mode=toggle$/;"	k
 map_	ranger/commands_full.py	/^class map_(Command):$/;"	c
+margin	linux/polybar/master.conf	/^module-margin = 0$/;"	k	section:bar/master
 mark_tag	ranger/commands_full.py	/^class mark_tag(Command):$/;"	c
+match	linux/polybar/modules.conf	/^fuzzy-match = false$/;"	k	section:module/bspwm
+match	linux/polybar/modules.conf	/^fuzzy-match = true$/;"	k	section:module/i3-workspaces
+max_tab_chars	linux/pcmanfm/default/pcmanfm.conf	/^max_tab_chars=32$/;"	k	section:ui
+media	linux/pcmanfm/default/pcmanfm.conf	/^x-content\/bootable-media=pcmanfm$/;"	k	section:autorun
+media_in_new_tab	linux/pcmanfm/default/pcmanfm.conf	/^media_in_new_tab=1$/;"	k	section:ui
 meta	ranger/commands_full.py	/^class meta(prompt_metadata):$/;"	c
 metadata	linux/polybar/spotify_show.py	/^    metadata = spotify_properties.Get("org.mpris.MediaPlayer2.Player", "Metadata")$/;"	v
+middle	linux/polybar/master.conf	/^click-middle = skippy-xd --activate-window-picker$/;"	k	section:bar/master
+middle	linux/polybar/master.conf	/^double-click-middle = skippy-xd --activate-window-picker$/;"	k	section:bar/master
+mixer	linux/polybar/modules.conf	/^master-mixer = Master$/;"	k	section:module/volume
 mkdir	ranger/commands_full.py	/^class mkdir(Command):$/;"	c
+mode	linux/polybar/modules.conf	/^inline-mode = false$/;"	k	section:module/bspwm
+mode	linux/polybar/modules.conf	/^label-mode = %mode%$/;"	k	section:module/i3-workspaces
+moderate	linux/polybar/master.conf	/^moderate = #ebcb8b$/;"	k	section:colors
+module/battery	linux/polybar/modules.conf	/^[module\/battery]$/;"	s
+module/bspwm	linux/polybar/modules.conf	/^[module\/bspwm]$/;"	s
+module/clock	linux/polybar/modules.conf	/^[module\/clock]$/;"	s
+module/compton_toggle	linux/polybar/modules.conf	/^[module\/compton_toggle]$/;"	s
+module/coreuse	linux/polybar/modules.conf	/^[module\/coreuse]$/;"	s
+module/filesystem	linux/polybar/modules.conf	/^[module\/filesystem]$/;"	s
+module/i3-workspaces	linux/polybar/modules.conf	/^[module\/i3-workspaces]$/;"	s
+module/jgmenu	linux/polybar/modules.conf	/^[module\/jgmenu]$/;"	s
+module/keyboard	linux/polybar/modules.conf	/^[module\/keyboard]$/;"	s
+module/memory	linux/polybar/modules.conf	/^[module\/memory]$/;"	s
+module/menu	linux/polybar/modules.conf	/^[module\/menu]$/;"	s
+module/mpd	linux/polybar/modules.conf	/^[module\/mpd]$/;"	s
+module/music2	linux/polybar/modules.conf	/^[module\/music2]$/;"	s
+module/network	linux/polybar/modules.conf	/^[module\/network]$/;"	s
+module/pkg	linux/polybar/modules.conf	/^[module\/pkg]$/;"	s
+module/play	linux/polybar/modules.conf	/^[module\/play]$/;"	s
+module/redshift	linux/polybar/modules.conf	/^[module\/redshift]$/;"	s
+module/temperature	linux/polybar/modules.conf	/^[module\/temperature]$/;"	s
+module/time	linux/polybar/modules.conf	/^[module\/time]$/;"	s
+module/volume	linux/polybar/modules.conf	/^[module\/volume]$/;"	s
+module/volume-bar	linux/polybar/modules.conf	/^[module\/volume-bar]$/;"	s
+module/window_switch	linux/polybar/modules.conf	/^[module\/window_switch]$/;"	s
+module/wired-network	linux/polybar/modules.conf	/^[module\/wired-network]$/;"	s
+module/wireless-network	linux/polybar/modules.conf	/^[module\/wireless-network]$/;"	s
+module/workspaces	linux/polybar/modules.conf	/^[module\/workspaces]$/;"	s
+monitor	linux/polybar/modules.conf	/^label-monitor = %name%$/;"	k	section:module/bspwm
+monocle	linux/polybar/modules.conf	/^label-monocle = $/;"	k	section:module/bspwm
+moped	mopidy.conf	/^[moped]$/;"	s
+mount_on_startup	linux/pcmanfm/default/pcmanfm.conf	/^mount_on_startup=1$/;"	k	section:volume
+mount_removable	linux/pcmanfm/default/pcmanfm.conf	/^mount_removable=1$/;"	k	section:volume
+mounted	linux/polybar/modules.conf	/^format-mounted = <label-mounted>$/;"	k	section:module/filesystem
+mounted	linux/polybar/modules.conf	/^label-mounted = %mountpoint% : %percentage_free%%$/;"	k	section:module/filesystem
+mpd	mopidy.conf	/^[mpd]$/;"	s
+muted	linux/polybar/modules.conf	/^label-muted   = " muted "$/;"	k	section:module/volume
+muted	linux/polybar/modules.conf	/^label-muted = "   mute"$/;"	k	section:module/volume-bar
 my_edit	ranger/commands.py	/^class my_edit(Command):$/;"	c
 n	nvim/init.vim	/^nnoremap n nzzzv$/;"	m
 name	ranger/commands_full.py	/^    name = 'eval'$/;"	v	class:eval_
@@ -244,51 +741,140 @@ name	ranger/commands_full.py	/^    name = 'help'$/;"	v	class:help_
 name	ranger/commands_full.py	/^    name = 'map'$/;"	v	class:map_
 name	ranger/commands_full.py	/^    name = 'quit!'$/;"	v	class:quit_bang
 name	ranger/commands_full.py	/^    name = 'set'  # don't override the builtin set class$/;"	v	class:set_
+next	linux/polybar/modules.conf	/^icon-next = $/;"	k	section:module/mpd
+occupied	linux/polybar/modules.conf	/^label-occupied = %icon% %name%$/;"	k	section:module/bspwm
+occupied	linux/polybar/modules.conf	/^label-occupied = %icon% %name%$/;"	k	section:module/workspaces
+offline	linux/polybar/modules.conf	/^format-offline = <label-offline>$/;"	k	section:module/mpd
+offline	linux/polybar/modules.conf	/^label-offline = mpd is off$/;"	k	section:module/mpd
+online	linux/polybar/modules.conf	/^format-online = <bar-progress>  <icon-prev> <icon-stop> <toggle> <icon-next>  <label-song>$/;"	k	section:module/mpd
+open	linux/polybar/modules.conf	/^label-open = "    "$/;"	k	section:module/menu
 open_with	ranger/commands_full.py	/^class open_with(Command):$/;"	c
-os	linux/polybar/Play-dark.py	/^import os$/;"	i
-os	linux/polybar/Play.py	/^import os$/;"	i
-os	ranger/commands.py	/^import os$/;"	i
-os	ranger/commands_full.py	/^            import os.path$/;"	i
-os	ranger/commands_full.py	/^        import os$/;"	i
-os	ranger/commands_full.py	/^        import os.path$/;"	i
+orange	linux/polybar/master.conf	/^orange = #ebcb8b$/;"	k	section:colors
+output	linux/polybar/master.conf	/^throttle-output = 5$/;"	k	section:settings
 output	linux/polybar/spotify_show.py	/^    output = artist + ': ' + song$/;"	v
+output	mopidy.conf	/^output = tee name=t ! queue ! autoaudiosink t. ! queue ! udpsink port=5555$/;"	k	section:audio
+overline	linux/polybar/master.conf	/^compositing-overline = source$/;"	k	section:settings
+packetloss	linux/polybar/modules.conf	/^format-packetloss = <animation-packetloss>$/;"	k	section:module/wireless-network
+padding	linux/polybar/modules.conf	/^format-padding = 0$/;"	k	section:module/workspaces
+padding	linux/polybar/modules.conf	/^format-padding = 1$/;"	k	section:module/coreuse
+padding	linux/polybar/modules.conf	/^format-padding = 1$/;"	k	section:module/keyboard
+padding	linux/polybar/modules.conf	/^format-padding = 1$/;"	k	section:module/play
+padding	linux/polybar/modules.conf	/^format-padding = 1$/;"	k	section:module/temperature
+padding	linux/polybar/modules.conf	/^format-volume-padding   = 1$/;"	k	section:module/volume
+padding	linux/polybar/modules.conf	/^label-active-padding = 1$/;"	k	section:module/workspaces
+padding	linux/polybar/modules.conf	/^label-empty-padding = 1$/;"	k	section:module/bspwm
+padding	linux/polybar/modules.conf	/^label-empty-padding = 1$/;"	k	section:module/workspaces
+padding	linux/polybar/modules.conf	/^label-focused-padding = 1$/;"	k	section:module/bspwm
+padding	linux/polybar/modules.conf	/^label-focused-padding = 2$/;"	k	section:module/i3-workspaces
+padding	linux/polybar/modules.conf	/^label-mode-padding = 0$/;"	k	section:module/i3-workspaces
+padding	linux/polybar/modules.conf	/^label-mode-padding = 1$/;"	k	section:module/bspwm
+padding	linux/polybar/modules.conf	/^label-occupied-padding = 1$/;"	k	section:module/bspwm
+padding	linux/polybar/modules.conf	/^label-occupied-padding = 1$/;"	k	section:module/workspaces
+padding	linux/polybar/modules.conf	/^label-padding = 1$/;"	k	section:module/memory
+padding	linux/polybar/modules.conf	/^label-padding = 1$/;"	k	section:module/music2
+padding	linux/polybar/modules.conf	/^label-padding = 1$/;"	k	section:module/network
+padding	linux/polybar/modules.conf	/^label-padding = 2$/;"	k	section:module/jgmenu
+padding	linux/polybar/modules.conf	/^label-unfocused-padding = 2$/;"	k	section:module/i3-workspaces
+padding	linux/polybar/modules.conf	/^label-urgent-padding = 1$/;"	k	section:module/bspwm
+padding	linux/polybar/modules.conf	/^label-urgent-padding = 1$/;"	k	section:module/workspaces
+padding	linux/polybar/modules.conf	/^label-urgent-padding = 2$/;"	k	section:module/i3-workspaces
+padding	linux/polybar/modules.conf	/^label-visible-padding = 2$/;"	k	section:module/i3-workspaces
+padding	linux/polybar/modules.conf	/^label-warn-padding = 1$/;"	k	section:module/temperature
 parser	linux/polybar/spotify_show.py	/^parser = argparse.ArgumentParser()$/;"	v
-partial	ranger/commands_full.py	/^        from functools import partial$/;"	i
-path	ranger/commands_full.py	/^            import os.path$/;"	i
-path	ranger/commands_full.py	/^        import os.path$/;"	i
+pathbar_mode_buttons	linux/pcmanfm/default/pcmanfm.conf	/^pathbar_mode_buttons=0$/;"	k	section:ui
+pause	linux/polybar/modules.conf	/^icon-pause = $/;"	k	section:module/mpd
+php	ranger/rifle.conf	/^!mime ^text, label editor, ext xml|json|csv|tex|py|pl|rb|js|sh|php = $EDITOR -- "$@"$/;"	k
+php	ranger/rifle.conf	/^!mime ^text, label pager,  ext xml|json|csv|tex|py|pl|rb|js|sh|php = "$PAGER" -- "$@"$/;"	k
+php	ranger/rifle.conf	/^label editor, !mime ^text, !ext xml|json|csv|tex|py|pl|rb|js|sh|php  = $EDITOR -- "$@"$/;"	k
+php	ranger/rifle.conf	/^label pager,  !mime ^text, !ext xml|json|csv|tex|py|pl|rb|js|sh|php  = "$PAGER" -- "$@"$/;"	k
+pink	linux/polybar/master.conf	/^pink = #bf616a$/;"	k	section:colors
+play	linux/polybar/modules.conf	/^icon-play = $/;"	k	section:module/mpd
 pluginsExist	nvim/init.vim	/^  let pluginsExist=1$/;"	v
 pmap	ranger/commands_full.py	/^class pmap(map_):$/;"	c
+position	ranger/rc.conf	/^map I  eval fm.open_console('rename ' + fm.thisfile.relative_path.replace("%", "%%"), position=7/;"	k
+prefix	linux/polybar/modules.conf	/^format-online-prefix = " "$/;"	k	section:module/mpd
+prefix	linux/polybar/modules.conf	/^format-prefix = $/;"	k	section:module/time
+prev	linux/polybar/modules.conf	/^icon-prev = $/;"	k	section:module/mpd
+private	linux/polybar/modules.conf	/^label-private = $/;"	k	section:module/bspwm
 prompt_metadata	ranger/commands_full.py	/^class prompt_metadata(Command):$/;"	c
+proxy	mopidy.conf	/^[proxy]$/;"	s
+pseudotiled	linux/polybar/modules.conf	/^label-pseudotiled = P$/;"	k	section:module/bspwm
 punmap	ranger/commands_full.py	/^class punmap(unmap):$/;"	c
+purple	linux/polybar/master.conf	/^purple = #b48ead$/;"	k	section:colors
 quick	ranger/commands_full.py	/^    def quick(self):$/;"	m	class:scout
 quit	ranger/commands_full.py	/^class quit(Command):$/;"	c
 quit_bang	ranger/commands_full.py	/^class quit_bang(quitall):$/;"	c
 quitall	ranger/commands_full.py	/^class quitall(Command):$/;"	c
-ranger	ranger/commands_full.py	/^        import ranger$/;"	i
-re	ranger/commands_full.py	/^        import re$/;"	i
+radius	linux/polybar/master.conf	/^radius = 6$/;"	k	section:bar/master
+random	linux/polybar/modules.conf	/^icon-random = $/;"	k	section:module/mpd
 relink	ranger/commands_full.py	/^class relink(Command):$/;"	c
+reload	linux/polybar/master.conf	/^screenchange-reload = true$/;"	k	section:settings
 rename	ranger/commands_full.py	/^class rename(Command):$/;"	c
 rename_append	ranger/commands_full.py	/^class rename_append(Command):$/;"	c
+repeat	linux/polybar/modules.conf	/^icon-repeat = $/;"	k	section:module/mpd
 resolve_macros	ranger/commands_full.py	/^    resolve_macros = False$/;"	v	class:alias
 resolve_macros	ranger/commands_full.py	/^    resolve_macros = False$/;"	v	class:eval_
 resolve_macros	ranger/commands_full.py	/^    resolve_macros = False$/;"	v	class:map_
+right	linux/polybar/master.conf	/^double-click-right = pavucontrol &$/;"	k	section:bar/master
+right	linux/polybar/master.conf	/^padding-right = 0$/;"	k	section:bar/master
+right	linux/polybar/modules.conf	/^click-right = exo-open $HOME\/.config\/jgmenu\/jgmenurc$/;"	k	section:module/jgmenu
+right	linux/polybar/modules.conf	/^click-right = networkmanager_dmenu &$/;"	k	section:module/network
+right	linux/polybar/modules.conf	/^click-right = playerctl pause$/;"	k	section:module/play
+right	linux/polybar/modules.conf	/^click-right = playerctl play$/;"	k	section:module/music2
+right	linux/polybar/modules.conf	/^click-right = skippy-xd$/;"	k	section:module/window_switch
+right	ranger/rc.conf	/^cmap <a-right>  eval fm.ui.console.move_word(right=1)$/;"	k
+right	ranger/rc.conf	/^cmap <end>   eval fm.ui.console.move(right=-1, absolute=True)$/;"	k
+right	ranger/rc.conf	/^cmap <home>  eval fm.ui.console.move(right=0, absolute=True)$/;"	k
+right	ranger/rc.conf	/^cmap <right> eval fm.ui.console.move(right=1)$/;"	k
 s:menus	nvim/init.vim	/^  let s:menus = {}$/;"	v
 safepipe	ranger/scope.sh	/^safepipe() { "$@"; test $? = 0 -o $? = 141; }$/;"	f
 save_copy_buffer	ranger/commands_full.py	/^class save_copy_buffer(Command):$/;"	c
 scout	ranger/commands_full.py	/^class scout(Command):$/;"	c
-session_bus	linux/polybar/spotify_show.py	/^    session_bus = dbus.SessionBus()$/;"	v
+scroll	linux/polybar/modules.conf	/^enable-scroll = false$/;"	k	section:module/bspwm
+scroll	linux/polybar/modules.conf	/^enable-scroll = false$/;"	k	section:module/i3-workspaces
+scroll	linux/polybar/modules.conf	/^enable-scroll = true$/;"	k	section:module/workspaces
+scroll	linux/polybar/modules.conf	/^reverse-scroll = false$/;"	k	section:module/bspwm
+scroll	linux/polybar/modules.conf	/^reverse-scroll = false$/;"	k	section:module/i3-workspaces
+scroll	linux/polybar/modules.conf	/^wrapping-scroll = false$/;"	k	section:module/i3-workspaces
+search_album_count	mopidy.conf	/^search_album_count = 20$/;"	k	section:spotify
+search_artist_count	mopidy.conf	/^search_artist_count = 10$/;"	k	section:spotify
+select_by_word_characters	kitty.conf	/^select_by_word_characters :@-.\/_~?&=%+#$/;"	k
+separator	linux/polybar/master.conf	/^separator = │$/;"	k	section:bar/master
+separator	linux/polybar/modules.conf	/^label-separator = " | "$/;"	k	section:module/menu
 set_	ranger/commands_full.py	/^class set_(Command):$/;"	c
 setintag	ranger/commands_full.py	/^class setintag(setlocal):$/;"	c
 setlocal	ranger/commands_full.py	/^class setlocal(set_):$/;"	c
+settings	linux/polybar/master.conf	/^[settings]$/;"	s
 shell	ranger/commands_full.py	/^class shell(Command):$/;"	c
-shlex	ranger/commands_full.py	/^        import shlex$/;"	i
+show_documents	linux/pcmanfm/default/desktop-items-0.conf	/^show_documents=1$/;"	k	section:*
+show_hidden	linux/pcmanfm/default/pcmanfm.conf	/^show_hidden=0$/;"	k	section:ui
+show_mounts	linux/pcmanfm/default/desktop-items-0.conf	/^show_mounts=1$/;"	k	section:*
+show_statusbar	linux/pcmanfm/default/pcmanfm.conf	/^show_statusbar=1$/;"	k	section:ui
+show_trash	linux/pcmanfm/default/desktop-items-0.conf	/^show_trash=1$/;"	k	section:*
+show_wm_menu	linux/pcmanfm/default/desktop-items-0.conf	/^show_wm_menu=1$/;"	k	section:*
+side_pane_mode	linux/pcmanfm/default/pcmanfm.conf	/^side_pane_mode=places$/;"	k	section:ui
+size	linux/polybar/master.conf	/^border-bottom-size = 0$/;"	k	section:bar/master
+size	linux/polybar/master.conf	/^border-size = 0$/;"	k	section:bar/master
+size	linux/polybar/master.conf	/^border-top-size = 0$/;"	k	section:bar/master
+size	linux/polybar/master.conf	/^line-size = 0$/;"	k	section:bar/master
+softwaremixer	mopidy.conf	/^[softwaremixer]$/;"	s
 song	linux/polybar/spotify_show.py	/^        song = song[0:trunclen]$/;"	v
 song	linux/polybar/spotify_show.py	/^    song = metadata['xesam:title']$/;"	v
-spotify_bus	linux/polybar/spotify_show.py	/^    spotify_bus = session_bus.get_object("org.mpris.MediaPlayer2.spotify", "\/org\/mpris\/MediaPlayer2")$/;"	v
+sort	linux/pcmanfm/default/desktop-items-0.conf	/^sort=mtime;ascending;$/;"	k	section:*
+sort	linux/pcmanfm/default/pcmanfm.conf	/^sort=name;ascending;$/;"	k	section:ui
+sort	linux/polybar/modules.conf	/^index-sort = true$/;"	k	section:module/i3-workspaces
+spacing	linux/polybar/modules.conf	/^format-spacing = 1$/;"	k	section:module/menu
+spacing	linux/polybar/modules.conf	/^spacing = 2$/;"	k	section:module/filesystem
+splitter_pos	linux/pcmanfm/default/pcmanfm.conf	/^splitter_pos=150$/;"	k	section:ui
+spotify	mopidy.conf	/^[spotify]$/;"	s
+spotify_bus	linux/polybar/spotify_show.py	/^    spotify_bus = session_bus.get_object("org.mpris.MediaPlayer2.spotify", "\/org\/mpris\/MediaP/;"	v
 spotify_properties	linux/polybar/spotify_show.py	/^    spotify_properties = dbus.Interface(spotify_bus, "org.freedesktop.DBus.Properties")$/;"	v
 stage	ranger/commands_full.py	/^class stage(Command):$/;"	c
-sys	linux/polybar/spotify_show.py	/^import sys$/;"	i
-sys	ranger/commands_full.py	/^        import sys$/;"	i
+sticky	linux/polybar/modules.conf	/^label-sticky = $/;"	k	section:module/bspwm
+stop	linux/polybar/modules.conf	/^icon-stop = $/;"	k	section:module/mpd
+stream	mopidy.conf	/^[stream]$/;"	s
+t	tmux.conf	/^bind -n C-PgDn select-window -t :+$/;"	k
+t	tmux.conf	/^bind -n C-PgUp select-window -t :-$/;"	k
 tab	ranger/commands.py	/^    def tab(self, tabnum):$/;"	m	class:my_edit
 tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:cd
 tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:default_linemode
@@ -303,20 +889,98 @@ tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:scout
 tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:set_
 tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:shell
 tab	ranger/commands_full.py	/^    def tab(self, tabnum):$/;"	m	class:touch
-tempfile	ranger/commands_full.py	/^        import tempfile$/;"	i
+tail	linux/polybar/modules.conf	/^tail = true$/;"	k	section:module/compton_toggle
+tail	linux/polybar/modules.conf	/^tail = true$/;"	k	section:module/network
+tail	linux/polybar/modules.conf	/^tail = true$/;"	k	section:module/pkg
+tail	linux/polybar/modules.conf	/^tail = true$/;"	k	section:module/redshift
+temperature	linux/polybar/modules.conf	/^warn-temperature = 70$/;"	k	section:module/temperature
 terminal	ranger/commands_full.py	/^class terminal(Command):$/;"	c
+tiled	linux/polybar/modules.conf	/^label-tiled = $/;"	k	section:module/bspwm
+time	linux/polybar/modules.conf	/^time = %H:%M$/;"	k	section:module/time
+time	linux/polybar/modules.conf	/^time = %R$/;"	k	section:module/clock
+timeout	mopidy.conf	/^timeout = 10$/;"	k	section:spotify
 tmap	ranger/commands_full.py	/^class tmap(map_):$/;"	c
+toolbar	linux/pcmanfm/default/pcmanfm.conf	/^toolbar=newtab;navigation;home;$/;"	k	section:ui
+toplist_countries	mopidy.conf	/^toplist_countries = $/;"	k	section:spotify
 touch	ranger/commands_full.py	/^class touch(Command):$/;"	c
+trim	linux/polybar/master.conf	/^trim = #8fa1b3$/;"	k	section:colors
 trim	ranger/scope.sh	/^trim() { head -n "$maxln"; }$/;"	f
-trunclen	linux/polybar/spotify_show.py	/^    trunclen = 25$/;"	v
 trunclen	linux/polybar/spotify_show.py	/^    trunclen = args.trunclen$/;"	v
 try	ranger/scope.sh	/^try() { output=$(eval '"$@"'); }$/;"	f
 tunmap	ranger/commands_full.py	/^class tunmap(unmap):$/;"	c
+type	linux/polybar/modules.conf	/^type = custom\/menu$/;"	k	section:module/menu
+type	linux/polybar/modules.conf	/^type = custom\/script$/;"	k	section:module/compton_toggle
+type	linux/polybar/modules.conf	/^type = custom\/script$/;"	k	section:module/jgmenu
+type	linux/polybar/modules.conf	/^type = custom\/script$/;"	k	section:module/music2
+type	linux/polybar/modules.conf	/^type = custom\/script$/;"	k	section:module/network
+type	linux/polybar/modules.conf	/^type = custom\/script$/;"	k	section:module/pkg
+type	linux/polybar/modules.conf	/^type = custom\/script$/;"	k	section:module/play
+type	linux/polybar/modules.conf	/^type = custom\/script$/;"	k	section:module/redshift
+type	linux/polybar/modules.conf	/^type = custom\/script$/;"	k	section:module/window_switch
+type	linux/polybar/modules.conf	/^type = internal\/battery$/;"	k	section:module/battery
+type	linux/polybar/modules.conf	/^type = internal\/bspwm$/;"	k	section:module/bspwm
+type	linux/polybar/modules.conf	/^type = internal\/cpu$/;"	k	section:module/coreuse
+type	linux/polybar/modules.conf	/^type = internal\/date$/;"	k	section:module/clock
+type	linux/polybar/modules.conf	/^type = internal\/date$/;"	k	section:module/time
+type	linux/polybar/modules.conf	/^type = internal\/fs$/;"	k	section:module/filesystem
+type	linux/polybar/modules.conf	/^type = internal\/i3$/;"	k	section:module/i3-workspaces
+type	linux/polybar/modules.conf	/^type = internal\/memory$/;"	k	section:module/memory
+type	linux/polybar/modules.conf	/^type = internal\/mpd$/;"	k	section:module/mpd
+type	linux/polybar/modules.conf	/^type = internal\/network$/;"	k	section:module/wired-network
+type	linux/polybar/modules.conf	/^type = internal\/network$/;"	k	section:module/wireless-network
+type	linux/polybar/modules.conf	/^type = internal\/temperature$/;"	k	section:module/temperature
+type	linux/polybar/modules.conf	/^type = internal\/volume$/;"	k	section:module/volume
+type	linux/polybar/modules.conf	/^type = internal\/volume$/;"	k	section:module/volume-bar
+type	linux/polybar/modules.conf	/^type = internal\/xkeyboard$/;"	k	section:module/keyboard
+type	linux/polybar/modules.conf	/^type = internal\/xworkspaces$/;"	k	section:module/workspaces
+ui	linux/pcmanfm/default/pcmanfm.conf	/^[ui]$/;"	s
+underline	linux/polybar/master.conf	/^compositing-underline = source$/;"	k	section:settings
+underline	linux/polybar/modules.conf	/^label-active-underline = ${colors.blue}$/;"	k	section:module/workspaces
+underline	linux/polybar/modules.conf	/^label-dimmed-underline = ${colors.purple}$/;"	k	section:module/bspwm
+underline	linux/polybar/modules.conf	/^label-focused-underline = ${colors.blue}$/;"	k	section:module/bspwm
+underline	linux/polybar/modules.conf	/^label-focused-underline = ${colors.blue}$/;"	k	section:module/i3-workspaces
+underline	linux/polybar/modules.conf	/^label-mode-underline = ${colors.urgent}$/;"	k	section:module/i3-workspaces
+underline	linux/polybar/modules.conf	/^label-occupied-underline = ${colors.blue}$/;"	k	section:module/workspaces
+underline	linux/polybar/modules.conf	/^label-occupied-underline = ${colors.purple}$/;"	k	section:module/bspwm
+underline	linux/polybar/modules.conf	/^label-urgent-underline = ${colors.urgent}$/;"	k	section:module/bspwm
+underline	linux/polybar/modules.conf	/^label-urgent-underline = ${colors.urgent}$/;"	k	section:module/i3-workspaces
+underline	linux/polybar/modules.conf	/^label-urgent-underline = ${colors.urgent}$/;"	k	section:module/workspaces
+underline	linux/polybar/modules.conf	/^label-visible-underline = ${colors.blue}$/;"	k	section:module/i3-workspaces
+unfocused	linux/polybar/modules.conf	/^label-unfocused = "%name% %icon%"$/;"	k	section:module/i3-workspaces
 unmap	ranger/commands_full.py	/^class unmap(Command):$/;"	c
 unmark_tag	ranger/commands_full.py	/^class unmark_tag(mark_tag):$/;"	c
 unstage	ranger/commands_full.py	/^class unstage(Command):$/;"	c
-val	linux/polybar/Play-dark.py	/^    val = 0$/;"	v
-val	linux/polybar/Play-dark.py	/^    val = os.popen('playerctl status').read()$/;"	v
-val	linux/polybar/Play.py	/^    val = '0'$/;"	v
-val	linux/polybar/Play.py	/^    val = os.popen('playerctl status').read()$/;"	v
-wQ	nvim/init.vim	/^cnoreabbrev wQ wq$/;"	m
+up	linux/polybar/master.conf	/^scroll-up = pamixer -i 2$/;"	k	section:bar/master
+urgent	linux/polybar/master.conf	/^urgent = #bf616a$/;"	k	section:colors
+urgent	linux/polybar/modules.conf	/^label-urgent = "%name% %icon%"$/;"	k	section:module/i3-workspaces
+urgent	linux/polybar/modules.conf	/^label-urgent = %icon% %name%$/;"	k	section:module/bspwm
+urgent	linux/polybar/modules.conf	/^label-urgent = %icon% %name%$/;"	k	section:module/workspaces
+values	linux/polybar/modules.conf	/^fixed-values = false$/;"	k	section:module/filesystem
+view_mode	linux/pcmanfm/default/pcmanfm.conf	/^view_mode=list$/;"	k	section:ui
+visible	linux/polybar/modules.conf	/^label-visible = "%name% %icon%"$/;"	k	section:module/i3-workspaces
+volume	linux/pcmanfm/default/pcmanfm.conf	/^[volume]$/;"	s
+volume	linux/polybar/modules.conf	/^format-volume = <label-volume><bar-volume>$/;"	k	section:module/volume-bar
+volume	linux/polybar/modules.conf	/^format-volume = <ramp-volume> <label-volume>$/;"	k	section:module/volume
+volume	linux/polybar/modules.conf	/^label-volume  = %{A3:pavucontrol & disown:}%percentage%% %{A}$/;"	k	section:module/volume
+volume	linux/polybar/modules.conf	/^label-volume = "  "$/;"	k	section:module/volume-bar
+volume_normalization	mopidy.conf	/^volume_normalization = true$/;"	k	section:spotify
+wallpaper	linux/pcmanfm/default/desktop-items-0.conf	/^wallpaper=\/home\/onoma\/.wallpapers\/gfn_vinyldesktop.png$/;"	k	section:*
+wallpaper_common	linux/pcmanfm/default/desktop-items-0.conf	/^wallpaper_common=1$/;"	k	section:*
+wallpaper_mode	linux/pcmanfm/default/desktop-items-0.conf	/^wallpaper_mode=crop$/;"	k	section:*
+warn	linux/polybar/modules.conf	/^format-warn = <label-warn>$/;"	k	section:module/temperature
+warn	linux/polybar/modules.conf	/^label-warn = " %temperature%"$/;"	k	section:module/temperature
+width	linux/polybar/master.conf	/^width = 100%$/;"	k	section:bar/master
+width	linux/polybar/modules.conf	/^bar-capacity-width = 10$/;"	k	section:module/battery
+width	linux/polybar/modules.conf	/^bar-progress-width = 35$/;"	k	section:module/mpd
+width	linux/polybar/modules.conf	/^bar-volume-width = 20$/;"	k	section:module/volume-bar
+win_height	linux/pcmanfm/default/pcmanfm.conf	/^win_height=1036$/;"	k	section:ui
+win_width	linux/pcmanfm/default/pcmanfm.conf	/^win_width=626$/;"	k	section:ui
+workspaces	linux/polybar/modules.conf	/^pin-workspaces = false$/;"	k	section:module/i3-workspaces
+workspaces	linux/polybar/modules.conf	/^pin-workspaces = false$/;"	k	section:module/workspaces
+workspaces	linux/polybar/modules.conf	/^pin-workspaces = true$/;"	k	section:module/bspwm
+wsnumbers	linux/polybar/modules.conf	/^strip-wsnumbers = false$/;"	k	section:module/i3-workspaces
+x	linux/polybar/master.conf	/^offset-x = 0$/;"	k	section:bar/master
+y	linux/polybar/master.conf	/^offset-y = 3$/;"	k	section:bar/master
+yellow	linux/polybar/master.conf	/^yellow = #ebcb8b$/;"	k	section:colors
+youtube	mopidy.conf	/^[youtube]$/;"	s
+zone	linux/polybar/modules.conf	/^thermal-zone = 0$/;"	k	section:module/temperature

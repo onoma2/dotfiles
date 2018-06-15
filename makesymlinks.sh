@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="antigenrc zshrc"           # list of files/folders to symlink in homedir
+files="antigenrc zshrc tmux.conf"           # list of files/folders to symlink in homedir
 
 ##########
 
@@ -29,3 +29,19 @@ for file in $files; do
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
 done
+
+echo -n "Random files"
+
+mkdir ~/.config
+ln -s $dir/kitty.conf ~/.config/kitty.conf
+ln -s $dir/nvim ~/.config/nvim
+ln -s $dir/nvim/init.vim ~/.vimrc
+ln -s $dir/macos/chunkwmrc ~/.chunkwmrc
+ln -s $dir/macos/skhdrc ~/.skhdrc
+ln -s $dir/macos/hammerspoon ~/.hammerspoon
+echo -n "Done Random"
+
+echo -n "setting up Antigen"
+git clone https://github.com/zsh-users/antigen.git ~/git/antigen
+
+source ~/.zshrc
