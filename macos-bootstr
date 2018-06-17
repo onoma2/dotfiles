@@ -94,6 +94,7 @@ tap "thoughtbot/formulae"
 tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
 tap "caskroom/cask"
+tap "homebrew/cask-fonts"
 # Unix
 brew "universal-ctags", args: ["HEAD"]
 brew "git"
@@ -104,7 +105,6 @@ brew "the_silver_searcher"
 brew "tmux"
 brew "vim"
 brew "neovim"
-cask "hammerspoon"
 brew "watchman"
 brew "zsh"
 brew "mas"
@@ -125,7 +125,8 @@ cask "visual-studio-code"
 cask "kitty"
 brew "chunkwm"
 brew "koekeishiya/formulae/skhd"
-
+cask "hammerspoon"
+casl "font-source-code-pro-for-powerline"
 # Programming language prerequisites and package managers
 brew "libyaml" # should come after openssl
 brew "coreutils"
