@@ -68,7 +68,6 @@ call dein#add('Shougo/deoplete.nvim')
 call dein#add('junegunn/fzf')
 call dein#add('majutsushi/tagbar')
 call dein#add('xolox/vim-misc')
-"call dein#add('xolox/vim-easytags')
 call dein#add('mkitt/tabline.vim')
 call dein#add('w0rp/ale')
 call dein#add('mattn/emmet-vim', {'on_ft': 'html'})
@@ -103,6 +102,7 @@ call dein#add('mileszs/ack.vim')
 
 " --- type ° to search the word in all files in the current dir
 "nnoremap ° :Ag <c-r>=expand("<cword>")<cr><cr>
+set rtp+=/usr/local/opt/fzf
 nnoremap <Leader>/ :Ack 
 if executable('ag')
   let g:ackprg = 'ag --vimgrep --nogroup --nocolor --column' 
@@ -168,7 +168,7 @@ set splitright             " Open new windows right of the current window.
 set wrapscan               " Searches wrap around end-of-file.
 set report      =0         " Always report changed lines.
 set synmaxcol   =200       " Only highlight the first 200 columns.
-
+set noswapfile
 set list                   " Show non-printable characters.
 if has('multi_byte') && &encoding ==# 'utf-8'
   let &listchars = 'tab:▸ ,extends:❯,precedes:❮,nbsp:±'
@@ -191,7 +191,7 @@ endif
 " set undofile
 " set undodir     =$HOME/.vim/files/undo/
 " set viminfo     ='100,n$HOME/.vim/files/info/viminfo
-
+[]
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
@@ -244,7 +244,7 @@ noremap gV `[v`]
 inoremap <C-e> <C-o>$
 
 inoremap <c-d> <esc>ddi
-"inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
+inoremap <expr> <Tab> matchstr(getline('.'), '.\%' . col('.') . 'c') =~ '\k' ? "\<C-P>" : "\<Tab>"
 inoremap jj <Esc>
 
 cnoreabbrev W! w!

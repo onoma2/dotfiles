@@ -115,6 +115,7 @@
 <Leader>y	nvim/init.vim	/^vnoremap <Leader>y "+y$/;"	m
 <Left>	nvim/init.vim	/^nnoremap <Left> :cp<CR>$/;"	m
 <Right>	nvim/init.vim	/^nnoremap <Right> :cn<CR>$/;"	m
+<Tab>	nvim/init.vim	/^inoremap <expr> <Tab> matchstr(getline('.'), '.\\%' . col('.') . 'c') =~ '\\k' ? "\\<C-P>" : "\\/;"	m
 <c-d>	nvim/init.vim	/^inoremap <c-d> <esc>ddi$/;"	m
 <c-p>	nvim/init.vim	/^nnoremap <silent> <c-p> :Denite file_rec<CR>$/;"	m
 <esc>	nvim/init.vim	/^noremap <silent> <esc> :noh<cr>$/;"	m

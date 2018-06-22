@@ -13,7 +13,7 @@
 #font_family Input Mono
 #font_family Courier Primal
 #
-font_family Source Code Pro For Powerline
+font_family SauceCodePro Nerd Font Mono
 italic_font      auto
 bold_font        auto
 bold_italic_font auto
@@ -24,34 +24,21 @@ font_size        14.0
 # The amount the font size is changed by (in pts) when increasing/decreasing
 # the font size in a running terminal.
 font_size_delta 2
-# Base16 Tomorrow Night - kitty color config
-# Chris Kempson (http://chriskempson.com)
-background #1d1f21
-foreground #c5c8c6
-selection_background #c5c8c6
-selection_foreground #1d1f21
-url_color #b4b7b4
-cursor #c5c8c6
 
-# normal
-color0 #1d1f21
-color1 #cc6666
-color2 #b5bd68
-color3 #f0c674
-color4 #81a2be
-color5 #b294bb
-color6 #8abeb7
-color7 #c5c8c6
+# The foreground color
+foreground        #c5c8c6
 
-# bright
-color8 #969896
-color9 #cc6666
-color10 #b5bd68
-color11 #f0c674
-color12 #81a2be
-color13 #b294bb
-color14 #8abeb7
-color15 #c5c8c6
+# The background color
+background        #1d1f21
+
+# The foreground for selections
+selection_foreground #2f2f2f
+
+# The background for selections
+selection_background #d75f5f
+
+# The cursor color
+cursor           #8fee96
 
 # The cursor shape can be one of (block, beam, underline)
 cursor_shape     block

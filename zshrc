@@ -49,7 +49,7 @@ alias neoa="neofetch --ascii"
 alias .d="source deactivate"
 alias v="nvim"
 alias r="ranger"
-
+alias p3u="pip3 install --user"
 ENABLE_CORRECTION="false"
 HIST_STAMPS="mm/dd/yyyy"
 
@@ -111,11 +111,11 @@ if [[ $PLATFORM == 'Linux' ]]; then
 elif [[ $PLATFORM == 'Darwin' ]]; then
 
 #	alias condainit='echo ". $HOME/anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile'
-	alias condainit='source $HOME/anaconda3/bin/activate'
+	alias condainit='source $HOME/miniconda3/bin/activate'
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
 	source ~/git/antigen/antigen.zsh
 	export LC_ALL='en_US.UTF-8'
-
+	export PATH=$HOME/Library/Python/3.6/Bin:$PATH
 fi
 # }-------
 
@@ -164,3 +164,7 @@ export FZF_DEFAULT_OPTS='
   --color info:108,prompt:109,spinner:108,pointer:168,marker:168
   '
 # fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+eval $(thefuck --alias)
