@@ -141,8 +141,6 @@ K	nvim/init.vim	/^noremap K 5k$/;"	m
 KEEP_OPEN	ranger/commands_full.py	/^    KEEP_OPEN       = 'k'$/;"	v	class:scout
 L	nvim/init.vim	/^noremap L g_$/;"	m
 MARK	ranger/commands_full.py	/^    MARK            = 'm'$/;"	v	class:scout
-Multiple_cursors_after	nvim/init.vim	/^function g:Multiple_cursors_after()$/;"	f
-Multiple_cursors_before	nvim/init.vim	/^function g:Multiple_cursors_before()$/;"	f
 N	nvim/init.vim	/^nnoremap N Nzzzv$/;"	m
 OPEN_ON_ENTER	ranger/commands_full.py	/^    OPEN_ON_ENTER   = 'e'$/;"	v	class:scout
 PATH_RE	ranger/commands_full.py	/^    PATH_RE = re.compile(r'^\\s*path="?(.*?)"?\\s*$')$/;"	v	class:setlocal

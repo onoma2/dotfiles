@@ -182,16 +182,15 @@ endif
 " if !isdirectory($HOME.'/.vim/files') && exists('*mkdir')
 "   call mkdir($HOME.'/.vim/files')
 " endif
-" set backup
-" set backupdir   =$HOME/.vim/files/backup/
-" set backupext   =-vimbackup
-" set backupskip  =
-" set directory   =$HOME/.vim/files/swap/
+set backup
+set backupdir   =$HOME/.vim/files/backup/
+set backupext   =-vimbackup
+set backupskip  =
+set directory   =$HOME/.vim/files/swap/
 " set updatecount =100
 " set undofile
 " set undodir     =$HOME/.vim/files/undo/
 " set viminfo     ='100,n$HOME/.vim/files/info/viminfo
-[]
 " Enable folding
 set foldmethod=indent
 set foldlevel=99
@@ -417,12 +416,12 @@ nnoremap <silent> <leader>u :call dein#update()<CR> */
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 "}}}
 
-function g:Multiple_cursors_before()
-    call deoplete#custom#buffer_option('auto_complete', v:false)
-endfunction
-function g:Multiple_cursors_after()
-    call deoplete#custom#buffer_option('auto_complete', v:true)
-endfunction
+" function g:Multiple_cursors_before()
+"     call deoplete#custom#buffer_option('auto_complete', v:false)
+" endfunction
+" function g:Multiple_cursors_after()
+"     call deoplete#custom#buffer_option('auto_complete', v:true)
+" endfunction
 
 au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
 

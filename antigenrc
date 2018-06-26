@@ -63,6 +63,7 @@ antigen bundle tmuxinator
 antigen bundle vi-mode
 antigen bundle command-not-found
 antigen bundle colored-man
+antigen bundle colored-man-pages
 # antigen bundle common-alias
 antigen bundle djui/alias-tips
 antigen bundle zsh-users/zsh-syntax-highlighting
