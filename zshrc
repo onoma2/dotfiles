@@ -115,7 +115,7 @@ elif [[ $PLATFORM == 'Darwin' ]]; then
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
 	source ~/git/antigen/antigen.zsh
 	export LC_ALL='en_US.UTF-8'
-	export PATH=$HOME/Library/Python/3.6/Bin:$PATH
+	export PATH=$HOME/Library/Python/3.7/Bin:$PATH
 fi
 # }-------
 

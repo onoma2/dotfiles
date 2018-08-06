@@ -90,6 +90,7 @@ call dein#add('nathanaelkane/vim-indent-guides')
 call dein#add('christoomey/vim-tmux-navigator')
 call dein#add('zchee/deoplete-jedi')
 call dein#add('ternjs/tern_for_vim', { 'do': 'npm install' })
+call dein#add('python-mode/python-mode', { 'branch': 'develop' })
 if !has('nvim')
   call dein#add('roxma/nvim-yarp')
   call dein#add('roxma/vim-hug-neovim-rpc')
@@ -447,3 +448,4 @@ autocmd BufWinLeave *.py :TagbarClose
 
 let g:comfortable_motion_scroll_down_key = "j"
 let g:comfortable_motion_scroll_up_key = "k"
+let g:pymode_python = 'python3'

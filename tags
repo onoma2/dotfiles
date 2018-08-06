@@ -582,6 +582,7 @@ g:deoplete#sources	nvim/init.vim	/^let g:deoplete#sources.vim = ['vim']$/;"	v
 g:deoplete_disable_auto_complete	nvim/init.vim	/^let g:deoplete_disable_auto_complete=1$/;"	v
 g:mapleader	nvim/init.vim	/^let g:mapleader="\\<Space>"$/;"	v
 g:maplocalleader	nvim/init.vim	/^let g:maplocalleader=';'$/;"	v
+g:pymode_python	nvim/init.vim	/^let g:pymode_python = 'python3'$/;"	v
 g:python_highlight_all	nvim/init.vim	/^let g:python_highlight_all = 1$/;"	v
 g:tagbar_autofocus	nvim/init.vim	/^let g:tagbar_autofocus=0$/;"	v
 g:tagbar_width	nvim/init.vim	/^let g:tagbar_width=42$/;"	v
