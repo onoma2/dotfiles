@@ -13,8 +13,8 @@ KITTY_CONFIG_DIRECTORY="$HOME/.config"
 bindkey -v
 
 # If not running interactively, do not do anything
-[[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux
+#[[ $- != *i* ]] && return
+#[[ -z "$TMUX" ]] && exec tmux
 
 # create history file
 HISTFILE=~/.histfile
@@ -98,7 +98,7 @@ if [[ $PLATFORM == 'Linux' ]]; then
 
 
 #	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
-	alias condainit='source $HOME/miniconda3/bin/activate'
+	alias condainit='source $HOME/Conda/miniconda3/bin/activate'
 
 	source /usr/share/zsh/share/antigen.zsh
 	

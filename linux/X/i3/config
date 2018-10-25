@@ -109,8 +109,8 @@ bindsym $Mod+t exec exo-open --launch TerminalEmulator
 bindsym $Mod+f exec exo-open --launch FileManager
 
 # jumpapp mash
-bindsym $Mod+Mod1+Ctrl+v exec --no-startup-id jumpapp code 
-bindsym $Mod+Mod1+Ctrl+c exec --no-startup-id jumpapp chromium
+bindsym $Mod+Mod1+Ctrl+v exec --no-startup-id jumpapp code
+bindsym $Mod+Mod1+Ctrl+c exec --no-startup-id jumpapp google-chrome-stable
 bindsym $Mod+Mod1+Ctrl+k exec --no-startup-id jumpapp kitty
 bindsym $Mod+Mod1+Ctrl+f exec --no-startup-id jumpapp pcmanfm
 bindsym $Mod+Mod1+Ctrl+t exec --no-startup-id jumpapp termite

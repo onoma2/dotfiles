@@ -76,6 +76,8 @@ antigen bundle rupa/z
 antigen bundle subnixr/minimal
 #antigen bundle miekg/lean
 
+#antigen theme refined
+
 # Load the theme.
 #antigen theme bhilburn/powerlevel9k powerlevel9k
 #antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
