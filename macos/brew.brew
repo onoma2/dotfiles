@@ -5,16 +5,20 @@ carthage
 chunkwm
 coreutils
 freetype
+fzf
 gdbm
 gettext
 git
+glib
 hub
 icu4c
 imagemagick
 jemalloc
 jpeg
 libevent
+libffi
 libpng
+libssh2
 libtermkey
 libtiff
 libtool
@@ -25,6 +29,7 @@ little-cms2
 lua
 luajit
 mas
+midnight-commander
 msgpack
 ncurses
 neovim
@@ -40,6 +45,7 @@ rcm
 readline
 reattach-to-user-namespace
 ruby
+s-lang
 skhd
 sqlite
 the_silver_searcher
@@ -51,4 +57,5 @@ vim
 watchman
 webp
 xz
+youtube-dl
 zsh
