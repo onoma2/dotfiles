@@ -10,6 +10,8 @@ gdbm
 gettext
 git
 glib
+highlight
+htop
 hub
 icu4c
 imagemagick
@@ -28,6 +30,8 @@ libyaml
 little-cms2
 lua
 luajit
+m-cli
+mackup
 mas
 midnight-commander
 msgpack
