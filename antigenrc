@@ -74,6 +74,7 @@ antigen bundle mafredri/zsh-async
 #antigen bundle sindresorhus/pure
 antigen bundle rupa/z
 antigen bundle subnixr/minimal
+antigen bundle changyuheng/fz
 #antigen bundle miekg/lean
 
 #antigen theme refined

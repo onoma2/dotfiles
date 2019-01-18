@@ -69,6 +69,8 @@ chunkc core::load ffm.so
 # specific application overrides
 
 chunkc tiling::rule --owner mpv --state float
+chunkc tiling::rule --owner Stickies  --state float
+
 # chunkc tiling::rule --owner kitty --role AXWindow --subrole AXDialog --state tile
 # chunkc tiling::rule --owner iTerm2 --role AXWindow --subrole AXDialog --state tile
 chunkc tiling::rule --owner Spotify --role AXWindow --subrole AXDialog --state tile

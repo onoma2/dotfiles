@@ -8,7 +8,7 @@ export PAGER=more
 
 TERM=xterm-256color
 
-KITTY_CONFIG_DIRECTORY="$HOME/.config"
+KITTY_CONFIG_DIRECTORY="$HOME/dotfiles"
 
 bindkey -v
 
@@ -116,6 +116,10 @@ elif [[ $PLATFORM == 'Darwin' ]]; then
 #	alias condainit='echo ". $HOME/anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile'
 	alias condainit='source $HOME/miniconda3/bin/activate'
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
+	alias rm=trash
+	alias bi='brew install'
+	alias bci='brew cask install'
+	alias bubuc='bubu && brew cask upgrade'
 	source ~/git/antigen/antigen.zsh
 	export LC_ALL='en_US.UTF-8'
 	export PATH=$HOME/Library/Python/3.7/Bin:$PATH
