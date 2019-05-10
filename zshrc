@@ -54,7 +54,7 @@ alias v="nvim"
 alias r="ranger"
 alias p3u="pip3 install --user"
 ENABLE_CORRECTION="false"
-HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="dd/mm/yyyy"
 
 
 
@@ -99,13 +99,13 @@ if [[ $PLATFORM == 'Linux' ]]; then
 
 #	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
 	alias condainit='source $HOME/Conda/miniconda3/bin/activate'
-
+	source .zshlocal
 	source /usr/share/zsh/share/antigen.zsh
-	
+
 	setxkbmap -model pc105 -layout us,ru -variant , -option grp:alt_shift_toggle,compose:ralt,ctrl:nocaps
 
 	timedatectl set-local-rtc 0
-# }----- 
+# }-----
 
 
 # ------- {macOS
@@ -127,7 +127,7 @@ fi
 # }-------
 
 # Prefer US English and use UTF-8.
-export LANG='en_US.UTF-8'; 
+export LANG='en_US.UTF-8';
 
 # Highlight section titles in manual pages.
 export LESS_TERMCAP_md="${yellow}";
@@ -175,3 +175,4 @@ export FZF_DEFAULT_OPTS='
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval $(thefuck --alias)
+export PATH="/usr/local/sbin:$PATH"

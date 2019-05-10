@@ -250,54 +250,31 @@
 >	nvim/init.vim	/^vmap > >gv$/;"	m
 AS_YOU_TYPE	ranger/commands_full.py	/^    AS_YOU_TYPE     = 't'$/;"	v	class:scout
 AUTO_OPEN	ranger/commands_full.py	/^    AUTO_OPEN       = 'a'$/;"	v	class:scout
-Configuration	macos/mac-cli/README.md	/^### Configuration$/;"	S
-END	macos/mac-cli/mac-cli/plugins/general	/^osascript <<'END'$/;"	h
-END	macos/mac-cli/mac-cli/plugins/general	/^osascript >\/dev\/null <<'END'$/;"	h
 EOD	macos-custom-stuff.sh	/^osascript <<EOD$/;"	h
 EOD	macos-sens-2	/^osascript <<EOD$/;"	h
 FILTER	ranger/commands_full.py	/^    FILTER          = 'f'$/;"	v	class:scout
 FILTER_DIRS	ranger/commands_full.py	/^    FILTER_DIRS  = 'd'$/;"	v	class:filter_inode_type
 FILTER_FILES	ranger/commands_full.py	/^    FILTER_FILES = 'f'$/;"	v	class:filter_inode_type
 FILTER_LINKS	ranger/commands_full.py	/^    FILTER_LINKS = 'l'$/;"	v	class:filter_inode_type
-General Commands	macos/mac-cli/README.md	/^### General Commands$/;"	S
-Git Utilities	macos/mac-cli/README.md	/^### Git Utilities$/;"	S
 H	nvim/init.vim	/^noremap H ^$/;"	m
-Help / Commands List	macos/mac-cli/README.md	/^### Help \/ Commands List$/;"	S
-Homebrew Utilities	macos/mac-cli/README.md	/^### Homebrew Utilities$/;"	S
 IGNORE_CASE	ranger/commands_full.py	/^    IGNORE_CASE     = 'i'$/;"	v	class:scout
 INVERT	ranger/commands_full.py	/^    INVERT          = 'v'$/;"	v	class:scout
-Image Utilities	macos/mac-cli/README.md	/^### Image Utilities$/;"	S
-Installation in 1 Simple Step - Including configuration wizard!	macos/mac-cli/README.md	/^### Installation in 1 Simple Step - Including configuration wizard!$/;"	S
-Integrated Projects	macos/mac-cli/README.md	/^### Integrated Projects$/;"	S
 J	nvim/init.vim	/^noremap J 5j$/;"	m
 K	nvim/init.vim	/^noremap K 5k$/;"	m
 KEEP_OPEN	ranger/commands_full.py	/^    KEEP_OPEN       = 'k'$/;"	v	class:scout
 L	nvim/init.vim	/^noremap L g_$/;"	m
-LAMP (Linux, Apache, MySQL, PHP) Utilities	macos/mac-cli/README.md	/^### LAMP (Linux, Apache, MySQL, PHP) Utilities$/;"	S
 MARK	ranger/commands_full.py	/^    MARK            = 'm'$/;"	v	class:scout
-Mac CLI	macos/mac-cli/README.md	/^# Mac CLI$/;"	c
-Magento Utilities	macos/mac-cli/README.md	/^### Magento Utilities$/;"	S
 N	nvim/init.vim	/^nnoremap N Nzzzv$/;"	m
-Network Utilities	macos/mac-cli/README.md	/^### Network Utilities$/;"	S
 OPEN_ON_ENTER	ranger/commands_full.py	/^    OPEN_ON_ENTER   = 'e'$/;"	v	class:scout
 PATH_RE	ranger/commands_full.py	/^    PATH_RE = re.compile(r'^\\s*path="?(.*?)"?\\s*$')$/;"	v	class:setlocal
 PERM_FILTER	ranger/commands_full.py	/^    PERM_FILTER     = 'p'$/;"	v	class:scout
-Performance and maintenance Utilities	macos/mac-cli/README.md	/^### Performance and maintenance Utilities$/;"	S
 Q	nvim/init.vim	/^nnoremap Q @q$/;"	m
-Requirements	macos/mac-cli/README.md	/^### Requirements$/;"	S
 SMART_CASE	ranger/commands_full.py	/^    SMART_CASE      = 's'$/;"	v	class:scout
 SM_GLOB	ranger/commands_full.py	/^    SM_GLOB         = 'g'$/;"	v	class:scout
 SM_LETTERSKIP	ranger/commands_full.py	/^    SM_LETTERSKIP   = 'l'$/;"	v	class:scout
 SM_REGEX	ranger/commands_full.py	/^    SM_REGEX        = 'r'$/;"	v	class:scout
-SSH Utilities	macos/mac-cli/README.md	/^### SSH Utilities$/;"	S
-Search Utilities	macos/mac-cli/README.md	/^### Search Utilities$/;"	S
 UNMARK	ranger/commands_full.py	/^    UNMARK          = 'M'$/;"	v	class:scout
-Uninstallation	macos/mac-cli/README.md	/^### Uninstallation$/;"	S
-Update	macos/mac-cli/README.md	/^### Update$/;"	S
-Web Development Utilities	macos/mac-cli/README.md	/^### Web Development Utilities$/;"	S
-Web Utilities	macos/mac-cli/README.md	/^### Web Utilities$/;"	S
 X	ranger/rifle.conf	/^ext s[wmf]c, has snes9x-gtk,X = snes9x-gtk "$1"$/;"	k
-Xcode Utilities	macos/mac-cli/README.md	/^### Xcode Utilities$/;"	S
 \x20            terminal	ranger/rifle.conf	/^ext x?html?, has w3m,             terminal = w3m "$@"$/;"	k
 \x20           terminal	ranger/rifle.conf	/^ext x?html?, has lynx,            terminal = lynx -- "$@"$/;"	k
 \x20          terminal	ranger/rifle.conf	/^ext x?html?, has links,           terminal = links "$@"$/;"	k
@@ -794,7 +771,6 @@ height	linux/polybar/master.conf	/^height = 24$/;"	k	section:bar/master
 help_	ranger/commands_full.py	/^class help_(Command):$/;"	c
 hold_down_milliseconds	karabiner.json	/^                                        "hold_down_milliseconds": 500,$/;"	n	object:profiles.0.complex_modifications.rules.3.manipulators.0.to_if_alone.0
 http	mopidy.conf	/^[http]$/;"	s
-iTerm / Terminal Utilities	macos/mac-cli/README.md	/^### iTerm \/ Terminal Utilities$/;"	S
 if	linux/polybar/modules.conf	/^exec-if = "ping -q -w 2 -c 1 176.34.135.167 > \/dev\/null"$/;"	k	section:module/pkg
 indicator	linux/polybar/modules.conf	/^bar-progress-indicator = █$/;"	k	section:module/mpd
 indicator	linux/polybar/modules.conf	/^bar-volume-indicator = |$/;"	k	section:module/volume-bar
@@ -889,7 +865,6 @@ local	mopidy.conf	/^[local]$/;"	s
 locked	linux/polybar/modules.conf	/^label-locked = $/;"	k	section:module/bspwm
 logging	mopidy.conf	/^[logging]$/;"	s
 m3u	mopidy.conf	/^[m3u]$/;"	s
-main	macos/mac-cli/mac-cli/tools/install	/^main() {$/;"	f
 mandatory	karabiner.json	/^                                        "mandatory": [$/;"	a	object:profiles.0.complex_modifications.rules.0.manipulators.0.from.modifiers
 mandatory	karabiner.json	/^                                        "mandatory": [$/;"	a	object:profiles.0.complex_modifications.rules.0.manipulators.1.from.modifiers
 mandatory	karabiner.json	/^                                        "mandatory": [$/;"	a	object:profiles.0.complex_modifications.rules.0.manipulators.2.from.modifiers
