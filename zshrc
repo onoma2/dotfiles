@@ -112,7 +112,7 @@ if [[ $PLATFORM == 'Linux' ]]; then
 # -----------------------------------------------
 # If the platform is OS X
 elif [[ $PLATFORM == 'Darwin' ]]; then
-	export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+	export PATH="/usr/local/opt/python/libexec/bin:$PATH" # essential for Brew Python
 #	alias condainit='echo ". $HOME/anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile'
 	alias condainit='source $HOME/miniconda3/bin/activate'
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
@@ -138,7 +138,7 @@ export MANPAGER='less -X'
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 # shellcheck disable=SC1090
-[ -f ~/.zshlocal] && . ~/.zshlocal
+[ -f ~/.zshlocal ] && . ~/.zshlocal
 #
 
 #[ -e "${HOME}/dotfiles/zsh/functions" ] && source "${HOME}/dotfiles/zsh/functions"
