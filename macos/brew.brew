@@ -9,6 +9,7 @@ carthage
 chunkwm
 composer
 coreutils
+emacs-plus
 fdupes
 ffmpeg
 flac
@@ -18,6 +19,7 @@ frei0r
 fribidi
 fzf
 gdbm
+gdk-pixbuf
 gettext
 giflib
 git
@@ -30,16 +32,19 @@ hardlink-osx
 harfbuzz
 highlight
 htop
+httrack
 hub
 icu4c
 ilmbase
 imagemagick
+imagemagick@6
 jemalloc
 jpeg
 lame
 leptonica
 libass
 libbluray
+libcroco
 libde265
 libevent
 libffi
@@ -48,6 +53,7 @@ libidn2
 libogg
 libomp
 libpng
+librsvg
 libsamplerate
 libsndfile
 libsoxr
@@ -82,6 +88,7 @@ openssl
 opus
 opusfile
 p11-kit
+pango
 pcre
 pcre2
 perl

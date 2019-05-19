@@ -99,7 +99,7 @@ if [[ $PLATFORM == 'Linux' ]]; then
 
 #	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
 	alias condainit='source $HOME/Conda/miniconda3/bin/activate'
-	source .zshlocal
+#	source ~/.zshlocal
 	source /usr/share/zsh/share/antigen.zsh
 
 	setxkbmap -model pc105 -layout us,ru -variant , -option grp:alt_shift_toggle,compose:ralt,ctrl:nocaps
@@ -112,7 +112,7 @@ if [[ $PLATFORM == 'Linux' ]]; then
 # -----------------------------------------------
 # If the platform is OS X
 elif [[ $PLATFORM == 'Darwin' ]]; then
-
+	export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 #	alias condainit='echo ". $HOME/anaconda3/etc/profile.d/conda.sh" >> ~/.bash_profile'
 	alias condainit='source $HOME/miniconda3/bin/activate'
 	alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
@@ -138,7 +138,7 @@ export MANPAGER='less -X'
 # use .localrc for SUPER SECRET CRAP that you don't
 # want in your public, versioned repo.
 # shellcheck disable=SC1090
-[ -f ~/.localrc ] && . ~/.localrc
+[ -f ~/.zshlocal] && . ~/.zshlocal
 #
 
 #[ -e "${HOME}/dotfiles/zsh/functions" ] && source "${HOME}/dotfiles/zsh/functions"
