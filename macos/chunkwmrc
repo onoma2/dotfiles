@@ -66,15 +66,25 @@ chunkc core::load tiling.so
 chunkc core::load ffm.so
 
 
-# specific application overrides
+# ====== List of rules =========================
 
-chunkc tiling::rule --owner mpv --state float
-chunkc tiling::rule --owner Stickies  --state float
-
-# chunkc tiling::rule --owner kitty --role AXWindow --subrole AXDialog --state tile
-# chunkc tiling::rule --owner iTerm2 --role AXWindow --subrole AXDialog --state tile
-chunkc tiling::rule --owner Spotify --role AXWindow --subrole AXDialog --state tile
-chunkc tiling::rule --owner Finder --name Copy --state float
-chunkc tiling::rule --owner \"App Store\" --state float
-chunkc tiling::rule --owner \"Battle.net\" --state float
-chunkc tiling::rule --owner \"World of Warcraft\" --state float
+# General applications
+chunkc tiling::rule --owner Finder --name Copy --state float &
+chunkc tiling::rule --owner Finder --name Move --state float &
+chunkc tiling::rule --owner Finder --name Info --state float &
+chunkc tiling::rule --owner Finder --name Connect --state float &
+chunkc tiling::rule --owner \"App Store\" --state float &
+chunkc tiling::rule --owner \"TextEdit\" --state float &
+chunkc tiling::rule --owner \"System Preferences\" --state float &
+chunkc tiling::rule --owner \"Activity Monitor\" --state float &
+chunkc tiling::rule --owner \"Calculator\" --state float &
+chunkc tiling::rule --owner \"Dictionary\" --state float &
+chunkc tiling::rule --owner \"mpv\" --state float &
+chunkc tiling::rule --owner \"The Unarchiver\" --state float &
+chunkc tiling::rule --owner \"Parallels Desktop\" --state float &
+chunkc tiling::rule --owner \"Transmission\" --state float &
+chunkc tiling::rule --owner \"qBittorrent\" --state float &
+chunkc tiling::rule --owner Stickies  --state float &
+chunkc tiling::rule --owner \"Battle.net\" --state float &
+chunkc tiling::rule --owner \"World of Warcraft\" --state float &
+chunkc tiling::rule --owner \"Karabiner-Elements\" --state float &

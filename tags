@@ -450,6 +450,7 @@ center	linux/polybar/master.conf	/^fixed-center = true$/;"	k	section:bar/master
 chain	ranger/commands_full.py	/^class chain(Command):$/;"	c
 change_tab_on_drop	linux/pcmanfm/default/pcmanfm.conf	/^change_tab_on_drop=1$/;"	k	section:ui
 charging	linux/polybar/modules.conf	/^format-charging    = <animation-charging> <label-charging>$/;"	k	section:module/battery
+check_apps	scripts_show_cpu.sh	/^check_apps()$/;"	f
 check_for_updates_on_startup	karabiner.json	/^        "check_for_updates_on_startup": true,$/;"	b	object:global
 chmod	ranger/commands_full.py	/^class chmod(Command):$/;"	c
 click	linux/polybar/modules.conf	/^enable-click = true$/;"	k	section:module/bspwm
@@ -764,6 +765,12 @@ g:python_highlight_all	nvim/init.vim	/^let g:python_highlight_all = 1$/;"	v
 g:tagbar_autofocus	nvim/init.vim	/^let g:tagbar_autofocus=0$/;"	v
 g:tagbar_width	nvim/init.vim	/^let g:tagbar_width=42$/;"	v
 gV	nvim/init.vim	/^noremap gV `[v`]$/;"	m
+get_args	scripts_show_cpu.sh	/^get_args()$/;"	f
+get_cpu	scripts_show_cpu.sh	/^get_cpu()$/;"	f
+get_cpu_usage	scripts_show_cpu.sh	/^get_cpu_usage()$/;"	f
+get_fan_temp	scripts_show_cpu.sh	/^get_fan_temp()$/;"	f
+get_load	scripts_show_cpu.sh	/^get_load()$/;"	f
+get_uptime	scripts_show_cpu.sh	/^get_uptime()$/;"	f
 global	karabiner.json	/^    "global": {$/;"	o
 gradient	linux/polybar/modules.conf	/^bar-volume-gradient = true$/;"	k	section:module/volume-bar
 grep	ranger/commands_full.py	/^class grep(Command):$/;"	c
@@ -865,6 +872,7 @@ local	mopidy.conf	/^[local]$/;"	s
 locked	linux/polybar/modules.conf	/^label-locked = $/;"	k	section:module/bspwm
 logging	mopidy.conf	/^[logging]$/;"	s
 m3u	mopidy.conf	/^[m3u]$/;"	s
+main	scripts_show_cpu.sh	/^main()$/;"	f
 mandatory	karabiner.json	/^                                        "mandatory": [$/;"	a	object:profiles.0.complex_modifications.rules.0.manipulators.0.from.modifiers
 mandatory	karabiner.json	/^                                        "mandatory": [$/;"	a	object:profiles.0.complex_modifications.rules.0.manipulators.1.from.modifiers
 mandatory	karabiner.json	/^                                        "mandatory": [$/;"	a	object:profiles.0.complex_modifications.rules.0.manipulators.2.from.modifiers
@@ -999,6 +1007,7 @@ name	ranger/commands_full.py	/^    name = 'map'$/;"	v	class:map_
 name	ranger/commands_full.py	/^    name = 'quit!'$/;"	v	class:quit_bang
 name	ranger/commands_full.py	/^    name = 'set'  # don't override the builtin set class$/;"	v	class:set_
 next	linux/polybar/modules.conf	/^icon-next = $/;"	k	section:module/mpd
+notify	scripts_show_cpu.sh	/^notify()$/;"	f
 occupied	linux/polybar/modules.conf	/^label-occupied = %icon% %name%$/;"	k	section:module/bspwm
 occupied	linux/polybar/modules.conf	/^label-occupied = %icon% %name%$/;"	k	section:module/workspaces
 offline	linux/polybar/modules.conf	/^format-offline = <label-offline>$/;"	k	section:module/mpd
@@ -1064,6 +1073,7 @@ position	ranger/rc.conf	/^map I  eval fm.open_console('rename ' + fm.thisfile.re
 prefix	linux/polybar/modules.conf	/^format-online-prefix = " "$/;"	k	section:module/mpd
 prefix	linux/polybar/modules.conf	/^format-prefix = $/;"	k	section:module/time
 prev	linux/polybar/modules.conf	/^icon-prev = $/;"	k	section:module/mpd
+print_usage	scripts_show_cpu.sh	/^print_usage()$/;"	f
 private	linux/polybar/modules.conf	/^label-private = $/;"	k	section:module/bspwm
 profiles	karabiner.json	/^    "profiles": [$/;"	a
 prompt_metadata	ranger/commands_full.py	/^class prompt_metadata(Command):$/;"	c
@@ -1208,6 +1218,7 @@ toplist_countries	mopidy.conf	/^toplist_countries = $/;"	k	section:spotify
 touch	ranger/commands_full.py	/^class touch(Command):$/;"	c
 trim	linux/polybar/master.conf	/^trim = #8fa1b3$/;"	k	section:colors
 trim	ranger/scope.sh	/^trim() { head -n "$maxln"; }$/;"	f
+trim	scripts_show_cpu.sh	/^trim()$/;"	f
 trunclen	linux/polybar/spotify_show.py	/^    trunclen = args.trunclen$/;"	v
 try	ranger/scope.sh	/^try() { output=$(eval '"$@"'); }$/;"	f
 tunmap	ranger/commands_full.py	/^class tunmap(unmap):$/;"	c
