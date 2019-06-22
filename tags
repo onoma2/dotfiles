@@ -743,7 +743,7 @@ g:airline#extensions#tabline#formatter	nvim/init.vim	/^let g:airline#extensions#
 g:airline#extensions#tagbar#enabled	nvim/init.vim	/^let g:airline#extensions#tagbar#enabled = 1$/;"	v
 g:airline_powerline_fonts	nvim/init.vim	/^let g:airline_powerline_fonts = 1$/;"	v
 g:airline_skip_empty_sections	nvim/init.vim	/^let g:airline_skip_empty_sections = 1$/;"	v
-g:airline_theme	nvim/init.vim	/^let g:airline_theme='base16_default'$/;"	v
+g:airline_theme	nvim/init.vim	/^let g:airline_theme='afterglow'$/;"	v
 g:comfortable_motion_scroll_down_key	nvim/init.vim	/^let g:comfortable_motion_scroll_down_key = "j"$/;"	v
 g:comfortable_motion_scroll_up_key	nvim/init.vim	/^let g:comfortable_motion_scroll_up_key = "k"$/;"	v
 g:ctrlp_user_command	nvim/init.vim	/^  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'$/;"	v
