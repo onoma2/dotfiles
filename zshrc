@@ -1,4 +1,6 @@
-#
+
+
+
 [[ $- != *i* ]] && return
 
 export PATH=$HOME/bin:$PATH
@@ -53,6 +55,9 @@ alias .d="source deactivate"
 alias v="nvim"
 alias r="ranger"
 alias p3u="pip3 install --user"
+alias pipux='pip3 list --outdated --format=freeze | grep -v ^-e | cut -d = -f 1 | xargs -n1 pip3 install -U'
+
+
 ENABLE_CORRECTION="false"
 HIST_STAMPS="dd/mm/yyyy"
 
@@ -95,7 +100,6 @@ if [[ $PLATFORM == 'Linux' ]]; then
 	alias update='sudo pacman -Syu'
 	alias upmirrors='sudo reflector --score 100 --fastest 25 --sort rate --save /etc/pacman.d/mirrorlist --verbose'
 	alias afk="systemctl suspend"
-
 
 #	alias condainit='export PATH=/home/onoma/miniconda3/bin:$PATH'
 	alias condainit='source $HOME/Conda/miniconda3/bin/activate'
@@ -176,3 +180,4 @@ export FZF_DEFAULT_OPTS='
 
 eval $(thefuck --alias)
 export PATH="/usr/local/sbin:$PATH"
+
