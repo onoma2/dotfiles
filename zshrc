@@ -51,7 +51,7 @@ alias wget="wget -c"
 alias zsr="exec zsh"
 alias zss="source ~/.zshrc"
 alias neoa="neofetch --ascii"
-alias .d="source deactivate"
+alias .d="conda deactivate"
 alias v="nvim"
 alias r="ranger"
 alias p3u="pip3 install --user"
@@ -180,4 +180,27 @@ export FZF_DEFAULT_OPTS='
 
 eval $(thefuck --alias)
 export PATH="/usr/local/sbin:$PATH"
+
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/onoma/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/onoma/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/onoma/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/onoma/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="$PYENV_ROOT/versions/anaconda3-5.3.1/bin/:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/onoma/.pyenv/versions/anaconda3-2019.03/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/onoma/.pyenv/versions/anaconda3-2019.03/etc/profile.d/conda.sh" ]; then
+        . "/Users/onoma/.pyenv/versions/anaconda3-2019.03/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/onoma/.pyenv/versions/anaconda3-2019.03/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
