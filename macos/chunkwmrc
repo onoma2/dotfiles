@@ -87,7 +87,7 @@ chunkc tiling::rule --owner \"qBittorrent\" --state float &
 chunkc tiling::rule --owner Stickies  --state float &
 chunkc tiling::rule --owner \"Battle.net\" --state float &
 chunkc tiling::rule --owner \"World of Warcraft\" --state float &
-chunkc tiling::rule --owner \"Zoom\" --state float &
+chunkc tiling::rule --owner \"zoom.us\" --state float &
 chunkc tiling::rule --owner \"Zoom meeting\" --state float &
 chunkc tiling::rule --owner \"Skype\" --state float &
 chunkc tiling::rule --owner \"Skype for Business\" --state float &

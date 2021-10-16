@@ -56,7 +56,7 @@ alias v="nvim"
 alias r="ranger"
 alias p3u="pip3 install --user"
 alias pipux='pip3 list --outdated --format=freeze | grep -v ^-e | cut -d = -f 1 | xargs -n1 pip3 install -U'
-
+alias gall="ls | xargs -P10 -I{} git -C {}"
 
 ENABLE_CORRECTION="false"
 HIST_STAMPS="dd/mm/yyyy"
