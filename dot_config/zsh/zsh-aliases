@@ -1,0 +1,55 @@
+#!/bin/sh
+alias j='z'
+alias f='zi'
+alias g='lazygit'
+alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
+alias nvimrc='nvim ~/.config/nvim/'
+
+#general aliases
+alias lc='exa -la'
+alias weather="clear && curl http://wttr.in/"
+alias moon="clear && curl http://wttr.in/Moon"
+alias mkdir="mkdir -pv"
+alias du="du -ach | sort -h"
+alias ps="ps -af"
+alias wget="wget -c"
+alias zsr="exec zsh"
+alias zss="source ~/.zshrc"
+alias neoa="neofetch --ascii"
+alias v="nvim"
+alias r="ranger"
+alias p3u="pip3 install --user"
+alias rm="trash"
+eval $(thefuck --alias)
+
+# dirs
+alias d='dirs -v | head -10'
+alias 1='cd -'
+alias 2='cd -2'
+alias 3='cd -3'
+alias 4='cd -4'
+alias 5='cd -5'
+alias 6='cd -6'
+alias 7='cd -7'
+alias 8='cd -8'
+alias 9='cd -9'
+
+#github
+alias gc="git clone"
+alias ga="git add"
+
+# macOS 	
+colorflag="-G"
+alias bi='brew install'
+alias bubu='brew update && brew upgrade'
+alias bs='brew search'
+alias c="codium ."
+alias afk="open -a /System/Library/CoreServices/ScreenSaverEngine.app"
+
+# Open the current directory in a Finder window
+alias ofd='open . $PWD'
+# Show/hide hidden files in the Finder
+alias showfiles="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"	
+	
+

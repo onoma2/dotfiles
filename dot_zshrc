@@ -1,0 +1,162 @@
+#!/bin/sh	
+# If not running interactively, do not do anything
+[[ $- != *i* ]] && return
+# [[ -z "$TMUX" ]] && exec tmux
+
+export ZDOTDIR=$HOME/.config/zsh
+
+
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+# export PATH="/usr/local/opt/llvm/bin:$PATH"
+
+# For compilers to find llvm you may need to set:
+  export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+  export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+
+# Terminal
+TERM=xterm-kitty
+KITTY_CONFIG_DIRECTORY="$HOME/.config"
+
+
+# create history file
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
+
+#options from ArchLabs
+setopt AUTO_CD # No cd needed to change directories
+setopt AUTO_PUSHD # cd historyjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+setopt BANG_HIST # Treat the '!' character specially during expansion.
+setopt EXTENDED_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST # Expire duplicate entries first when trimming history.
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS # Delete old recorded entry if new entry is a duplicate.
+setopt HIST_IGNORE_DUPS # Don't record an entry that was just recorded again.
+setopt HIST_IGNORE_SPACE # Don't record an entry starting with a space.
+setopt HIST_REDUCE_BLANKS # Remove superfluous blanks before recording entry.
+setopt HIST_SAVE_NO_DUPS # Don't write duplicate entries in the history file.
+setopt INC_APPEND_HISTORY # Write to the history file immediately, not when the shell exits.
+setopt SHARE_HISTORY # Share history between all sessions.
+setopt extendedglob
+setopt nomatch
+setopt menucomplete
+setopt interactive_comments
+zle_highlight=('paste:none')
+unsetopt BEEP
+set bell-style visible
+ENABLE_CORRECTION="false"
+HIST_STAMPS="dd/mm/yyyy"
+
+
+# completions
+
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+   autoload -Uz compinit
+   compinit
+fi
+#################
+## COMPLETIONS ##
+#################
+
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
+
+zstyle ':completion:*' menu select
+
+# smartcase
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+
+# KILLALL
+zstyle ':completion:*:processes' command 'ps -ax' 
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;32'
+zstyle ':completion:*:*:kill:*' menu yes select
+zstyle ':completion:*:kill:*'   force-list always
+
+zstyle ':completion:*:processes-names' command 'ps -e -o comm='
+zstyle ':completion:*:*:killall:*' menu yes select
+zstyle ':completion:*:killall:*'   force-list always
+
+zmodload zsh/complist
+# compinit
+_comp_options+=(globdots)		# Include hidden files.
+
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+# Colors
+autoload -Uz colors && colors
+
+
+# Useful Functions
+source "$ZDOTDIR/zsh-functions"
+
+# Normal files to source
+zsh_add_file "zsh-exports"
+zsh_add_file "zsh-aliases"
+
+
+# Plugins
+zsh_add_plugin "zsh-users/zsh-autosuggestions"
+zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
+zsh_add_plugin "hlissner/zsh-autopair"
+zsh_add_plugin "ael-code/zsh-colored-man-pages"
+zsh_add_plugin "zpm-zsh/colorize"
+zsh_add_plugin "djui/alias-tips"
+zsh_add_completion "esc/conda-zsh-completion" false
+# For more plugins: https://github.com/unixorn/awesome-zsh-plugins
+# More completions https://github.com/zsh-users/zsh-completions
+
+
+
+
+
+
+
+
+# use .localrc for SUPER SECRET CRAP that you don't
+# want in your public, versioned repo.
+# shellcheck disable=SC1090
+[ -f ~/.zshlocal ] && . ~/.zshlocal
+#
+
+
+# fzf + ag configuration
+# if _has fzf && _has ag; then
+export FZF_DEFAULT_COMMAND='ag --nocolor -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_OPTS='
+  --color fg:242,bg:236,hl:65,fg+:15,bg+:239,hl+:108
+  --color info:108,prompt:109,spinner:108,pointer:168,marker:168
+  '
+# fi
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# rupa/z
+source /opt/homebrew/etc/profile.d/z.sh
+
+# Prompt (Startship installed via Homebrew)
+
+eval "$(starship init zsh)"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+
+bindkey -v
+[ -f "/Users/onoma/.ghcup/env" ] && source "/Users/onoma/.ghcup/env" # ghcup-env
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
