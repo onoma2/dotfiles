@@ -38,6 +38,13 @@ alias 9='cd -9'
 alias gc="git clone"
 alias ga="git add"
 
+#chezmoi
+alias che="chezmoi edit"
+alias chd="cd $(chezmoi source-path)"
+alias chz="chezmoi"
+alias cha="chezmoi apply"
+alias chra="chezmoi re-add"
+
 # macOS 	
 colorflag="-G"
 alias bi='brew install'

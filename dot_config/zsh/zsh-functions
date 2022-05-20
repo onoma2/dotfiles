@@ -36,6 +36,4 @@ function mach_java_mode() {
     [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 }
 
-function chezmoi-cd() {
-    cd $(chezmoi source-path)
-}
+

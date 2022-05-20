@@ -12,7 +12,6 @@ export PATH="$HOME/.ghcup/bin":$PATH
 
 export EDITOR=nvim
 export VISUAL=nvim
-## export PAGER=more
 export CLICOLOR=1
 
 
