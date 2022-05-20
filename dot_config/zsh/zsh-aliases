@@ -37,6 +37,10 @@ alias 9='cd -9'
 #github
 alias gc="git clone"
 alias ga="git add"
+alias gm="git commit -m"
+alias gp="git push"
+alias gl="gut pull"
+alias gst="git status"
 
 #chezmoi
 alias che="chezmoi edit"
